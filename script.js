@@ -1,3 +1,9 @@
+let loader = document.querySelector("#pre-loader");
+
+window.addEventListener("load", function () {
+  loader.style.display = "none";
+});
+
 const navbar = document.querySelector(".navbar");
 
 const navMenu = document.querySelector(".nav-menu");
