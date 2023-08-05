@@ -118,7 +118,7 @@
   }
 
   main h1 {
-    margin-top: 12%;
+    margin-top: 7%;
     font-size: 3.5rem;
     font-weight: 300 !important;
     margin-left: 5%;
@@ -209,7 +209,7 @@
     display: flex;
     align-items: center;
     position: absolute;
-    top: 15px;
+    top: 12px;
     right: 55%;
     text-transform: uppercase;
   }
@@ -250,18 +250,6 @@
     margin-left: 0;
   }
 
-  .elementosHeader {
-    position: fixed;
-
-    left: -100%;
-    top: 0;
-    gap: 0;
-    flex-direction: column;
-    background-color: rgb(0, 0, 0);
-    width: 100%;
-    text-align: center;
-  }
-
   .perfil-desktop {
     display: none;
     width: 100%;
@@ -284,7 +272,7 @@
   }
 
   main h1 {
-    margin-top: 12%;
+    margin-top: 4%;
     font-size: 3.5rem;
     font-weight: 300 !important;
     margin-left: 5%;
@@ -298,19 +286,8 @@
   }
 
   .cards {
-    margin: 30% 0;
-    grid-template-columns: repeat(4, 70vw);
-    grid-template-rows: min(32vh, 25rem);
-    overflow-x: auto;
-    overflow-y: hidden;
-  }
-
-  .card {
-    height: 30vh;
-  }
-
-  .card h2 {
-    font-size: 2rem;
+    visibility: hidden !important;
+    height: 0 !important;
   }
 
   .sobre {
@@ -376,6 +353,11 @@
     padding-top: 22%;
   }
 
+  .grid-opiniao {
+    margin-top: 2%;
+    display: block;
+    margin-left: 11%;
+  }
   .galeria-parent h2 {
     padding-top: 22%;
   }
@@ -406,6 +388,7 @@
     margin-left: 0 !important;
     width: min(80vw, 40rem);
     height: 25rem;
+    margin-bottom: 2%;
     text-align: center;
   }
 
