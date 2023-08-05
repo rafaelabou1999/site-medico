@@ -81,6 +81,7 @@ header p a {
   padding: 10px 11%;
   color: white !important;
   border-radius: 10px;
+  font-size: 2rem;
   transition: all 1s ease;
 }
 
@@ -504,23 +505,23 @@ main p {
 }
 
 /*galeria*/
-.galeria-parent {
-  margin-left: 5%;
-}
 .galeria-parent h2 {
   margin-top: 20%;
   font-weight: 100;
   font-size: var(--main-font-size-h2);
+  margin-left: 5%;
 }
 
 .galeria-parent h3 {
   font-size: var(--main-font-size-h3);
   color: #777;
   padding-bottom: 0%;
+  margin-left: 5%;
 }
 
 .line4 {
   margin-top: 5%;
+  margin-left: 5%;
   width: 10%;
   background-color: var(--main-color);
   height: 1vh;
@@ -528,6 +529,7 @@ main p {
 
 .images {
   margin-top: 5%;
+  margin-left: 5%;
 }
 
 .images img {
@@ -547,4 +549,28 @@ main p {
   padding-bottom: 3%;
   font-size: 2rem;
   text-align: center;
+}
+
+#pre-loader {
+  display: block;
+  z-index: 10000;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.loader {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 100%;
+}
+
+.loader img {
+  width: 150px;
+  display: block;
+  margin: 0 auto;
 }
