@@ -401,9 +401,18 @@
   .patientReview {
     margin-right: 10%;
   }
+
   .galeria-parent img {
+    margin-left: 0 !important;
     width: min(80vw, 40rem);
     height: 25rem;
+    text-align: center;
+  }
+
+  .images {
+    display: block;
+    margin-left: 0 !important;
+    text-align: center;
   }
   .footer {
     padding-top: 25%;
