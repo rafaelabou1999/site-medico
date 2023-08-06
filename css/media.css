@@ -290,6 +290,9 @@
     height: 0 !important;
   }
 
+  #sobre {
+    margin-top: 8% !important;
+  }
   .sobre {
     flex-direction: column;
   }
@@ -346,11 +349,11 @@
   }
 
   .contato h2 {
-    padding-top: 22%;
+    padding-top: 9%;
   }
 
   .opiniao h2 {
-    padding-top: 22%;
+    padding-top: 9%;
   }
 
   .grid-opiniao {
@@ -359,7 +362,7 @@
     margin-left: 11%;
   }
   .galeria-parent h2 {
-    padding-top: 22%;
+    padding-top: 9%;
   }
 
   .bg-dark {
