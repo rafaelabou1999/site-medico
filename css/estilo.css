@@ -2,7 +2,9 @@
   margin: 0;
   padding: 0;
 }
-
+html:focus-within {
+  scroll-behavior: smooth;
+}
 html {
   font-size: 62.5%;
 }
@@ -73,15 +75,15 @@ header p a {
 }
 
 .link a:hover {
-  border-right: 5px solid var(--main-color);
+  color: var(--main-color);
 }
 
 .agendar a {
   background-color: var(--main-color) !important;
-  padding: 10px 11%;
+  padding: 10px 11% !important;
   color: white !important;
   border-radius: 10px;
-  font-size: 2rem;
+
   transition: all 1s ease;
 }
 
