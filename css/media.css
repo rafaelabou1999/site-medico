@@ -15,7 +15,7 @@
 
 @media screen and (min-width: 1200px) and (max-width: 1450px) {
   .agendar a {
-    font-size: 1.7rem !important;
+    font-size: 1rem !important;
   }
 }
 
@@ -48,7 +48,7 @@
 
     display: flex;
     flex-direction: row;
-    height: 10vh !important;
+    height: max(6vh, 80px) !important;
     top: 0;
     background-color: #333;
   }
