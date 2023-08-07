@@ -13,9 +13,9 @@
   }
 }
 
-@media screen and (min-width: 1200px) and (max-width: 1450px) {
+@media screen and (min-width: 1200px) and (max-width: 1480px) {
   .agendar a {
-    font-size: 1.7rem !important;
+    font-size: 1.8rem !important;
   }
 }
 
