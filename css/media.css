@@ -13,6 +13,12 @@
   }
 }
 
+@media screen and (min-width: 1200px) and (max-width: 1450px) {
+  .agendar a {
+    font-size: 1.7rem !important;
+  }
+}
+
 @media screen and (min-width: 650px) and (max-width: 1199px) {
   .navbar::before {
     background-color: white;
@@ -413,7 +419,7 @@
   }
   .agendar a {
     background-color: var(--main-color) !important;
-    padding: 5px 2% !important;
+    padding: 10px 11% !important;
     color: white !important;
     border-radius: 10px;
 
