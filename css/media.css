@@ -27,6 +27,10 @@
     height: 26rem;
   }
 
+  .card h2 {
+    font-size: 2.7rem;
+  }
+
   .sobre img {
     width: 250px;
   }
