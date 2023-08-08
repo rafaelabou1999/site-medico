@@ -15,7 +15,21 @@
 
 @media screen and (min-width: 1200px) and (max-width: 1450px) {
   .agendar a {
-    font-size: 1rem !important;
+    font-size: 1.7rem !important;
+  }
+
+  .cards {
+    grid-template-columns: repeat(2, calc(90% / 2));
+    grid-template-rows: 27rem;
+  }
+
+  .card {
+    height: 26rem;
+  }
+
+  .galeria-parent img {
+    width: 30vw;
+    height: 25rem;
   }
 }
 
@@ -125,7 +139,7 @@
 
   main h1 {
     margin-top: 7%;
-    font-size: 3.5rem;
+    font-size: 4.7rem;
     font-weight: 300 !important;
     margin-left: 5%;
     color: #fff;
