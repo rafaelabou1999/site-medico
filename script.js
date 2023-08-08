@@ -13,8 +13,3 @@ navbar.addEventListener("click", () => {
   hamburger.classList.toggle("active");
   navMenu.classList.toggle("active");
 });
-
-document.querySelectorAll(".navbar a").addEventListener("click", () => {
-  navbar.removeClass("active");
-});
-
