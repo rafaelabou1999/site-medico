@@ -27,6 +27,15 @@
     height: 26rem;
   }
 
+  .sobre img {
+    width: 250px;
+  }
+
+  .texto p {
+    margin-right: 15%;
+    font-size: 1.9rem;
+  }
+
   .galeria-parent img {
     width: 30vw;
     height: 25rem;
