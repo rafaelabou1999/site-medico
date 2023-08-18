@@ -23,6 +23,14 @@
     grid-template-rows: 27rem;
   }
 
+  header p a {
+    font-weight: 300;
+    text-decoration: none;
+    color: black;
+    font-size: 19px !important
+    ;
+  }
+
   .card {
     height: 26rem;
   }
@@ -511,7 +519,7 @@
   }
 
   #sobre {
-    margin-top: 8% !important;
+    margin-top: 5% !important;
   }
   .sobre {
     flex-direction: column;
