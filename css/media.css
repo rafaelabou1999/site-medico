@@ -626,6 +626,9 @@
     color: black;
   }
 
+  .telefone{
+    color:black !important;
+  }
   .mapa:hover {
     color: var(--bg-grey);
   }
