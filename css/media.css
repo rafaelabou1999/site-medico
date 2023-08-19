@@ -570,12 +570,12 @@
   }
 
   #sobre {
-    margin-top: -25% !important;
+    margin-top: 1% !important;
     
   }
 
   .sobre {
-    padding-top: -11% !important;
+    padding-top: 1% !important;
     display: flex;
     flex-direction: row;
   }
