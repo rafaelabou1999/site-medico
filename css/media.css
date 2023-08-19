@@ -80,13 +80,14 @@
   .menu-mobile {
     display: block;
     z-index: 100;
-
+    padding: 9px !important;
     display: flex;
     flex-direction: row;
-    height: max(6vh, 80px) !important;
+    height: 70px !important;
     top: 0;
     background-color: #333;
   }
+
 
   .perfil-mobile img {
     margin-top: 4%;
@@ -122,11 +123,6 @@
     display: none;
     width: 100%;
   }
-
-  .menu-mobile {
-    height: 10vh;
-  }
-
   .perfil {
     display: none;
     width: 100%;
@@ -159,7 +155,7 @@
   }
 
   main h1 {
-    margin-top: 7%;
+    margin-top: 4% !important;
     font-size: 4.7rem;
     font-weight: 300 !important;
     margin-left: 5%;
@@ -197,6 +193,13 @@
     font-size: 1.8rem;
   }
 
+  .contato2 {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    margin-left:11% !important;
+  }
+  
   .c1 {
     width: 60vw !important;
   }
@@ -213,16 +216,50 @@
     margin-left: 10%;
   }
 
+  .grid-opiniao {
+    margin-left: 11% !important;
+    position: relative;
+  }
+
   .bg-dark {
     padding: 2% 10%;
     border-radius: 20px;
-    margin: 0;
-    margin-right: 35% !important;
-    font-size: 1.6rem;
+    margin-right: 120px !important;
+    font-size: 1.7rem !important;
+    width: 300px !important;
+   
   }
-  .patientReview {
-    margin-left: 12%;
+  
+  .opiniao1,
+  .opiniao2,
+  .opiniao3 {
+    padding-top: 3%;
+    text-align: center;
   }
+ 
+.patientReview {
+  display: none;
+  width: 0;
+  height:0;
+}
+
+
+.reviewBtn{
+  display: block !important;
+  margin:4% 0;
+  margin-bottom:9% !important;
+  position: absolute;
+  left:12vw;
+  background-color: #bea370;
+  border:none;
+  padding:10px 18px; 
+}
+
+.reviewBtn a{
+  font-family:  var(--main-font);
+  font-weight: 100;
+}
+
   .pacienteP {
     font-size: 1.5rem;
   }
@@ -232,11 +269,26 @@
     height: 25rem;
   }
 
-  .footer {
-    padding-top: 25%;
-    padding-bottom: 2%;
-    font-size: 1.8rem;
-  }
+ .images{
+  text-align: center !important;
+  display: block;
+  margin-left: 0 !important;
+ }
+ .galeria-parent h2 {
+  margin-top: 21% !important;
+  font-weight: 100;
+  font-size: var(--main-font-size-h2);
+  margin-left: 5%;
+}
+
+.footer {
+  margin-top: 10%;
+  padding-top:2%;
+  padding-bottom: 2%;
+  font-size: 1.3rem;
+  text-align: center;
+  background-color: var(--main-color) !important;
+}
 }
 
 @media screen and (min-width: 1000px) and (max-width: 1199px) {
@@ -250,7 +302,7 @@
     display: flex;
     align-items: center;
     position: absolute;
-    top: 5px !important;
+    top: 12px !important;
     right: 55%;
     text-transform: uppercase;
   }
@@ -265,29 +317,32 @@
   .menu-mobile {
     display: block;
     z-index: 100;
-
+    padding:10px !important;
+    height: 80px !important;
     display: flex;
     flex-direction: row;
-    height: max(6vh, 80px) !important;
+   
     top: 0;
     background-color: #333;
   }
 
   .perfil-mobile img {
     margin-top: 4%;
-    height: 6rem !important;
+    height: 7rem !important;
+    width:7rem !important;
+   
   }
   .perfil-mobile h3 {
     font-family: "Work Sans", sans-serif;
     font-weight: 300;
-    margin-top: 15%;
+    margin-top: 20% !important;
     font-size: 15px;
   }
 
   main {
     width: 100% !important;
     left: 0;
-    padding-top: 5%;
+    padding-top: 1%;
     top: 5% !important;
     margin-left: 0;
   }
@@ -308,19 +363,10 @@
     width: 100%;
   }
 
-  .menu-mobile {
-    height: 10vh;
-  }
 
   .perfil {
     display: none;
     width: 100%;
-  }
-
-  .perfil-mobile img {
-    width: 34%;
-    height: 6vh;
-    object-fit: cover;
   }
 
   .elementosHeader {
@@ -414,16 +460,24 @@
     font-size: 1.5rem;
   }
 
+  .reviewBtn{
+    display: none !important;
+  }
+
   .galeria-parent img {
     width: min(40vw, 380px);
     height: 25rem;
   }
 
-  .footer {
-    padding-top: 25%;
-    padding-bottom: 2%;
-    font-size: 1.8rem;
-  }
+  
+.footer {
+  margin-top: 10%;
+  padding-top:2%;
+  padding-bottom: 2%;
+  font-size: 1.3rem;
+  text-align: center;
+  background-color: var(--main-color) !important;
+}
 }
 
 @media screen and (min-width: 300px) and (max-width: 650px) {
@@ -462,6 +516,8 @@
 
   .perfil-mobile img {
     margin-top: 4%;
+    width: 6rem !important;
+    height:6rem !important;
   }
   .perfil-mobile h3 {
     font-family: "Work Sans", sans-serif;
@@ -500,12 +556,7 @@
   }
 
   main h1 {
-    margin-top: 4%;
-    font-size: 3.5rem;
-    font-weight: 300 !important;
-    margin-left: 5%;
-    color: #fff;
-    font-family: var(--main-font);
+    margin-top: 0 !important;
   }
 
   main p {
@@ -519,10 +570,20 @@
   }
 
   #sobre {
-    margin-top: 5% !important;
+    margin-top: -25% !important;
+    
   }
+
   .sobre {
-    flex-direction: column;
+    padding-top: -11% !important;
+    display: flex;
+    flex-direction: row;
+  }
+ 
+  #home{
+    display: none;
+    height:0 !important;
+    width:0;
   }
 
   .imgSobre img {
@@ -575,7 +636,13 @@
     object-fit: cover;
     transition: all 200ms ease-in;
   }
-
+  .contato2 {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    margin-left:11% !important;
+  }
+  
   .contato h2 {
     padding-top: 9%;
   }
@@ -592,7 +659,12 @@
   .galeria-parent h2 {
     padding-top: 9%;
   }
-
+  .patientReview {
+    display: none;
+    width: 0;
+    height:0;
+  }
+  
   .bg-dark {
     padding: 2% 10%;
     border-radius: 20px;
@@ -602,23 +674,36 @@
   }
 
   .opiniao1,
-  .opiniao2 {
+  .opiniao2,
+  .opiniao3{
     padding-bottom: 6%;
 
     margin-right: 5%;
   }
   .pacienteP {
-    font-size: 1.3rem;
+   display: none !important;
   }
 
-  .patientReview {
-    margin-right: 10%;
+  .reviewBtn{
+    display: block !important;
+    margin:-2% auto !important;
+    margin-left:minmax(25%, 15rem) !important;
+    background-color: #bea370;
+    border:none;
+    padding:10px 18px; 
   }
+  
+  .reviewBtn a{
+    font-family:  var(--main-font);
+    font-weight: 100;
+  }
+  
+
 
   .galeria-parent img {
     margin-left: 0 !important;
-    width: min(80vw, 40rem);
-    height: 25rem;
+    width: min(75%, 340px) !important;
+    height: 22rem;
     margin-bottom: 2%;
     text-align: center;
   }
@@ -628,11 +713,15 @@
     margin-left: 0 !important;
     text-align: center;
   }
-  .footer {
-    padding-top: 25%;
-    padding-bottom: 2%;
-    font-size: 1.5rem;
-  }
+  
+.footer {
+  margin-top: 10%;
+  padding-top:2%;
+  padding-bottom: 2%;
+  font-size: 1.3rem;
+  text-align: center;
+  background-color: var(--main-color) !important;
+}
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1600px) {
