@@ -396,6 +396,11 @@ main p {
 .tel{
   font-size:12px;
 }
+
+.telefone{
+  text-decoration: none !important;
+  color:black;
+}
 .contato h2 {
   margin-top: 5%;
   font-weight: 100;
