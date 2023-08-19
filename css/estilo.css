@@ -37,6 +37,7 @@ header {
   text-align: right;
   height: 100vh;
   width: 20vw;
+  position: absolute;
   margin-left: 3%;
   background-color: white;
 }
@@ -145,11 +146,11 @@ header {
 }
 
 .menu-mobile {
-  padding: 5px;
+  padding: 7px;
   display: none;
   z-index: 1000;
   position: fixed;
-  min-height: 2vh;
+  min-height: 4vh;
   background-color: white !important;
   width: 100%;
 }
@@ -168,7 +169,7 @@ li {
 }
 
 .navbar {
-  min-height: 53px;
+  min-height: 60px;
   position: absolute;
   top: 0%;
   right: 1%;
@@ -193,7 +194,7 @@ li {
   font-size: max(14px, 3vmin);
   font-family: var(--main-font);
   font-weight: 400;
-  padding-top: 20px;
+  padding-top: 18px;
   text-transform: uppercase;
 }
 .nav-menu {
@@ -217,8 +218,23 @@ li {
   transition: 0.3s;
 }
 
+.navbar button{
+  background-color: var(--main-color);
+  padding:10px 20px;
+  color:rgb(255, 255, 255) !important;
+  margin-left: 26px;
+  margin-bottom: 5%;
+  border: none;
+ 
+  border-radius: 10px;
+}
+
+.navbar button a{
+  color:white;
+  font-size: 1.3rem !important;
+}
 .nav-item {
-  margin: 25px 20px;
+  margin: 25px 26px;
 }
 
 .nav-menu.active {
@@ -376,6 +392,10 @@ main p {
 .contato {
   margin-left: 5%;
 }
+
+.tel{
+  font-size:12px;
+}
 .contato h2 {
   margin-top: 5%;
   font-weight: 100;
@@ -504,6 +524,28 @@ main p {
   border-radius: 50%;
 }
 
+.reviewBtn{
+  display: none;
+}
+.reviewBtn button{
+  display: none;
+  border: 1px solid var(--main-color);
+  background-color: #bea370 !important;
+
+  width:max(50px, 2rem)!important;
+  height: 10px !important;
+  border: none;
+  margin:3% auto;
+}
+
+.reviewBtn a{
+  font-family: var(--main-font);
+  font-weight: 200 !important;
+  color:white;
+  font-size: 1.8rem !important;
+  text-transform: capitalize;
+  text-decoration: none;
+}
 .opiniaoImg {
   margin-top: 3%;
 }
@@ -549,11 +591,14 @@ main p {
 }
 
 .footer {
-  padding-top: 10%;
-  padding-bottom: 3%;
-  font-size: 2rem;
+  margin-top: 10%;
+  padding-top:2%;
+  padding-bottom: 2%;
+  font-size: max(1.2vw, 1.3rem);
   text-align: center;
+  background-color: var(--main-color) !important;
 }
+
 
 #pre-loader {
   display: block;
