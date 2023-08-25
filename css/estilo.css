@@ -334,7 +334,7 @@ main p {
 }
 
 .card .iconCard{
-    transition: all 700ms ease-in;
+    transition: all 400ms ease-in;
 }
 .card:hover .iconCard{
   color:#434343;
