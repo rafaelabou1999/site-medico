@@ -78,6 +78,10 @@ header p a {
   color: var(--main-color);
 }
 
+.agendar {
+  cursor:pointer;
+}
+
 .agendar a {
   background-color: var(--main-color) !important;
   padding: 10px 11% !important;
@@ -278,6 +282,7 @@ main p {
 .buttonTitle button {
   background-color: var(--main-color);
   border: none;
+  cursor: pointer;
   border-radius: 20px;
   padding: 20px 30px;
   margin-left: 5%;
@@ -455,6 +460,7 @@ main p {
 .contatoButton {
   background-color: var(--main-color);
   border: none;
+  cursor:pointer;
   border-radius: 20px;
   padding: 20px 30px;
   margin-top: 5%;
