@@ -333,8 +333,8 @@ main p {
   font-weight: 100 !important;
 }
 
-.iconCard{
-    transition: all 400ms ease-in;
+.card .iconCard{
+    transition: all 700ms ease-in;
 }
 .card:hover .iconCard{
   color:#434343;
