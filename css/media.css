@@ -568,7 +568,7 @@
 
   .menu-mobile {
     display: block;
-    z-index: 100;
+    z-index: 1000 !important;
 
     display: flex;
     flex-direction: row;
@@ -759,14 +759,14 @@
     left: 0;
     bottom: -5%;
     opacity: 0.2;
-    z-index: 0;
+    z-index: 1;
     height: minmax(380px, 100%, 35vh);
     width: 100%;
     background-color: var(--main-color);
   }
 
   .insp1 img {
-    width: 90%;
+    width: 100%;
     margin-bottom: 5%;
     height: 280px;
     object-fit: contain;
