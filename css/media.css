@@ -88,7 +88,6 @@
     background-color: #333;
   }
 
-
   .perfil-mobile img {
     margin-top: 4%;
     height: 6rem !important;
@@ -197,9 +196,9 @@
     margin-top: 5%;
     display: flex;
     flex-direction: row;
-    margin-left:11% !important;
+    margin-left: 11% !important;
   }
-  
+
   .c1 {
     width: 60vw !important;
   }
@@ -227,38 +226,36 @@
     margin-right: 120px !important;
     font-size: 1.7rem !important;
     width: 300px !important;
-   
   }
-  
+
   .opiniao1,
   .opiniao2,
   .opiniao3 {
     padding-top: 3%;
     text-align: center;
   }
- 
-.patientReview {
-  display: none;
-  width: 0;
-  height:0;
-}
 
+  .patientReview {
+    display: none;
+    width: 0;
+    height: 0;
+  }
 
-.reviewBtn{
-  display: block !important;
-  margin:4% 0;
-  margin-bottom:9% !important;
-  position: absolute;
-  left:12vw;
-  background-color: #bea370;
-  border:none;
-  padding:10px 18px; 
-}
+  .reviewBtn {
+    display: block !important;
+    margin: 4% 0;
+    margin-bottom: 9% !important;
+    position: absolute;
+    left: 12vw;
+    background-color: #bea370;
+    border: none;
+    padding: 10px 18px;
+  }
 
-.reviewBtn a{
-  font-family:  var(--main-font);
-  font-weight: 100;
-}
+  .reviewBtn a {
+    font-family: var(--main-font);
+    font-weight: 100;
+  }
 
   .pacienteP {
     font-size: 1.5rem;
@@ -269,26 +266,79 @@
     height: 25rem;
   }
 
- .images{
-  text-align: center !important;
-  display: block;
-  margin-left: 0 !important;
- }
- .galeria-parent h2 {
-  margin-top: 21% !important;
-  font-weight: 100;
-  font-size: var(--main-font-size-h2);
-  margin-left: 5%;
-}
+  .images {
+    text-align: center !important;
+    display: block;
+    margin-left: 0 !important;
+  }
+  .galeria-parent h2 {
+    margin-top: 21% !important;
+    font-weight: 100;
+    font-size: var(--main-font-size-h2);
+    margin-left: 5%;
+  }
+  .insp1 {
+    margin-left: -10%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+  }
+  .insp2 {
+    position: relative;
+    z-index: 100;
+    opacity: 1;
+    margin-bottom: 10%;
+  }
+  .textInsp1 h2 {
+    font-size: max(4vw, 22px);
+  }
 
-.footer {
-  margin-top: 10%;
-  padding-top:2%;
-  padding-bottom: 2%;
-  font-size: 1.3rem;
-  text-align: center;
-  background-color: var(--main-color) !important;
-}
+  .textInsp1 p {
+    font-size: max(2vw, 18px);
+    line-height: 1.5;
+    margin-top: 4%;
+  }
+  .curve {
+    display: block;
+    position: absolute;
+    top: -3%;
+    right: 0;
+    left: 0;
+    bottom: -5%;
+    opacity: 0.2;
+    z-index: 0;
+    height: minmax(380px, 100%, 35vh);
+    width: 100%;
+    background-color: var(--main-color);
+  }
+
+  .insp1 img {
+    width: 75%;
+    margin-bottom: 5%;
+    height: 280px;
+    object-fit: cover;
+    text-align: center;
+    margin-left: 15%;
+  }
+  .imgInsp2,
+  .imgInsp3 {
+    display: none;
+  }
+  .textInsp1 {
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    width: 70vw;
+  }
+
+  .footer {
+    margin-top: 10%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 1.3rem;
+    text-align: center;
+    background-color: var(--main-color) !important;
+  }
 }
 
 @media screen and (min-width: 1000px) and (max-width: 1199px) {
@@ -317,11 +367,11 @@
   .menu-mobile {
     display: block;
     z-index: 100;
-    padding:10px !important;
+    padding: 10px !important;
     height: 80px !important;
     display: flex;
     flex-direction: row;
-   
+
     top: 0;
     background-color: #333;
   }
@@ -329,8 +379,7 @@
   .perfil-mobile img {
     margin-top: 4%;
     height: 7rem !important;
-    width:7rem !important;
-   
+    width: 7rem !important;
   }
   .perfil-mobile h3 {
     font-family: "Work Sans", sans-serif;
@@ -362,7 +411,6 @@
     display: none;
     width: 100%;
   }
-
 
   .perfil {
     display: none;
@@ -460,7 +508,7 @@
     font-size: 1.5rem;
   }
 
-  .reviewBtn{
+  .reviewBtn {
     display: none !important;
   }
 
@@ -468,16 +516,31 @@
     width: min(40vw, 380px);
     height: 25rem;
   }
+  .textInsp1 {
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    margin-left: 3%;
+    width: 55vw;
+  }
 
-  
-.footer {
-  margin-top: 10%;
-  padding-top:2%;
-  padding-bottom: 2%;
-  font-size: 1.3rem;
-  text-align: center;
-  background-color: var(--main-color) !important;
-}
+  .textInsp1 h2 {
+    font-size: 2.5rem;
+  }
+
+  .textInsp1 p {
+    font-size: 1.8rem;
+    line-height: 1.6;
+    margin-top: 4%;
+  }
+  .footer {
+    margin-top: 10%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 1.3rem;
+    text-align: center;
+    background-color: var(--main-color) !important;
+  }
 }
 
 @media screen and (min-width: 300px) and (max-width: 650px) {
@@ -517,7 +580,7 @@
   .perfil-mobile img {
     margin-top: 4%;
     width: 6rem !important;
-    height:6rem !important;
+    height: 6rem !important;
   }
   .perfil-mobile h3 {
     font-family: "Work Sans", sans-serif;
@@ -529,7 +592,7 @@
   main {
     width: 100% !important;
     left: 0;
-    padding-top:0 !important;
+    padding-top: 0 !important;
     top: 5% !important;
     margin-left: 0;
   }
@@ -571,7 +634,6 @@
 
   #sobre {
     margin-top: 1% !important;
-    
   }
 
   .sobre {
@@ -579,11 +641,11 @@
     display: flex;
     flex-direction: row;
   }
- 
-  #home{
+
+  #home {
     display: none;
-    height:0 !important;
-    width:0;
+    height: 0 !important;
+    width: 0;
   }
 
   .imgSobre img {
@@ -626,8 +688,8 @@
     color: black;
   }
 
-  .telefone{
-    color:black !important;
+  .telefone {
+    color: black !important;
   }
   .mapa:hover {
     color: var(--bg-grey);
@@ -643,9 +705,9 @@
     margin-top: 5%;
     display: flex;
     flex-direction: row;
-    margin-left:11% !important;
+    margin-left: 11% !important;
   }
-  
+
   .contato h2 {
     padding-top: 9%;
   }
@@ -665,9 +727,63 @@
   .patientReview {
     display: none;
     width: 0;
-    height:0;
+    height: 0;
   }
-  
+  .insp1 {
+    margin-left: 0%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+  }
+  .insp2 {
+    position: relative;
+    z-index: 100;
+    opacity: 1;
+    margin-bottom: 24%;
+    margin-top: 24%;
+  }
+  .textInsp1 h2 {
+    font-size: max(4vw, 22px);
+  }
+
+  .textInsp1 p {
+    font-size: max(2vw, 18px);
+    line-height: 1.5;
+    margin-top: 4%;
+  }
+  .curve {
+    display: block;
+    position: absolute;
+    top: -3%;
+    right: 0;
+    left: 0;
+    bottom: -5%;
+    opacity: 0.2;
+    z-index: 0;
+    height: minmax(380px, 100%, 35vh);
+    width: 100%;
+    background-color: var(--main-color);
+  }
+
+  .insp1 img {
+    width: 90%;
+    margin-bottom: 5%;
+    height: 280px;
+    object-fit: contain;
+    text-align: center;
+    margin-left: 5%;
+  }
+  .imgInsp2,
+  .imgInsp3 {
+    display: none;
+  }
+  .textInsp1 {
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    width: 90vw;
+  }
+
   .bg-dark {
     padding: 2% 10%;
     border-radius: 20px;
@@ -678,30 +794,28 @@
 
   .opiniao1,
   .opiniao2,
-  .opiniao3{
+  .opiniao3 {
     padding-bottom: 6%;
 
     margin-right: 5%;
   }
   .pacienteP {
-   display: none !important;
+    display: none !important;
   }
 
-  .reviewBtn{
+  .reviewBtn {
     display: block !important;
-    margin:-2% auto !important;
-    margin-left:minmax(25%, 15rem) !important;
+    margin: -2% auto !important;
+    margin-left: minmax(25%, 15rem) !important;
     background-color: #bea370;
-    border:none;
-    padding:10px 18px; 
+    border: none;
+    padding: 10px 18px;
   }
-  
-  .reviewBtn a{
-    font-family:  var(--main-font);
+
+  .reviewBtn a {
+    font-family: var(--main-font);
     font-weight: 100;
   }
-  
-
 
   .galeria-parent img {
     margin-left: 0 !important;
@@ -716,15 +830,15 @@
     margin-left: 0 !important;
     text-align: center;
   }
-  
-.footer {
-  margin-top: 10%;
-  padding-top:2%;
-  padding-bottom: 2%;
-  font-size: 1.3rem;
-  text-align: center;
-  background-color: var(--main-color) !important;
-}
+
+  .footer {
+    margin-top: 10%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 1.3rem;
+    text-align: center;
+    background-color: var(--main-color) !important;
+  }
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1600px) {
