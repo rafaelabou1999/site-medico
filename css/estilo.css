@@ -152,7 +152,7 @@ header {
 .menu-mobile {
   padding: 7px;
   display: none;
-  z-index: 1000;
+  z-index: 3000;
   position: fixed;
   min-height: 4vh;
   background-color: white !important;
