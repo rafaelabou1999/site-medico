@@ -5,7 +5,7 @@
 
 html {
   font-size: 62.5%;
-   scroll-behavior: smooth !important;
+  scroll-behavior: smooth !important;
 }
 :root {
   --main-font: "Work Sans", sans-serif;
@@ -79,7 +79,7 @@ header p a {
 }
 
 .agendar {
-  cursor:pointer;
+  cursor: pointer;
 }
 
 .agendar a {
@@ -222,19 +222,19 @@ li {
   transition: 0.3s;
 }
 
-.navbar button{
+.navbar button {
   background-color: var(--main-color);
-  padding:10px 20px;
-  color:rgb(255, 255, 255) !important;
+  padding: 10px 20px;
+  color: rgb(255, 255, 255) !important;
   margin-left: 26px;
   margin-bottom: 5%;
   border: none;
- 
+
   border-radius: 10px;
 }
 
-.navbar button a{
-  color:white;
+.navbar button a {
+  color: white;
   font-size: 1.3rem !important;
 }
 .nav-item {
@@ -333,11 +333,11 @@ main p {
   font-weight: 100 !important;
 }
 
-.card .iconCard{
-    transition: all 500ms ease-in;
+.card .iconCard {
+  transition: all 500ms ease-in;
 }
-.card:hover .iconCard{
-  color:#434343;
+.card:hover .iconCard {
+  color: #434343;
 }
 .card {
   text-decoration: none;
@@ -404,13 +404,13 @@ main p {
   margin-left: 5%;
 }
 
-.tel{
-  font-size:12px;
+.tel {
+  font-size: 12px;
 }
 
-.telefone{
+.telefone {
   text-decoration: none !important;
-  color:white;
+  color: white;
 }
 .contato h2 {
   margin-top: 5%;
@@ -466,7 +466,7 @@ main p {
 .contatoButton {
   background-color: var(--main-color);
   border: none;
-  cursor:pointer;
+  cursor: pointer;
   border-radius: 20px;
   padding: 20px 30px;
   margin-top: 5%;
@@ -541,24 +541,24 @@ main p {
   border-radius: 50%;
 }
 
-.reviewBtn{
+.reviewBtn {
   display: none;
 }
-.reviewBtn button{
+.reviewBtn button {
   display: none;
   border: 1px solid var(--main-color);
   background-color: #bea370 !important;
 
-  width:max(50px, 2rem)!important;
+  width: max(50px, 2rem) !important;
   height: 10px !important;
   border: none;
-  margin:3% auto;
+  margin: 3% auto;
 }
 
-.reviewBtn a{
+.reviewBtn a {
   font-family: var(--main-font);
   font-weight: 200 !important;
-  color:white;
+  color: white;
   font-size: 1.8rem !important;
   text-transform: capitalize;
   text-decoration: none;
@@ -607,16 +607,74 @@ main p {
   opacity: 1;
 }
 
+/**/
+.inspiracoesTitle {
+  margin-left: 5%;
+  margin-top: 10%;
+  font-weight: 100;
+  font-size: var(--main-font-size-h2);
+}
+
+.inspiracoesSub {
+  margin-left: 5%;
+  font-size: var(--main-font-size-h3);
+  color: #777;
+  padding-bottom: 0%;
+}
+
+.line4 {
+  margin-top: 5%;
+  width: 10%;
+  background-color: var(--main-color);
+  height: 1vh;
+}
+
+.insp1 {
+  margin-left: 5%;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: row;
+}
+
+.insp1 img {
+  width: 320px;
+  height: 480px;
+  object-fit: cover;
+}
+
+.imgInsp {
+  position: relative;
+}
+
 .footer {
   margin-top: 10%;
-  padding-top:2%;
+  padding-top: 2%;
   padding-bottom: 2%;
   font-size: max(1.2vw, 1.3rem);
   text-align: center;
   background-color: var(--main-color) !important;
 }
 
+.textInsp1 {
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  margin-left: 3%;
+  width: 40vw;
+}
 
+.curve {
+  display: none;
+}
+.textInsp1 h2 {
+  font-size: 2.5rem;
+}
+
+.textInsp1 p {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  margin-top: 4%;
+}
 #pre-loader {
   display: block;
   z-index: 10000;
