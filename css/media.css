@@ -79,7 +79,7 @@
 
   .menu-mobile {
     display: block;
-    z-index: 100;
+    z-index: 1000 !important;
     padding: 9px !important;
     display: flex;
     flex-direction: row;
@@ -306,7 +306,7 @@
     left: 0;
     bottom: -5%;
     opacity: 0.2;
-    z-index: 0;
+    z-index: 1;
     height: minmax(380px, 100%, 35vh);
     width: 100%;
     background-color: var(--main-color);
@@ -331,6 +331,9 @@
     width: 70vw;
   }
 
+  .insp2 {
+    padding-left: 8%;
+  }
   .footer {
     margin-top: 10%;
     padding-top: 2%;
@@ -741,7 +744,7 @@
     opacity: 1;
     margin-bottom: 24%;
     margin-top: 24%;
-    padding-left: 5%;
+    padding-left: 5.5%;
   }
   .textInsp1 h2 {
     font-size: max(4vw, 22px);
@@ -783,7 +786,6 @@
     align-self: center;
     flex-direction: column;
     width: 90vw;
-    
   }
 
   .bg-dark {
