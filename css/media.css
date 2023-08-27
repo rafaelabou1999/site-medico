@@ -741,6 +741,7 @@
     opacity: 1;
     margin-bottom: 24%;
     margin-top: 24%;
+    padding-left: 5%;
   }
   .textInsp1 h2 {
     font-size: max(4vw, 22px);
@@ -766,7 +767,7 @@
   }
 
   .insp1 img {
-    width: 100%;
+    width: 90%;
     margin-bottom: 5%;
     height: 280px;
     object-fit: contain;
@@ -782,6 +783,7 @@
     align-self: center;
     flex-direction: column;
     width: 90vw;
+    
   }
 
   .bg-dark {
