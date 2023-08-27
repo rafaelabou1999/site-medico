@@ -152,7 +152,7 @@ header {
 .menu-mobile {
   padding: 7px;
   display: none;
-  z-index: 3000;
+  z-index: 1000;
   position: fixed;
   min-height: 4vh;
   background-color: white !important;
@@ -629,6 +629,10 @@ main p {
   height: 1vh;
 }
 
+.textMargin {
+  margin-right: 5%;
+  margin-left: 0 !important;
+}
 .insp1 {
   margin-left: 5%;
   margin-top: 5%;
