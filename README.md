@@ -12,14 +12,8 @@ Para desenvolver esse site foi usado:
 
 <hr>
 
-Principais propriedades utilizadas no CSS:
-- [x] Display
-- [x] Transition
-- [x] Position
-- [x] Media Queries
+<br>
 
-<br>
-<br>
 
 **Desenvolvido por:** 
 <br>
