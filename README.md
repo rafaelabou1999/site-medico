@@ -10,7 +10,7 @@ Para desenvolver esse site foi usado:
 - [x] CSS
 - [x] Javascript
 
-<hr>
+
 
 <br>
 
