@@ -548,6 +548,7 @@ main p {
 
 .grid-opiniao {
   margin-left: 5%;
+  position: relative;
 }
 .line3 {
   margin-left: 5%;
@@ -590,31 +591,21 @@ main p {
 
 .reviewBtn {
   display: none;
+  cursor: pointer;
   background-color: rgba(18, 16, 17, 0.486);
   border: 1px solid #bea370;
   height: 30px;
-  width: 25%;
-  position: absolute;
-  right: 12%;
+  width: 22%;
+  margin: 0 auto;
   padding: 2px 4px;
   transition: all 0.1s ease-in;
-}
-
-.reviewBtn:hover {
-  display: block;
-  background-color: rgba(18, 16, 17, 0.788);
-  border: 1px solid #e6c17c;
-  height: 30px;
-  width: 25%;
-  position: absolute;
-  right: 12%;
-  padding: 2px 4px;
 }
 
 .reviewBtn a {
   background-color: rgba(18, 16, 17, 0.269);
   border: none;
-  font-size: 1112px;
+  font-size: 13px;
+  color: white !important;
 }
 .opiniaoImg {
   margin-top: 3%;
@@ -707,11 +698,11 @@ main p {
 
 .footer {
   margin-top: 10%;
-  padding-top: 2%;
-  padding-bottom: 2%;
-  font-size: max(1.2vw, 1.3rem);
+  padding-top: 1%;
+  padding-bottom: 1%;
+  font-size: max(1.1vw, 1.1rem);
   text-align: center;
-  background-color: var(--main-color) !important;
+  background-color: #6b6150 !important;
 }
 
 .textInsp1 {
