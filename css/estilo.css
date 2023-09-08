@@ -8,7 +8,7 @@ html {
   scroll-behavior: smooth !important;
 }
 :root {
-  --main-font: "Work Sans", sans-serif;
+  --main-font: "Poppins", sans-serif;
   --main-color: #bea370;
   --main-font-size-h2: max(32px, 3vw);
   --main-font-size-h3: max(22px, 2vw);
@@ -68,14 +68,13 @@ header p a {
 }
 
 .link a {
-  transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in;
   color: black;
-
   border-right: 0 solid var(--bg-grey);
 }
 
 .link a:hover {
-  color: var(--main-color);
+  border-bottom: 4px solid var(--main-color);
 }
 
 .agendar {
@@ -285,6 +284,7 @@ main p {
   cursor: pointer;
   border-radius: 20px;
   padding: 20px 30px;
+
   margin-left: 5%;
   margin-top: 5%;
 }
@@ -293,6 +293,7 @@ main p {
   text-transform: uppercase;
   text-decoration: none;
   color: white;
+  transition: all 0.2s ease-in;
 }
 
 .icon {
@@ -325,12 +326,14 @@ main p {
 .card a {
   text-decoration: none;
   color: white;
-  font-family: var(--main-font);
+  font-family: "Roboto", sans-serif;
 }
 .card h2 {
   padding-top: 15%;
   font-size: 4rem;
-  font-weight: 100 !important;
+  line-height: 1.2;
+  font-weight: 400 !important;
+  margin-bottom: 2%;
 }
 
 .card .iconCard {
@@ -344,7 +347,8 @@ main p {
   color: white !important;
 }
 .card p {
-  font-size: 2rem;
+  font-size: 1.8rem;
+  font-weight: 100;
 }
 .iconCard {
   color: var(--main-color);
@@ -366,7 +370,7 @@ main p {
 }
 .text h2 {
   margin-top: 8%;
-  font-weight: 100;
+  font-weight: 400;
   font-size: var(--main-font-size-h2);
 }
 
@@ -374,6 +378,7 @@ main p {
   font-size: var(--main-font-size-h3);
   color: #777;
   padding-bottom: 5%;
+  font-weight: 100;
 }
 
 .line {
@@ -424,13 +429,14 @@ main p {
 }
 .contato h2 {
   margin-top: 5%;
-  font-weight: 100;
+  font-weight: 400;
   font-size: var(--main-font-size-h2);
 }
 
 .contato h3 {
   font-size: var(--main-font-size-h3);
   color: #777;
+  font-weight: 100;
 }
 
 .line2 {
@@ -464,15 +470,45 @@ main p {
 }
 .c1 h2 {
   font-size: min(5rem, 26px);
-  font-weight: 100;
+  font-weight: 400;
 }
 
+.c1 h6 {
+  text-transform: uppercase;
+  color: #a8a8a8;
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 0.1%;
+}
+
+.c1 p:first-of-type {
+  padding-top: 2%;
+}
 .c1 p {
   padding-top: 1%;
   font-size: min(2rem, 18px);
   padding-right: 15%;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
 }
 
+.consultorio {
+  background-color: #434343;
+  padding: 1% 2%;
+  width: 50%;
+}
+
+.consultorioTexto {
+  background-color: #434343;
+  padding: 1% 2%;
+  width: 50%;
+}
+.lineConsultorio {
+  width: 2%;
+  height: 0.4vh;
+  margin-bottom: 0.2%;
+  background-color: var(--main-color);
+}
 .contatoButton {
   background-color: var(--main-color);
   border: none;
@@ -498,7 +534,7 @@ main p {
 .opiniao h2 {
   margin-left: 5%;
   margin-top: 10%;
-  font-weight: 100;
+  font-weight: 400;
   font-size: var(--main-font-size-h2);
 }
 
@@ -506,6 +542,7 @@ main p {
   margin-left: 5%;
   font-size: var(--main-font-size-h3);
   color: #777;
+  font-weight: 100;
   padding-bottom: 0%;
 }
 
@@ -553,25 +590,31 @@ main p {
 
 .reviewBtn {
   display: none;
+  background-color: rgba(18, 16, 17, 0.486);
+  border: 1px solid #bea370;
+  height: 30px;
+  width: 25%;
+  position: absolute;
+  right: 12%;
+  padding: 2px 4px;
+  transition: all 0.1s ease-in;
 }
-.reviewBtn button {
-  display: none;
-  border: 1px solid var(--main-color);
-  background-color: #bea370 !important;
 
-  width: max(50px, 2rem) !important;
-  height: 10px !important;
-  border: none;
-  margin: 3% auto;
+.reviewBtn:hover {
+  display: block;
+  background-color: rgba(18, 16, 17, 0.788);
+  border: 1px solid #e6c17c;
+  height: 30px;
+  width: 25%;
+  position: absolute;
+  right: 12%;
+  padding: 2px 4px;
 }
 
 .reviewBtn a {
-  font-family: var(--main-font);
-  font-weight: 200 !important;
-  color: white;
-  font-size: 1.8rem !important;
-  text-transform: capitalize;
-  text-decoration: none;
+  background-color: rgba(18, 16, 17, 0.269);
+  border: none;
+  font-size: 1112px;
 }
 .opiniaoImg {
   margin-top: 3%;
@@ -579,8 +622,8 @@ main p {
 
 /*galeria*/
 .galeria-parent h2 {
-  margin-top: 8%;
-  font-weight: 100;
+  margin-top: 14% !important;
+  font-weight: 400;
   font-size: var(--main-font-size-h2);
   margin-left: 5%;
 }
@@ -590,6 +633,7 @@ main p {
   color: #777;
   padding-bottom: 0%;
   margin-left: 5%;
+  font-weight: 100;
 }
 
 .line4 {
@@ -621,11 +665,12 @@ main p {
 .inspiracoesTitle {
   margin-left: 5%;
   margin-top: 10%;
-  font-weight: 100;
+  font-weight: 400;
   font-size: var(--main-font-size-h2);
 }
 
 .inspiracoesSub {
+  font-weight: 100;
   margin-left: 5%;
   font-size: var(--main-font-size-h3);
   color: #777;
