@@ -692,9 +692,9 @@
   }
 
   .consultorioTexto {
-    background-color: transparent;
     padding: 1% 2%;
-    width: 100%;
+    width: 110%;
+    padding-bottom: 4% !important;
   }
 
   .consultorio h6 {
