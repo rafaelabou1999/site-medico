@@ -11,13 +11,30 @@
   .card h2 {
     font-size: 2.7rem;
   }
+  .agendar a {
+    font-size: 1.3rem !important;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+  }
+
+  .agendar a:hover {
+    background-color: #6b6150 !important;
+    padding: 10px 11% !important;
+    color: white !important;
+    border-radius: 10px;
+
+    transition: all 1s ease;
+  }
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1488px) {
   .agendar a {
-    font-size: 1.8rem !important;
+    font-size: 1.2rem !important;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
   }
-
   .cards {
     grid-template-columns: repeat(2, calc(90% / 2));
     grid-template-rows: 27rem;
@@ -663,38 +680,39 @@
     line-height: 1.7;
   }
 
+  .consultorio {
+    padding: 5% 2%;
+    width: 110% !important;
+  }
   .contato2 {
-    flex-direction: column;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    margin-left: 5% !important;
   }
 
-  .c1 {
-    width: 81%;
-    padding-bottom: 5%;
-    padding: 15px;
-    background-color: var(--main-color);
-    padding-bottom: 15px !important;
-    color: black;
+  .consultorioTexto {
+    background-color: transparent;
+    padding: 1% 2%;
+    width: 100%;
   }
 
-  .contatoButton {
-    opacity: 0.9;
-    background-color: var(--bg-grey);
+  .consultorio h6 {
+    font-size: min(3.5vw, 18px);
   }
-
-  .contatoButton:hover {
-    opacity: 1;
-    background-color: var(--bg-grey);
+  .consultorio h2 {
+    font-size: max(3.5vw, 21px);
   }
-
+  .c1 p,
   .mapa {
-    color: black;
+    padding-top: 1%;
+    font-size: min(1.5rem, 18px);
+    padding-right: 15%;
+    font-family: "Roboto", sans-serif;
   }
 
   .telefone {
-    color: black !important;
-  }
-  .mapa:hover {
-    color: var(--bg-grey);
+    margin-top: 7%;
   }
   .images img {
     opacity: 0.7;
@@ -703,11 +721,10 @@
     object-fit: cover;
     transition: all 200ms ease-in;
   }
-  .contato2 {
-    margin-top: 5%;
-    display: flex;
-    flex-direction: row;
-    margin-left: 11% !important;
+
+  .contatoButton a {
+    font-size: 1.2rem;
+    font-weight: 500;
   }
 
   .contato h2 {
@@ -731,6 +748,7 @@
     width: 0;
     height: 0;
   }
+
   .insp1 {
     margin-left: 0%;
     margin-top: 5%;
@@ -806,20 +824,6 @@
     display: none !important;
   }
 
-  .reviewBtn {
-    display: block !important;
-    margin: -2% auto !important;
-    margin-left: minmax(25%, 15rem) !important;
-    background-color: #bea370;
-    border: none;
-    padding: 10px 18px;
-  }
-
-  .reviewBtn a {
-    font-family: var(--main-font);
-    font-weight: 100;
-  }
-
   .galeria-parent img {
     margin-left: 0 !important;
     width: min(75%, 340px) !important;
@@ -828,19 +832,69 @@
     text-align: center;
   }
 
+  .text h2 {
+    margin-top: max(2vh, 27px) !important;
+  }
+  .contato h2,
+  .opiniao h2,
+  .text h2,
+  .inspiracoesTitle,
+  .galeria-parent h2 {
+    margin-top: 5%;
+    font-weight: 400;
+    font-size: var(--main-font-size-h2);
+    font-size: min(9vw, 22px);
+  }
+  .lineConsultorio {
+    width: 24% !important;
+  }
+
+  .inspiracoesTitle {
+    margin-top: 12%;
+  }
+  .contato h3,
+  .opiniao h3,
+  .text h3,
+  .inspiracoesSub,
+  .galeria-parent h3 {
+    font-size: var(--main-font-size-h3);
+    color: #777;
+    font-weight: 100;
+    font-size: min(5vw, 20px);
+  }
+
+  .text p,
+  .contato p,
+  .opiniao p,
+  .galeria-parent p,
+  .textInsp1 p {
+    margin-top: 3%;
+    font-size: 1.6rem;
+  }
+
   .images {
     display: block;
     margin-left: 0 !important;
     text-align: center;
   }
-
+  .reviewBtn {
+    display: block;
+  }
+  .reviewBtn a {
+    font-family: var(--main-font);
+    font-weight: 200 !important;
+    color: white;
+    font-size: 1.4rem !important;
+    text-transform: capitalize;
+    text-decoration: none;
+  }
   .footer {
     margin-top: 10%;
     padding-top: 2%;
     padding-bottom: 2%;
-    font-size: 1.3rem;
+    font-size: min(3.2vw, 13px);
     text-align: center;
-    background-color: var(--main-color) !important;
+    background-color: #6b6150 !important;
   }
 }
 
