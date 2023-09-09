@@ -68,13 +68,13 @@ header p a {
 }
 
 .link a {
-  transition: all 0.2s ease-in;
+  transition: all 0.5s ease-in;
   color: black;
   border-right: 0 solid var(--bg-grey);
 }
 
 .link a:hover {
-  border-bottom: 4px solid var(--main-color);
+  border-bottom: 2px solid var(--main-color);
 }
 
 .agendar {
@@ -304,8 +304,8 @@ main p {
   margin-top: 10%;
   margin-left: 5%;
   display: grid;
-  grid-template-columns: repeat(auto-fill, calc(70% / 2));
-  grid-column-gap: 20px;
+  grid-template-columns: repeat(auto-fill, calc(100% / 2));
+  grid-column-gap: 10px;
   grid-row-gap: 20px;
 }
 
@@ -658,6 +658,14 @@ main p {
   margin-top: 10%;
   font-weight: 400;
   font-size: var(--main-font-size-h2);
+  font-family: var(--main-font);
+}
+
+.borderInsp {
+  margin-top: 1%;
+  height: 0.3vh;
+  width: 80px;
+  background-color: #bea370;
 }
 
 .inspiracoesSub {
