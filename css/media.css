@@ -12,7 +12,7 @@
     font-size: 2.7rem;
   }
   .agendar a {
-    font-size: 1.3rem !important;
+    font-size: 1.4rem !important;
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 0.2rem;
@@ -20,7 +20,7 @@
 
   .agendar a:hover {
     background-color: #6b6150 !important;
-    padding: 10px 11% !important;
+    padding: 10px 8% !important;
     color: white !important;
     border-radius: 10px;
 
@@ -30,10 +30,19 @@
 
 @media screen and (min-width: 1200px) and (max-width: 1488px) {
   .agendar a {
-    font-size: 1.2rem !important;
+    font-size: 1.3rem !important;
     font-weight: 400;
     text-transform: uppercase;
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.1rem;
+  }
+
+  .agendar a:hover {
+    background-color: #6b6150 !important;
+    padding: 10px 8% !important;
+    color: white !important;
+    border-radius: 10px;
+
+    transition: all 1s ease;
   }
   .cards {
     grid-template-columns: repeat(2, calc(90% / 2));
