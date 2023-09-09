@@ -1,6 +1,6 @@
 
-![image](https://github.com/rafaelabou1999/site-medico/assets/120579642/82c9610f-5e42-42e4-9f6b-944406af42cd)
 
+![image](https://github.com/rafaelabou1999/site-medico/assets/120579642/02e0a411-203e-477a-ba05-3d94fb32f81f)
 
 <br>
 <br>
