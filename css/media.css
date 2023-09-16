@@ -11,6 +11,10 @@
   .card h2 {
     font-size: 2.7rem;
   }
+
+  .agendar {
+    margin-left: 0 !important;
+  }
   .agendar a {
     font-size: 1.4rem !important;
     font-weight: 400;
@@ -20,7 +24,7 @@
 
   .agendar a:hover {
     background-color: #6b6150 !important;
-    padding: 10px 8% !important;
+    padding: 10px 10px !important;
     color: white !important;
     border-radius: 10px;
 
@@ -28,17 +32,17 @@
   }
 }
 
-@media screen and (min-width: 1200px) and (max-width: 1488px) {
+@media screen and (min-width: 1205px) and (max-width: 1488px) {
   .agendar a {
     font-size: 1.3rem !important;
     font-weight: 400;
     text-transform: uppercase;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.2rem;
   }
 
   .agendar a:hover {
     background-color: #6b6150 !important;
-    padding: 10px 8% !important;
+    padding: 10px 10px !important;
     color: white !important;
     border-radius: 10px;
 
@@ -398,9 +402,69 @@
     text-align: center;
     background-color: #6b6150 !important;
   }
+
+  summary {
+    background-color: #434343;
+    width: 600px;
+    padding: 1% 0;
+    padding-left: 1% !important;
+    list-style-type: none;
+    margin-left: 5%;
+    position: relative;
+  }
+
+  summary::after {
+    content: "+";
+    font-size: 4rem !important;
+    color: var(--main-color);
+    position: absolute;
+    top: -21%;
+    cursor: pointer;
+    right: 7%;
+  }
+
+  details {
+    display: flex;
+    flex-direction: column;
+  }
+  details p {
+    font-size: 1.4rem;
+    color: white;
+    line-height: 1.8;
+    padding-bottom: 10%;
+  }
+
+  .itemSaiba {
+    position: relative;
+  }
+
+  .itemSaiba img {
+    width: 250px;
+    height: 380px;
+    position: absolute;
+    top: 15%;
+    right: 2%;
+    object-fit: cover;
+    border-left: 5px solid #bea370;
+  }
+
+  .itemSaiba p {
+    margin-left: 5%;
+    margin-top: 4%;
+    margin-right: 42%;
+  }
 }
 
-@media screen and (min-width: 1000px) and (max-width: 1199px) {
+@media screen and (min-width: 1199px) and (max-width: 1300px) {
+  .agendar a {
+    font-size: 1.2rem !important;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
   .navbar::before {
     background-color: white;
     content: "Menu";
@@ -621,6 +685,53 @@
 }
 
 @media screen and (min-width: 300px) and (max-width: 650px) {
+  summary {
+    font-size: 1.3rem !important;
+
+    color: white;
+  }
+
+  summary {
+    font-size: 1.4rem;
+    background-color: #434343;
+    width: 280px !important;
+    padding: 1% 0;
+    padding-left: 1% !important;
+    list-style-type: none;
+    margin-left: 5%;
+    position: relative;
+    height: 7vh;
+  }
+
+  summary::after {
+    content: "+";
+    font-size: 3.4rem !important;
+    color: var(--main-color);
+    position: absolute;
+    top: -3%;
+    cursor: pointer;
+    right: 7%;
+  }
+
+  .itemSaiba p {
+    margin-left: 5%;
+    margin-top: 4%;
+    margin-right: 6%;
+    padding-bottom: 11%;
+  }
+
+  details img {
+    display: none;
+  }
+  details {
+    display: flex;
+    flex-direction: row;
+  }
+  details p {
+    font-size: 1.4rem;
+    color: white;
+    line-height: 1.8;
+  }
   .navbar::before {
     background-color: white;
     content: "Menu";
@@ -809,7 +920,7 @@
 
   .insp1 {
     margin-left: 0%;
-    margin-top: 8%;
+    margin-top: 3%;
     display: flex;
     flex-direction: column;
   }
@@ -817,31 +928,55 @@
     position: relative;
     z-index: 100;
     opacity: 1;
-    margin-bottom: 11%;
-    margin-top: 11%;
-    padding-left: 5.5%;
-  }
-  .textInsp1 h2 {
-    font-size: max(4vw, 22px);
+    margin-left: 4% !important;
   }
 
+  .textInsp1 h2 {
+    font-size: max(2.5vw, 17px);
+    margin-right: 8%;
+    font-weight: 400;
+    margin-top: 2%;
+  }
+
+  .textInsp1 {
+    padding: 2% 2%;
+    padding-bottom: 1% !important;
+    padding-left: 2%;
+    width: 85vw !important;
+    height: 70px;
+    margin-left: 0% !important;
+  }
+
+  .withPlus {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
+  .arrowDown {
+    display: block;
+    font-style: normal;
+    color: #bea370;
+    text-transform: uppercase;
+    font-weight: 600;
+    position: absolute;
+    bottom: 8%;
+    right: 5%;
+
+    font-size: 30px !important;
+  }
+
+  .arrow2 {
+    bottom: -50% !important;
+    right: 4%;
+  }
+  .arrow3 {
+    bottom: -50% !important;
+    right: 5%;
+  }
   .textInsp1 p {
     font-size: max(2vw, 18px);
     line-height: 1.5;
     margin-top: 4%;
-  }
-  .curve {
-    display: block;
-    position: absolute;
-    top: -3%;
-    right: 0;
-    left: 0;
-    bottom: -5%;
-    opacity: 0.2;
-    z-index: 1;
-    height: minmax(380px, 100%, 35vh);
-    width: 100%;
-    background-color: var(--main-color);
   }
 
   .insp1 img {
@@ -861,8 +996,16 @@
     align-self: center;
     flex-direction: column;
     width: 90vw;
+    background-color: #41403d !important;
+    color: rgb(206, 206, 206);
+  }
+  .textInsp1 p {
+    display: none;
   }
 
+  .textInsp1 .active {
+    display: block !important;
+  }
   .bg-dark {
     padding: 2% 10%;
     border-radius: 20px;
@@ -971,7 +1114,7 @@
 
 @media screen and (min-width: 1200px) and (max-width: 1600px) {
   header a {
-    font-size: 2.2rem !important;
+    font-size: 2.3rem !important;
   }
   .agendar a {
     background-color: var(--main-color) !important;
@@ -987,5 +1130,18 @@
 
     color: white !important;
     border-radius: 10px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .textInsp1 h2 {
+    font-size: 17px !important;
+    margin-right: 14% !important;
+    font-weight: 400;
+    margin-top: 2%;
+  }
+
+  .arrow3 {
+    bottom: 10% !important;
   }
 }
