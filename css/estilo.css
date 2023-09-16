@@ -21,6 +21,7 @@ body {
   display: flex;
   flex-direction: row;
   max-width: 100vw !important;
+
   font-family: var(--main-font);
 }
 
@@ -28,6 +29,7 @@ html,
 body {
   overflow-x: hidden;
 }
+
 /*============HEADER==================*/
 
 header {
@@ -57,24 +59,24 @@ header h2 span {
   color: var(--dark-golden);
 }
 header p {
-  padding-top: 6%;
+  padding-top: 8%;
 }
 
 header p a {
   font-weight: 300;
   text-decoration: none;
   color: black;
-  font-size: 26px;
+  font-size: 18px !important;
 }
 
 .link a {
-  transition: all 0.5s ease-in;
+  transition: all 0.2s ease-in;
   color: black;
   border-right: 0 solid var(--bg-grey);
 }
 
 .link a:hover {
-  border-bottom: 2px solid var(--main-color);
+  border-bottom: 1px solid var(--main-color);
 }
 
 .agendar {
@@ -84,6 +86,7 @@ header p a {
 .agendar a {
   background-color: var(--main-color) !important;
   padding: 10px 11% !important;
+
   color: white !important;
   border-radius: 10px;
 
@@ -305,7 +308,7 @@ main p {
   margin-left: 5%;
   display: grid;
   grid-template-columns: repeat(auto-fill, calc(100% / 2));
-  grid-column-gap: 10px;
+  grid-column-gap: 20px;
   grid-row-gap: 20px;
 }
 
@@ -314,6 +317,7 @@ main p {
   color: var(--main-color);
   height: 40vh;
   padding-left: 8%;
+  width: 95%;
   padding-top: 5%;
   transition: all 400ms ease-in;
 }
@@ -654,56 +658,109 @@ main p {
 
 /**/
 .inspiracoesTitle {
-  margin-left: 5%;
-  margin-top: 10%;
+  margin-top: 14% !important;
   font-weight: 400;
   font-size: var(--main-font-size-h2);
-  font-family: var(--main-font);
-}
-
-.borderInsp {
-  margin-top: 1%;
-  height: 0.3vh;
-  width: 80px;
-  background-color: #bea370;
+  margin-left: 5%;
 }
 
 .inspiracoesSub {
-  font-weight: 100;
-  margin-left: 5%;
   font-size: var(--main-font-size-h3);
   color: #777;
   padding-bottom: 0%;
-}
-
-.line4 {
-  margin-top: 5%;
-  width: 10%;
-  background-color: var(--main-color);
-  height: 1vh;
-}
-
-.textMargin {
-  margin-right: 5%;
-  margin-left: 0 !important;
-}
-.insp1 {
   margin-left: 5%;
-  margin-top: 5%;
+  font-weight: 100;
+}
+
+.insp1 {
+  margin-left: 0%;
+  margin-top: 3%;
+  display: flex;
+  flex-direction: column;
+}
+.insp2 {
+  position: relative;
+  z-index: 100;
+  opacity: 1;
+  margin-left: 0% !important;
+}
+
+.textInsp1 h2 {
+  font-size: 18px !important;
+  font-weight: 400;
+  margin-top: 2%;
+}
+
+.textInsp1 {
+  padding: 2% 2%;
+  padding-bottom: 1% !important;
+  padding-left: 2%;
+  width: 85vw !important;
+  height: 70px;
+  margin-left: -26% !important;
+}
+
+.withPlus {
   display: flex;
   flex-direction: row;
-}
-
-.insp1 img {
-  width: 320px;
-  height: 480px;
-  object-fit: cover;
-}
-
-.imgInsp {
   position: relative;
+  cursor: pointer;
+}
+.arrowDown {
+  display: block;
+  font-style: normal;
+  color: #bea370;
+  text-transform: uppercase;
+  font-weight: 600;
+  position: absolute;
+  bottom: 8%;
+  right: 5%;
+
+  font-size: 30px !important;
 }
 
+.arrow2 {
+  bottom: -50% !important;
+  right: 5%;
+}
+.arrow3 {
+  bottom: -50% !important;
+  right: 5%;
+}
+.textInsp1 p {
+  display: none;
+}
+
+.mainImgInsp {
+  width: 800px !important;
+  margin-bottom: 5%;
+  margin-top: 2%;
+  height: 280px;
+  object-fit: cover;
+  text-align: center;
+  margin-left: 5%;
+}
+.imgInsp2,
+.imgInsp3 {
+  display: none;
+}
+.textInsp1 {
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  width: 60% !important;
+  background-color: #41403d !important;
+  color: rgb(206, 206, 206);
+}
+.textInsp1 p {
+  height: 200px;
+  overflow-y: scroll;
+  background-color: red;
+}
+
+.textInsp1 .active {
+  display: block !important;
+}
 .footer {
   margin-top: 10%;
   padding-top: 1%;
@@ -717,7 +774,7 @@ main p {
   display: flex;
   align-self: center;
   flex-direction: column;
-  margin-left: 3%;
+  margin-left: 0%;
   width: 40vw;
 }
 
@@ -755,4 +812,68 @@ main p {
   width: 150px;
   display: block;
   margin: 0 auto;
+}
+
+summary {
+  font-size: 1.3rem;
+  color: white;
+}
+
+summary {
+  font-size: 1.4rem;
+  background-color: #434343;
+  width: 600px;
+  padding: 1% 0;
+  padding-left: 1% !important;
+  list-style-type: none;
+  margin-left: 5%;
+  position: relative;
+}
+
+summary::after {
+  content: "+";
+  font-size: 4rem !important;
+  color: var(--main-color);
+  position: absolute;
+  top: -21%;
+  cursor: pointer;
+  right: 7%;
+}
+
+details {
+  display: flex;
+  flex-direction: column;
+}
+details p {
+  font-size: 1.4rem;
+  color: white;
+  line-height: 1.8;
+}
+
+.itemSaiba {
+  position: relative;
+}
+
+.itemSaiba img {
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  top: 22%;
+  right: 18%;
+  object-fit: cover;
+  border-left: 5px solid #bea370;
+}
+
+.itemSaiba p {
+  margin-left: 5%;
+  margin-top: 4%;
+  margin-right: 42%;
+}
+
+.itemSaiba:nth-of-type(1) {
+  margin-top: 2%;
+}
+.itemSaiba:nth-last-of-type(1),
+.itemSaiba:nth-of-type(2) {
+  margin-top: 1%;
 }
