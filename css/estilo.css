@@ -856,18 +856,21 @@ details p {
 
 .itemSaiba img {
   width: 250px;
-  height: 250px;
+  height: 315px;
   position: absolute;
   top: 22%;
-  right: 18%;
+  left: 5%;
   object-fit: cover;
-  border-left: 5px solid #bea370;
 }
 
 .itemSaiba p {
   margin-left: 5%;
-  margin-top: 4%;
-  margin-right: 42%;
+  margin-top: 2%;
+  margin-right: 37%;
+  background-color: #3a3a3a;
+  padding: 10px;
+  margin-bottom: 6%;
+  border-left: 15px solid #8e8065;
 }
 
 .itemSaiba:nth-of-type(1) {
