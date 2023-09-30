@@ -405,22 +405,23 @@
 
   summary {
     background-color: #434343;
-    width: 600px;
+    width: 500px;
     padding: 1% 0;
     padding-left: 1% !important;
     list-style-type: none;
     margin-left: 5%;
+    height: 15%;
     position: relative;
   }
 
   summary::after {
     content: "+";
-    font-size: 4rem !important;
+    font-size: 3.5rem !important;
     color: var(--main-color);
     position: absolute;
-    top: -21%;
+    top: -19%;
     cursor: pointer;
-    right: 7%;
+    right: 3%;
   }
 
   details {
@@ -450,8 +451,8 @@
 
   .itemSaiba p {
     margin-left: 5%;
-    margin-top: 4%;
-    margin-right: 42%;
+    margin-top: 2%;
+    margin-right: 22%;
   }
 }
 
@@ -692,15 +693,16 @@
   }
 
   summary {
-    font-size: 1.4rem;
+    font-size: 1.4rem !important;
     background-color: #434343;
-    width: 280px !important;
+    width: 300px !important;
     padding: 1% 0;
-    padding-left: 1% !important;
+    padding-right: 10%;
+    padding-left: 3% !important;
     list-style-type: none;
-    margin-left: 5%;
     position: relative;
-    height: 7vh;
+    height: 10%;
+    margin-top: 2%;
   }
 
   summary::after {
@@ -713,6 +715,9 @@
     right: 7%;
   }
 
+  .filosofia {
+    height: 10vw !important;
+  }
   .itemSaiba p {
     margin-left: 5%;
     margin-top: 4%;
