@@ -843,6 +843,7 @@ main p {
 .box {
   display: flex;
   flex-direction: column;
+  cursor:pointer;
 }
 .box p {
   font-size: 1.4rem;
