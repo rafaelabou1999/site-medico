@@ -14,6 +14,7 @@ Para desenvolver esse site foi usado:
 
 <br>
 
+**_Para acompanhar as alterações do site, acesse esse <a href="https://site-medico.vercel.app/">link</a>_** 😄
 
 **Desenvolvido por:** 
 <br>
