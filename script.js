@@ -28,3 +28,21 @@ boxH2.forEach((box, index) => {
     });
   });
 });
+
+const span = document.querySelectorAll("span");
+const mais = document.querySelectorAll(".mais");
+const menos = document.querySelectorAll(".menos");
+
+boxH2.forEach((box, index) => {
+  box.addEventListener("click", function () {
+    span.forEach((spn, i) => {
+      if (index == i - 1) {
+        if (spn.innerHTML == "+") {
+          spn.innerHTML = "-";
+        } else {
+          spn.innerHTML = "+";
+        }
+      }
+    });
+  });
+});
