@@ -830,8 +830,8 @@ main p {
   position: relative;
 }
 
-.boxH2::after {
-  content: "+";
+.boxH2 span {
+  visibility: visible;
   font-size: 4rem !important;
   color: var(--main-color);
   position: absolute;
@@ -843,7 +843,7 @@ main p {
 .box {
   display: flex;
   flex-direction: column;
-  cursor:pointer;
+  cursor: pointer;
 }
 .box p {
   font-size: 1.4rem;
