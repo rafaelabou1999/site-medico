@@ -862,30 +862,38 @@ main p {
   overflow-y: scroll;
   overflow-x: hidden;
   z-index:100;
-  width:75rem; 
+  width:62rem; 
   height:70rem;
   background-color: aliceblue;
   color:#434343;
   position:fixed;
-  bottom:-5%;
+  bottom:0%;
 padding:2rem;
 font-size: 2rem;
   right:0%;
+  left:0%;
   filter:saturate(100%) !important;
-  transform: translate(-50%, -25%);
+  transform: translate(-60%, -16%);
 
 
+}
+
+.articleText p{
+  width:40rem;
 }
 
 .articleText h2{
   color:#a18a60;
+  margin-top:7%;
+  width:40rem;
 }
 
 .articleText i{
   position: absolute;
-  top:1%;
-  right:1%;
+  top:1% !important;
+  right:35% !important;
   font-size: 3rem;
+ 
 }
 
 
@@ -902,7 +910,7 @@ header, main{
   height:22rem;
   object-fit: cover;
   filter: saturate(60%);
-  border:2px solid #a18a60;
+ 
   border-radius: 2%;
 }
 
