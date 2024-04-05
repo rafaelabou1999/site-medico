@@ -11,10 +11,6 @@
   .card h2 {
     font-size: 2.7rem;
   }
-
-  .agendar {
-    margin-left: 0 !important;
-  }
   .agendar a {
     font-size: 1.4rem !important;
     font-weight: 400;
@@ -24,7 +20,7 @@
 
   .agendar a:hover {
     background-color: #6b6150 !important;
-    padding: 10px 10px !important;
+    padding: 10px 8% !important;
     color: white !important;
     border-radius: 10px;
 
@@ -32,17 +28,17 @@
   }
 }
 
-@media screen and (min-width: 1205px) and (max-width: 1488px) {
+@media screen and (min-width: 1200px) and (max-width: 1488px) {
   .agendar a {
     font-size: 1.3rem !important;
     font-weight: 400;
     text-transform: uppercase;
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.1rem;
   }
 
   .agendar a:hover {
     background-color: #6b6150 !important;
-    padding: 10px 10px !important;
+    padding: 10px 8% !important;
     color: white !important;
     border-radius: 10px;
 
@@ -403,69 +399,26 @@
     background-color: #6b6150 !important;
   }
 
-  summary {
-    background-color: #434343;
-    width: 500px;
-    padding: 1% 0;
-    padding-left: 1% !important;
-    list-style-type: none;
-    margin-left: 5%;
-    height: 15%;
-    position: relative;
+  iframe {
+    width: 300px;
+    margin-left: -7%;
+    height: 200px;
   }
 
-  summary::after {
-    content: "+";
-    font-size: 3.5rem !important;
-    color: var(--main-color);
-    position: absolute;
-    top: -19%;
-    cursor: pointer;
-    right: 3%;
+  .ctc5 {
+    margin-left: 4% !important;
   }
 
-  details {
-    display: flex;
-    flex-direction: column;
-  }
-  details p {
-    font-size: 1.4rem;
-    color: white;
-    line-height: 1.8;
-    padding-bottom: 10%;
+  .contactBtn{
+    display: block !important;
   }
 
-  .itemSaiba {
-    position: relative;
-  }
-
-  .itemSaiba img {
-    width: 250px;
-    height: 380px;
-    position: absolute;
-    top: 15%;
-    right: 2%;
-    object-fit: cover;
-    border-left: 5px solid #bea370;
-  }
-
-  .itemSaiba p {
-    margin-left: 5%;
-    margin-top: 2%;
-    margin-right: 22%;
+  .contatoCard{
+    margin-left: -16%;
   }
 }
 
-@media screen and (min-width: 1199px) and (max-width: 1300px) {
-  .agendar a {
-    font-size: 1.2rem !important;
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: 0.2rem;
-  }
-}
-
-@media screen and (min-width: 1000px) and (max-width: 1200px) {
+@media screen and (min-width: 1000px) and (max-width: 1199px) {
   .navbar::before {
     background-color: white;
     content: "Menu";
@@ -685,57 +638,53 @@
   }
 }
 
-@media screen and (min-width: 300px) and (max-width: 650px) {
-  summary {
-    font-size: 1.3rem !important;
+@media screen and (min-width: 200px) and (max-width: 710px) {
 
-    color: white;
-  }
-
-  summary {
-    font-size: 1.5rem !important;
-    background-color: #434343;
-    width: 300px !important;
-    padding: 1% 0;
-    padding-right: 10%;
-    padding-left: 3% !important;
-    list-style-type: none;
-    position: relative;
-    height: 10%;
-    margin-top: 2%;
+  .article{
+    margin-bottom: 4%;
   }
 
-  summary::after {
-    content: "+";
-    font-size: 3.4rem !important;
-    color: var(--main-color);
-    position: absolute;
-    top: -3%;
-    cursor: pointer;
-    right: 7%;
+  .articleText{
+    z-index:100;
+    width:40rem !important; 
+    height:70rem;
+    background-color: aliceblue;
+    color:#434343;
+    position:fixed;
+    bottom:0% !important;
+    top:33%;
+  padding:2rem;
+  font-size: 1.4rem;
+    right:0%;
+    left:50% !important;
+    filter:saturate(100%) !important;
+    transform: translate(-50%, -25%);
   }
+  
 
-  .filosofia {
-    height: 10vw !important;
+  .imgArticle{
+    margin-top: 5%;
+    width: 38rem;
+    height:23rem !important;
+    object-fit: cover;
+    filter: saturate(60%);
+    border:2px solid #a18a60;
+    border-radius: 2%;
   }
-  .itemSaiba p {
-    margin-left: 5%;
-    margin-top: 4%;
-    margin-right: 6%;
-    padding-bottom: 11%;
-  }
+  
 
-  details img {
-    display: none;
-  }
-  details {
-    display: flex;
-    flex-direction: row;
-  }
-  details p {
-    font-size: 1.4rem;
-    color: white;
-    line-height: 1.8;
+
+
+
+
+
+
+
+
+
+
+  .contactBtn{
+    display: block !important;
   }
   .navbar::before {
     background-color: white;
@@ -925,7 +874,7 @@
 
   .insp1 {
     margin-left: 0%;
-    margin-top: 3%;
+    margin-top: 8%;
     display: flex;
     flex-direction: column;
   }
@@ -933,55 +882,31 @@
     position: relative;
     z-index: 100;
     opacity: 1;
-    margin-left: 4% !important;
+    margin-bottom: 11%;
+    margin-top: 11%;
+    padding-left: 5.5%;
   }
-
   .textInsp1 h2 {
-    font-size: max(2.5vw, 17px);
-    margin-right: 8%;
-    font-weight: 400;
-    margin-top: 2%;
+    font-size: max(4vw, 22px);
   }
 
-  .textInsp1 {
-    padding: 2% 2%;
-    padding-bottom: 1% !important;
-    padding-left: 2%;
-    width: 85vw !important;
-    height: 70px;
-    margin-left: 0% !important;
-  }
-
-  .withPlus {
-    display: flex;
-    flex-direction: row;
-    position: relative;
-  }
-  .arrowDown {
-    display: block;
-    font-style: normal;
-    color: #bea370;
-    text-transform: uppercase;
-    font-weight: 600;
-    position: absolute;
-    bottom: 8%;
-    right: 5%;
-
-    font-size: 30px !important;
-  }
-
-  .arrow2 {
-    bottom: -50% !important;
-    right: 4%;
-  }
-  .arrow3 {
-    bottom: -50% !important;
-    right: 5%;
-  }
   .textInsp1 p {
     font-size: max(2vw, 18px);
     line-height: 1.5;
     margin-top: 4%;
+  }
+  .curve {
+    display: block;
+    position: absolute;
+    top: -3%;
+    right: 0;
+    left: 0;
+    bottom: -5%;
+    opacity: 0.2;
+    z-index: 1;
+    height: minmax(380px, 100%, 35vh);
+    width: 100%;
+    background-color: var(--main-color);
   }
 
   .insp1 img {
@@ -1001,16 +926,8 @@
     align-self: center;
     flex-direction: column;
     width: 90vw;
-    background-color: #41403d !important;
-    color: rgb(206, 206, 206);
-  }
-  .textInsp1 p {
-    display: none;
   }
 
-  .textInsp1 .active {
-    display: block !important;
-  }
   .bg-dark {
     padding: 2% 10%;
     border-radius: 20px;
@@ -1115,11 +1032,19 @@
     text-align: center;
     background-color: #6b6150 !important;
   }
+
+  iframe {
+    display: none;
+  }
+
+  .ctc5 {
+    margin-left: 1% !important;
+  }
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1600px) {
   header a {
-    font-size: 2.3rem !important;
+    font-size: 2.1rem !important;
   }
   .agendar a {
     background-color: var(--main-color) !important;
@@ -1138,15 +1063,79 @@
   }
 }
 
-@media screen and (max-width: 470px) {
-  .textInsp1 h2 {
-    font-size: 17px !important;
-    margin-right: 14% !important;
-    font-weight: 400;
-    margin-top: 2%;
-  }
 
-  .arrow3 {
-    bottom: 10% !important;
+@media  screen and (max-width: 440px) {
+  .articleText{
+    z-index:100;
+    width:90vw !important; 
+    height:70rem;
+    background-color: aliceblue;
+    color:#434343;
+    position:fixed;
+    bottom:0% !important;
+    top:33%;
+  padding:2rem;
+  font-size: 3.9vw;
+    right:0%;
+    left:50% !important;
+    filter:saturate(100%) !important;
+    transform: translate(-50%, -25%);
   }
+  .imgArticle{
+    margin-top: 5%;
+    width: 90vw;;
+    height:15rem !important;
+    object-fit: cover;
+    filter: saturate(60%);
+    border:2px solid #a18a60;
+    border-radius: 2%;
+  }
+  
+
+}
+
+@media screen and (max-width:400px) {
+  .article{
+    width:90vw;
+    height:260px;
+    background-color:aliceblue;
+    color:#333;
+   position: relative;
+  }
+  
+  .filosofia{
+    height:2.8rem !important;
+  }
+  
+  .article h2{
+    font-size: max(5vw,15px) !important;
+    font-weight: 800;
+    height:6rem;
+    
+    padding-top: 1.3rem;
+    padding-bottom: 3% !important;
+    padding-left:1.3rem;
+    padding-right:1.3rem;
+  }
+  .article p{
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding-left:1.3rem;
+    padding-right:1.3rem;
+    padding-bottom: 4.1rem;
+  }
+  
+  .article input{
+    position: absolute;
+    bottom:2%;
+    right:5%;
+    width:12rem;
+    background-color:#a18a60;
+    color:white;
+    padding: 1rem .6rem 1rem .6rem;
+    border: none;
+    margin-bottom: 3%;
+    font-weight: 800;
+  }
+  
 }

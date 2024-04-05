@@ -14,35 +14,63 @@ navbar.addEventListener("click", () => {
   navMenu.classList.toggle("active");
 });
 
-//Saiba mais
-const boxH2 = document.querySelectorAll(".boxH2");
 
-const boxP = document.querySelectorAll(".box p");
+const articleBtn = document.querySelectorAll(".articleBtn");
+const atero = document.querySelector("#atero");
+const filosofia = document.querySelector("#filosofia");
+const risco = document.querySelector("#risco");
+const exit = document.querySelectorAll(".exit");
+const header = document.querySelector("header");
+const main = document.querySelector("main");
 
-boxH2.forEach((box, index) => {
-  box.addEventListener("click", function (e) {
-    boxP.forEach((p, i) => {
-      if (index == i) {
-        p.classList.toggle("display");
-      }
-    });
-  });
-});
+const ateroArtigo = document.querySelector("#ateroArtigo");
+const filosofiaArtigo = document.querySelector("#filosofiaArtigo");
+const riscoArtigo = document.querySelector("#riscoArtigo");
 
-const span = document.querySelectorAll("span");
-const mais = document.querySelectorAll(".mais");
-const menos = document.querySelectorAll(".menos");
+const articleText = document.querySelectorAll(".articleText");
 
-boxH2.forEach((box, index) => {
-  box.addEventListener("click", function () {
-    span.forEach((spn, i) => {
-      if (index == i - 1) {
-        if (spn.innerHTML == "+") {
-          spn.innerHTML = "-";
-        } else {
-          spn.innerHTML = "+";
-        }
-      }
-    });
-  });
-});
+const riscoExit= document.querySelector(".riscoExit");
+const ateroExit= document.querySelector(".ateroExit");
+const filosofiaExit = document.querySelector(".filosofiaExit");
+function desaturateBg(){
+  header.style.filter = 'saturate(0)';
+  main.style.filter = 'saturate(0)';
+}
+exit.forEach((eachExit) => {
+  eachExit.addEventListener("click", () => {
+    text.style.display ='none';
+    header.style.filter = 'saturate(100%)';
+    main.style.filter = 'saturate(100%)';
+  })
+})
+
+atero.addEventListener("click", () => {
+  desaturateBg();
+  ateroArtigo.style.display = 'block';
+})
+
+filosofia.addEventListener("click", () => {
+  desaturateBg();
+  filosofiaArtigo.style.display = 'block';
+})
+
+risco.addEventListener("click", () => {
+  desaturateBg();
+  riscoArtigo.style.display = 'block';
+})
+
+ateroExit.addEventListener("click", () => {
+  ateroArtigo.style.display = 'none';
+  header.style.filter = 'saturate(100%)';
+  main.style.filter = 'saturate(100%)';
+})
+filosofiaExit.addEventListener("click", () => {
+  filosofiaArtigo.style.display = 'none';
+  header.style.filter = 'saturate(100%)';
+  main.style.filter = 'saturate(100%)';
+})
+riscoExit.addEventListener("click", () => {
+  riscoArtigo.style.display = 'none';
+  header.style.filter = 'saturate(100%)';
+  main.style.filter = 'saturate(100%)';
+})

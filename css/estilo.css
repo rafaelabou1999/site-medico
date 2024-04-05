@@ -9,7 +9,7 @@ html {
 }
 :root {
   --main-font: "Poppins", sans-serif;
-  --main-color: #bea370;
+  --main-color: #a18a60;
   --main-font-size-h2: max(32px, 3vw);
   --main-font-size-h3: max(22px, 2vw);
   --main-height-div: max(70vh, 40vh);
@@ -21,7 +21,6 @@ body {
   display: flex;
   flex-direction: row;
   max-width: 100vw !important;
-
   font-family: var(--main-font);
 }
 
@@ -29,7 +28,6 @@ html,
 body {
   overflow-x: hidden;
 }
-
 /*============HEADER==================*/
 
 header {
@@ -59,24 +57,24 @@ header h2 span {
   color: var(--dark-golden);
 }
 header p {
-  padding-top: 8%;
+  padding-top: 6%;
 }
 
 header p a {
   font-weight: 300;
   text-decoration: none;
   color: black;
-  font-size: 18px !important;
+  font-size: 26px;
 }
 
 .link a {
-  transition: all 0.2s ease-in;
+  transition: all 0.5s ease-in;
   color: black;
   border-right: 0 solid var(--bg-grey);
 }
 
 .link a:hover {
-  border-bottom: 1px solid var(--main-color);
+  border-bottom: 2px solid var(--main-color);
 }
 
 .agendar {
@@ -86,7 +84,6 @@ header p a {
 .agendar a {
   background-color: var(--main-color) !important;
   padding: 10px 11% !important;
-
   color: white !important;
   border-radius: 10px;
 
@@ -287,7 +284,7 @@ main p {
   cursor: pointer;
   border-radius: 20px;
   padding: 20px 30px;
-
+   
   margin-left: 5%;
   margin-top: 5%;
 }
@@ -308,7 +305,7 @@ main p {
   margin-left: 5%;
   display: grid;
   grid-template-columns: repeat(auto-fill, calc(100% / 2));
-  grid-column-gap: 20px;
+  grid-column-gap: 10px;
   grid-row-gap: 20px;
 }
 
@@ -317,7 +314,6 @@ main p {
   color: var(--main-color);
   height: 40vh;
   padding-left: 8%;
-  width: 95%;
   padding-top: 5%;
   transition: all 400ms ease-in;
 }
@@ -386,7 +382,7 @@ main p {
 }
 
 .line {
-  margin-top: 5%;
+  margin-top: 2%;
   width: 10%;
   background-color: var(--main-color);
   height: 1vh;
@@ -444,7 +440,7 @@ main p {
 }
 
 .line2 {
-  margin-top: 5%;
+  margin-top: 2%;
   width: 10%;
   background-color: var(--main-color);
   height: 1vh;
@@ -453,12 +449,14 @@ main p {
 .contato2 {
   margin-top: 5%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   margin-left: 5%;
 }
 
-.c1 {
-  width: 70vw;
+.contactBtn{
+  margin-left: 0% !important;
+  margin-top: -5% !important;
+  display: none;
 }
 
 .mapa {
@@ -496,23 +494,12 @@ main p {
   line-height: 1.5;
 }
 
-.consultorio {
-  background-color: #434343;
-  padding: 1% 2%;
-  width: 50%;
-}
-
 .consultorioTexto {
   background-color: #434343;
   padding: 1% 2%;
   width: 50%;
 }
-.lineConsultorio {
-  width: 2%;
-  height: 0.4vh;
-  margin-bottom: 0.2%;
-  background-color: var(--main-color);
-}
+
 .contatoButton {
   background-color: var(--main-color);
   border: none;
@@ -556,7 +543,7 @@ main p {
 }
 .line3 {
   margin-left: 5%;
-  margin-top: 5%;
+  margin-top: 2%;
   width: 10%;
   background-color: var(--main-color);
   height: 1vh;
@@ -632,7 +619,7 @@ main p {
 }
 
 .line4 {
-  margin-top: 5%;
+  margin-top: 2%;
   margin-left: 5%;
   width: 10%;
   background-color: var(--main-color);
@@ -658,109 +645,56 @@ main p {
 
 /**/
 .inspiracoesTitle {
-  margin-top: 14% !important;
+  margin-left: 5%;
+  margin-top: 10%;
   font-weight: 400;
   font-size: var(--main-font-size-h2);
-  margin-left: 5%;
+  font-family: var(--main-font);
+}
+
+.borderInsp {
+  margin-top: 1%;
+  height: 0.3vh;
+  width: 80px;
+  background-color: #bea370;
 }
 
 .inspiracoesSub {
+  font-weight: 100;
+  margin-left: 5%;
   font-size: var(--main-font-size-h3);
   color: #777;
   padding-bottom: 0%;
-  margin-left: 5%;
-  font-weight: 100;
 }
 
-.insp1 {
-  margin-left: 0%;
-  margin-top: 3%;
-  display: flex;
-  flex-direction: column;
-}
-.insp2 {
-  position: relative;
-  z-index: 100;
-  opacity: 1;
-  margin-left: 0% !important;
-}
-
-.textInsp1 h2 {
-  font-size: 18px !important;
-  font-weight: 400;
+.line4 {
   margin-top: 2%;
+  width: 10%;
+  background-color: var(--main-color);
+  height: 1vh;
 }
 
-.textInsp1 {
-  padding: 2% 2%;
-  padding-bottom: 1% !important;
-  padding-left: 2%;
-  width: 85vw !important;
-  height: 70px;
-  margin-left: -26% !important;
+.textMargin {
+  margin-right: 5%;
+  margin-left: 0 !important;
 }
-
-.withPlus {
+.insp1 {
+  margin-left: 5%;
+  margin-top: 5%;
   display: flex;
   flex-direction: row;
-  position: relative;
-  cursor: pointer;
-}
-.arrowDown {
-  display: block;
-  font-style: normal;
-  color: #bea370;
-  text-transform: uppercase;
-  font-weight: 600;
-  position: absolute;
-  bottom: 8%;
-  right: 5%;
-
-  font-size: 30px !important;
 }
 
-.arrow2 {
-  bottom: -50% !important;
-  right: 5%;
-}
-.arrow3 {
-  bottom: -50% !important;
-  right: 5%;
-}
-.textInsp1 p {
-  display: none;
-}
-
-.mainImgInsp {
-  width: 800px !important;
-  margin-bottom: 5%;
-  margin-top: 2%;
-  height: 280px;
+.insp1 img {
+  width: 320px;
+  height: 480px;
   object-fit: cover;
-  text-align: center;
-  margin-left: 5%;
-}
-.imgInsp2,
-.imgInsp3 {
-  display: none;
-}
-.textInsp1 {
-  display: flex;
-  align-self: center;
-  flex-direction: column;
-  width: 60% !important;
-  background-color: #41403d !important;
-  color: rgb(206, 206, 206);
-}
-.textInsp1 p {
-  height: 200px;
-  overflow-y: scroll;
-  background-color: red;
 }
 
-.textInsp1 .active {
-  display: block !important;
+.imgInsp {
+  position: relative;
 }
+
 .footer {
   margin-top: 10%;
   padding-top: 1%;
@@ -774,7 +708,7 @@ main p {
   display: flex;
   align-self: center;
   flex-direction: column;
-  margin-left: 0%;
+  margin-left: 3%;
   width: 40vw;
 }
 
@@ -814,64 +748,163 @@ main p {
   margin: 0 auto;
 }
 
-.boxH2 {
-  font-size: 1.3rem;
-  color: white;
+.insp1 img {
+  opacity: 0.8;
 }
 
-.boxH2 {
-  font-size: 1.4rem;
-  background-color: #434343;
-  width: 600px;
-  padding: 1% 0;
-  padding-left: 1% !important;
-  list-style-type: none;
-  margin-left: 5%;
+.circleLocal {
   position: relative;
+
+  background-color: #bea370;
+  width: 50px;
+  height: 50px;
+  margin-right: 2% !important;
+
+  margin-bottom: 2%;
 }
 
-.boxH2 span {
-  visibility: visible;
-  font-size: 4rem !important;
-  color: var(--main-color);
+.contatoCard {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  font-size: 1.6rem;
+  margin-bottom: 12%;
+}
+
+.ctc1 {
+  margin-bottom: 1%;
+}
+.circleLocal i {
   position: absolute;
-  top: -21%;
-  cursor: pointer;
-  right: 7%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
 }
 
-.box {
+.ctcP {
+  margin-top: 3%;
+}
+
+.contatoMapa {
+  display: flex;
+  flex-direction: row;
+}
+
+.ctc5 {
   display: flex;
   flex-direction: column;
-  cursor: pointer;
-}
-.box p {
-  font-size: 1.4rem;
-  color: white;
-  line-height: 1.8;
+  margin-top: 4.5%;
 }
 
-.box p {
-  height: 0;
-  overflow: hidden;
-  transition: 0.6s;
-  transform: translate3d(0, 0);
+.paragrafosCtc {
+  display: flex;
+  flex-direction: column;
+  width: 35rem;
+}
+
+.allArticles{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   margin-left: 5%;
-  margin-right: 37%;
+  gap:5%;
+  margin-top: 6%;
 }
 
-.box {
-  margin-top: 1%;
+.article{
+  width:350px;
+  height:200px;
+  background-color:aliceblue;
+  color:#333;
+ position: relative;
 }
 
-.display {
-  transform: translate3d(10px, 0);
-  height: auto !important;
-  margin-left: 5%;
-  margin-top: 2%;
-  margin-right: 37%;
-  background-color: #3a3a3a;
-  padding: 10px;
-  margin-bottom: 6%;
-  border-left: 15px solid #8e8065;
+.filosofia{
+  height:2.8rem !important;
+}
+
+.article h2{
+  font-size: 1.8rem !important;
+  font-weight: 800;
+  height:6rem;
+  
+  padding-top: 1.3rem;
+  padding-left:1.3rem;
+  padding-right:1.3rem;
+}
+.article p{
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding-left:1.3rem;
+  padding-right:1.3rem;
+  padding-bottom: 4.1rem;
+}
+
+.article input{
+  position: absolute;
+  bottom:2%;
+  right:5%;
+  width:12rem;
+  background-color:#a18a60;
+  color:white;
+  padding: 1rem .6rem 1rem .6rem;
+  border: none;
+  margin-bottom: 3%;
+  font-weight: 800;
+}
+
+#ateroArtigo, #riscoArtigo, #filosofiaArtigo{
+  display: none;
+}
+.articleText{
+  overflow-y: scroll;
+  overflow-x: hidden;
+  z-index:100;
+  width:75rem; 
+  height:70rem;
+  background-color: aliceblue;
+  color:#434343;
+  position:fixed;
+  bottom:-5%;
+padding:2rem;
+font-size: 2rem;
+  right:0%;
+  filter:saturate(100%) !important;
+  transform: translate(-50%, -25%);
+
+
+}
+
+.articleText h2{
+  color:#a18a60;
+}
+
+.articleText i{
+  position: absolute;
+  top:1%;
+  right:1%;
+  font-size: 3rem;
+}
+
+
+header, main{
+  filter:saturate(100%);
+}
+
+.riscoImg{
+  height:18rem !important;
+}
+.imgArticle{
+  margin-top: 5%;
+  width: 72rem;
+  height:22rem;
+  object-fit: cover;
+  filter: saturate(60%);
+  border:2px solid #a18a60;
+  border-radius: 2%;
+}
+
+input{
+  cursor: pointer !important;
 }
