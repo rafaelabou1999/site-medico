@@ -67,13 +67,13 @@ header p a {
   font-size: 26px;
 }
 
-.link a {
+.elementosHeader p:not(.agendar) a {
   transition: all 0.5s ease-in;
   color: black;
   border-right: 0 solid var(--bg-grey);
 }
 
-.link a:hover {
+.elementosHeader p:not(.agendar) a:hover {
   border-bottom: 2px solid var(--main-color);
 }
 
@@ -819,6 +819,7 @@ main p {
   color:#333;
  position: relative;
  margin-bottom:2%;
+
 }
 
 .filosofia{
@@ -867,11 +868,11 @@ main p {
   background-color: aliceblue;
   color:#434343;
   position:fixed;
-  bottom:0%;
-padding:2rem;
+  bottom: -5%;
+padding:2.5rem;
 font-size: 2rem;
   right:0%;
-  left:0%;
+  left:65%;
   filter:saturate(100%) !important;
   transform: translate(-60%, -16%);
 
@@ -879,7 +880,7 @@ font-size: 2rem;
 }
 
 .articleText p{
-  width:40rem;
+  width:55rem;
 }
 
 .articleText h2{
@@ -890,8 +891,8 @@ font-size: 2rem;
 
 .articleText i{
   position: absolute;
-  top:1% !important;
-  right:35% !important;
+  top:4% !important;
+  right:5% !important;
   font-size: 3rem;
  
 }
@@ -906,7 +907,7 @@ header, main{
 }
 .imgArticle{
   margin-top: 5%;
-  width: 72rem;
+  width: 58rem;
   height:22rem;
   object-fit: cover;
   filter: saturate(60%);

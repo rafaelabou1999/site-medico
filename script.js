@@ -19,58 +19,38 @@ const articleBtn = document.querySelectorAll(".articleBtn");
 const atero = document.querySelector("#atero");
 const filosofia = document.querySelector("#filosofia");
 const risco = document.querySelector("#risco");
-const exit = document.querySelectorAll(".exit");
 const header = document.querySelector("header");
 const main = document.querySelector("main");
 
-const ateroArtigo = document.querySelector("#ateroArtigo");
-const filosofiaArtigo = document.querySelector("#filosofiaArtigo");
-const riscoArtigo = document.querySelector("#riscoArtigo");
+const artigo = document.querySelectorAll(".articleText");
+const cardArtigo = document.querySelectorAll(".article");
+const exit = document.querySelectorAll(".exit");
 
-const articleText = document.querySelectorAll(".articleText");
-
-const riscoExit= document.querySelector(".riscoExit");
-const ateroExit= document.querySelector(".ateroExit");
-const filosofiaExit = document.querySelector(".filosofiaExit");
 function desaturateBg(){
   header.style.filter = 'saturate(0)';
   main.style.filter = 'saturate(0)';
 }
-exit.forEach((eachExit) => {
+
+function toExit(index){
+  artigo[index].style.display ='none';
+  header.style.filter = 'saturate(100%)';
+  main.style.filter = 'saturate(100%)';
+}
+
+exit.forEach((eachExit, index) => {
   eachExit.addEventListener("click", () => {
-    text.style.display ='none';
-    header.style.filter = 'saturate(100%)';
-    main.style.filter = 'saturate(100%)';
+    toExit(index);
   })
 })
 
-atero.addEventListener("click", () => {
+function displayArticle(index){
+  artigo[index].style.display = 'block';
   desaturateBg();
-  ateroArtigo.style.display = 'block';
-})
+}
 
-filosofia.addEventListener("click", () => {
-  desaturateBg();
-  filosofiaArtigo.style.display = 'block';
-})
 
-risco.addEventListener("click", () => {
-  desaturateBg();
-  riscoArtigo.style.display = 'block';
-})
-
-ateroExit.addEventListener("click", () => {
-  ateroArtigo.style.display = 'none';
-  header.style.filter = 'saturate(100%)';
-  main.style.filter = 'saturate(100%)';
-})
-filosofiaExit.addEventListener("click", () => {
-  filosofiaArtigo.style.display = 'none';
-  header.style.filter = 'saturate(100%)';
-  main.style.filter = 'saturate(100%)';
-})
-riscoExit.addEventListener("click", () => {
-  riscoArtigo.style.display = 'none';
-  header.style.filter = 'saturate(100%)';
-  main.style.filter = 'saturate(100%)';
+cardArtigo.forEach((card,index) => {
+  card.addEventListener('click', () => {
+    displayArticle(index)
+  })
 })

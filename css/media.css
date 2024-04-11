@@ -80,7 +80,7 @@
   }
 }
 
-@media screen and (min-width: 620px) and (max-width: 1000px) {
+@media screen and (min-width: 600px) and (max-width: 1000px) {
   
   .article{
     margin-bottom: 4%;
@@ -110,23 +110,14 @@
     height:23rem !important;
     object-fit: cover;
     filter: saturate(60%);
-    border:2px solid #a18a60;
-    border-radius: 2%;
   }
   
   
+  .articleText p{
+    width:38rem !important;
+  }
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+
   
   .contato h3,
   .opiniao h3,
@@ -469,7 +460,10 @@
   .article{
     margin-bottom: 4%;
   }
-
+  .articleText p{
+    width:44rem !important;
+  }
+  
   .articleText{
     z-index:100;
     width:50rem !important; 
@@ -494,7 +488,6 @@
     height:23rem !important;
     object-fit: cover;
     filter: saturate(60%);
-    border:2px solid #a18a60;
     border-radius: 2%;
   }
   
@@ -737,7 +730,7 @@
     top:33% !important;
   
     right:80% !important;
-  padding:2rem;
+  padding:2.7rem;
   font-size: 1.4rem;
   
     left:50% !important;
@@ -757,20 +750,9 @@
     height:23rem !important;
     object-fit: cover;
     filter: saturate(60%);
-    border:2px solid #a18a60;
-    border-radius: 2%;
+ 
   }
   
-
-
-
-
-
-
-
-
-
-
 
   .contactBtn{
     display: block !important;
@@ -1153,7 +1135,7 @@
 }
 
 
-@media  screen and (max-width: 580px){
+@media  screen and (max-width: 600px){
   .articleText p, .articleText h2, .imgArticle{
     padding:1.3rem !important;
     width:80%;
@@ -1181,7 +1163,6 @@
     height:15rem !important;
     object-fit: cover;
     filter: saturate(60%);
-    border:2px solid #a18a60;
     border-radius: 2%;
   }
   
@@ -1202,6 +1183,8 @@
     color:#333;
    position: relative;
   }
+
+  
   
   .filosofia{
     height:2.8rem !important;
@@ -1297,7 +1280,6 @@
     height:20rem !important;
     object-fit: cover;
     filter: saturate(60%);
-    border:2px solid #a18a60;
     border-radius: 2%;
   }
 }
@@ -1331,7 +1313,6 @@
     height:23rem !important;
     object-fit: cover;
     filter: saturate(60%);
-    border:2px solid #a18a60;
     border-radius: 2%;
   }
 
