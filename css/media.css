@@ -1135,16 +1135,16 @@
   }
 }
 
-@media screen and (max-width:700px) and (max-heigth:801){
+@media screen and (max-width:700px) and (max-height:801px){
   .articleText{
     z-index:100;
     width:95vw !important; 
-    height:20rem !important;
+    height:55rem !important;
     background-color: aliceblue;
     color:#434343;
     position:fixed;
     bottom:0% !important;
-    top:36% !important;
+    top:22% !important;
   padding:2rem;
   font-size: 3.9vw;
     right:0%;
