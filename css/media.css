@@ -1177,6 +1177,9 @@
 
 
 @media screen and (max-width:600px) {
+  header{
+    z-index:-1 !important;
+  }
   .article{
     width:90vw;
     height:260px;
@@ -1223,7 +1226,7 @@
   }
 
   .articleText{
-    z-index:100;
+    z-index:500 !important;
     width:90vw !important; 
     height:80rem;
     background-color: aliceblue;
