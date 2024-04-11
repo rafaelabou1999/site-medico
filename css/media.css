@@ -1135,6 +1135,24 @@
   }
 }
 
+@media screen and (max-width:700px) and (max-heigth:801){
+  .articleText{
+    z-index:100;
+    width:95vw !important; 
+    height:20rem !important;
+    background-color: aliceblue;
+    color:#434343;
+    position:fixed;
+    bottom:0% !important;
+    top:36% !important;
+  padding:2rem;
+  font-size: 3.9vw;
+    right:0%;
+    left:48% !important;
+    filter:saturate(100%) !important;
+    transform: translate(-50%, -25%);
+  }
+}
 
 @media  screen and (max-width: 600px){
   .articleText p, .articleText h2, .imgArticle{
