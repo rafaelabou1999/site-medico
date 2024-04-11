@@ -1144,17 +1144,16 @@
   .articleText{
     z-index:100;
     width:95vw !important; 
-    height:90rem;
+    height:50rem;
     background-color: aliceblue;
     color:#434343;
     position:fixed;
     bottom:0% !important;
-    top:35% !important;
+    top:36% !important;
   padding:2rem;
   font-size: 3.9vw;
     right:0%;
     left:48% !important;
-  
     filter:saturate(100%) !important;
     transform: translate(-50%, -25%);
   }
