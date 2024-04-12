@@ -106,7 +106,7 @@
 
   .imgArticle{
     margin-top: 5%;
-    width: 38rem;
+    width: 48rem;
     height:23rem !important;
     object-fit: cover;
     filter: saturate(60%);
@@ -484,7 +484,7 @@
 
   .imgArticle{
     margin-top: 5%;
-    width: 48rem;
+    width: 75rem !important;
     height:23rem !important;
     object-fit: cover;
     filter: saturate(60%);
@@ -1344,40 +1344,6 @@
     position:fixed;
     bottom:30% !important;
     top:210px !important;
-  padding:2rem;
-  font-size: 1.4rem;
-    right:0%;
-    left:50% !important;
-    filter:saturate(100%) !important;
-    transform: translate(-50%, -25%);
-  }
-}
-@media screen and  (max-height:900px) {
-  .articleText{
-    z-index:100;
-    width:30rem !important; 
-    height:57rem;
-    color:#434343;
-    position:fixed;
-    bottom:30% !important;
-    top:300px !important;
-  padding:2rem;
-  font-size: 1.4rem;
-    right:0%;
-    left:50% !important;
-    filter:saturate(100%) !important;
-    transform: translate(-50%, -25%);
-  }
-}
-@media screen and  (max-height:600px) {
-  .articleText{
-    z-index:100;
-    width:30rem !important; 
-    height:57rem;
-    color:#434343;
-    position:fixed;
-    bottom:30% !important;
-    top:235px !important;
   padding:2rem;
   font-size: 1.4rem;
     right:0%;
