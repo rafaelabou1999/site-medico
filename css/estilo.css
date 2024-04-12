@@ -868,7 +868,7 @@ main p {
   background-color: aliceblue;
   color:#434343;
   position:fixed;
-  bottom: -5%;
+  bottom:-6%;
 padding:2.5rem;
 font-size: 2rem;
   right:0%;
@@ -907,11 +907,14 @@ header, main{
 }
 .imgArticle{
   margin-top: 5%;
-  width: 58rem;
-  height:22rem;
+  margin-bottom: -10%;
+  width: 100rem;
+  padding: 0 !important;
+  margin-left: -10% !important;
+  height:35rem;
   object-fit: cover;
   filter: saturate(60%);
- 
+  opacity: .9;
   border-radius: 2%;
 }
 
