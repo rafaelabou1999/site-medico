@@ -5,7 +5,7 @@
 
 html {
   font-size: 62.5%;
-  scroll-behavior: smooth !important;
+  
 }
 :root {
   --main-font: "Poppins", sans-serif;
@@ -68,13 +68,12 @@ header p a {
 }
 
 .elementosHeader p:not(.agendar) a {
-  transition: all 0.5s ease-in;
-  color: black;
-  border-right: 0 solid var(--bg-grey);
+  transition: color .3s ease-in;
 }
 
 .elementosHeader p:not(.agendar) a:hover {
-  border-bottom: 2px solid var(--main-color);
+   color:#1a1919;
+   border-bottom: 2px solid #313030;
 }
 
 .agendar {
@@ -118,6 +117,8 @@ main {
   display: flex;
   flex-direction: column;
 }
+
+
 /*menu mobile*/
 .perfil-mobile {
   background-color: white;
