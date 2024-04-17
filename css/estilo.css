@@ -854,7 +854,12 @@ main p {
   padding: 1rem .6rem 1rem .6rem;
   border: none;
   margin-bottom: 3%;
+  transition: all .1s ease-in;
   font-weight: 800;
+}
+
+.article input:hover{
+  background-color: #313030;
 }
 
 #ateroArtigo, #riscoArtigo, #filosofiaArtigo{
@@ -869,7 +874,7 @@ main p {
   background-color: aliceblue;
   color:#434343;
   position:fixed;
-  bottom:-6%;
+  bottom:-5%;
 padding:2.5rem;
 font-size: 2rem;
   right:0%;
@@ -880,13 +885,14 @@ font-size: 2rem;
 
 }
 
+
 .articleText p{
   width:55rem;
 }
 
 .articleText h2{
   color:#a18a60;
-  margin-top:7%;
+  margin-top:1%;
   width:40rem;
 }
 
