@@ -39,7 +39,8 @@ function initArticle(){
   
   function toExit(index){
     artigo[index].style.display ='none';
-    main.style.filter =  'brightness(100%)'
+    main.style.filter =  'brightness(100%)';
+    header.style.filter = 'brightness(100%)';
   }
   
   exit.forEach((eachExit, index) => {
