@@ -106,7 +106,7 @@
 
   .imgArticle{
     margin-top: 5%;
-    width: 48rem;
+    width: 60rem!important;
     height:23rem !important;
     object-fit: cover;
     filter: saturate(60%);

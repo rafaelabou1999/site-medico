@@ -7,6 +7,7 @@ html {
   font-size: 62.5%;
   
 }
+
 :root {
   --main-font: "Poppins", sans-serif;
   --main-color: #a18a60;
@@ -28,6 +29,8 @@ html,
 body {
   overflow-x: hidden;
 }
+
+
 /*============HEADER==================*/
 
 header {
@@ -38,7 +41,8 @@ header {
   height: 100vh;
   width: 20vw;
   position: absolute;
-  margin-left: 3%;
+  padding-left: 3%;
+  padding-right: 3%;
   background-color: white;
 }
 
@@ -95,7 +99,7 @@ header p a {
 .perfil-desktop {
   width: 8vw;
   height: 8vw;
-  margin-right: 1%;
+  padding-right: 1%;
 }
 
 .elementosHeader {
@@ -874,9 +878,9 @@ main p {
   background-color: aliceblue;
   color:#434343;
   position:fixed;
-  bottom:-5%;
-padding:2.5rem;
-font-size: 2rem;
+  bottom:-3%;
+  padding:2.5rem;
+  font-size: 2rem;
   right:0%;
   left:65%;
   filter:saturate(100%) !important;

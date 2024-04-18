@@ -33,14 +33,13 @@ function initArticle(){
   const exit = document.querySelectorAll(".exit");
   
   function desaturateBg(){
-    header.style.filter = 'saturate(0)';
-    main.style.filter = 'saturate(0)';
+    header.style.filter = 'brightness(40%)';
+    main.style.filter = 'brightness(40%)';
   }
   
   function toExit(index){
     artigo[index].style.display ='none';
-    header.style.filter = 'saturate(100%)';
-    main.style.filter = 'saturate(100%)';
+    main.style.filter =  'brightness(100%)'
   }
   
   exit.forEach((eachExit, index) => {
