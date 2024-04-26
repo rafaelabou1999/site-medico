@@ -454,6 +454,11 @@
   .contatoCard{
     margin-left: -16%;
   }
+
+  
+  .exit{
+    top:2.5% !important;
+  }
 }
 
 @media screen and (min-width: 1000px) and (max-width: 1199px) {
@@ -1265,6 +1270,10 @@
   }
   
   
+  .exit{
+    top:2.5% !important;
+  }
+  
 }
 
 @media screen and (min-width:1200px) and (max-width:1600px){
@@ -1298,6 +1307,11 @@
     filter: saturate(60%);
     border-radius: 2%;
   }
+
+  .exit{
+    top:3% !important;
+  }
+  
 }
   
 @media screen and (min-width: 1000px) and (max-width: 1199px) {
@@ -1332,7 +1346,9 @@
     border-radius: 2%;
   }
 
-  
+  .exit{
+    top:2.5% !important;
+  }
 }
 
 @media screen and  (max-height:600px) {
@@ -1344,11 +1360,40 @@
     position:fixed;
     bottom:30% !important;
     top:210px !important;
-  padding:2rem;
-  font-size: 1.4rem;
+    padding:2rem;
+    font-size: 1.4rem;
     right:0%;
     left:50% !important;
     filter:saturate(100%) !important;
     transform: translate(-50%, -25%);
+  }
+}
+
+@media screen and (max-height:680px) {
+  header p a {
+    font-weight: 300;
+    text-decoration: none;
+    color: black;
+    font-size: 16px !important
+    ;
+  }
+
+  .articleText{
+    z-index:100;
+    width:55rem !important; 
+    height:80vh;
+    color:#434343;
+    position:fixed;
+    top:160px !important;
+    padding:2rem;
+    font-size: 1.4rem;
+    right:0%;
+    left:60% !important;
+    filter:saturate(100%) !important;
+    transform: translate(-50%, -25%);
+  }
+
+  .exit{
+    top:4.5% !important;
   }
 }
