@@ -1351,7 +1351,7 @@
   }
 }
 
-@media screen and  (max-height:600px) {
+@media screen and  (max-height:600px) and (min-width:1000px) and (max-width:1440px){
   .articleText{
     z-index:100;
     width:30rem !important; 
@@ -1369,7 +1369,7 @@
   }
 }
 
-@media screen and (max-height:680px) {
+@media screen and (max-height:680px)  and (min-width:1000px) and (max-width:1440px){
   header p a {
     font-weight: 300;
     text-decoration: none;
