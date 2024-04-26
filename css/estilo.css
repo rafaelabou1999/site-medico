@@ -879,15 +879,13 @@ main p {
   background-color: aliceblue;
   color:#434343;
   position:fixed;
-  bottom:-8%;
+  bottom:-33%;
   padding:2.5rem;
   font-size: 2rem;
   right:0%;
-  left:65%;
+  left:62%;
   filter:saturate(100%) !important;
-  transform: translate(-60%, -16%);
-
-
+  transform: translate(-50%, -50%);
 }
 
 
