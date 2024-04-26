@@ -545,6 +545,7 @@ main p {
 .grid-opiniao {
   margin-left: 5%;
   position: relative;
+  
 }
 .line3 {
   margin-left: 5%;
@@ -878,7 +879,7 @@ main p {
   background-color: aliceblue;
   color:#434343;
   position:fixed;
-  bottom:-3%;
+  bottom:-8%;
   padding:2.5rem;
   font-size: 2rem;
   right:0%;
@@ -896,16 +897,17 @@ main p {
 
 .articleText h2{
   color:#a18a60;
-  margin-top:1%;
+  margin-top:1-2%;
   width:40rem;
+  padding-bottom: 1.3rem;
+ 
 }
 
-.articleText i{
+.exit{
   position: absolute;
   top:4% !important;
   right:5% !important;
-  font-size: 3rem;
- 
+  width: 3rem;
 }
 
 
@@ -931,4 +933,17 @@ header, main{
 
 input{
   cursor: pointer !important;
+}
+
+.titleArticle{
+  display: flex;
+  flex-direction: row;
+  gap:3%;
+}
+.lineArticle{
+  width:.5rem;
+  height:2rem;
+  background-color: #bea370;
+  margin-left: -2.5rem !important;
+  margin-top: 2%;
 }
