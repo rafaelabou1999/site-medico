@@ -1,4 +1,4 @@
-A hospedagem ainda n atualizou o site completamente! <br>
+Atualmente mudando o layout do site :) Responsivo em andamento <br>
 ***Acesse https://site-medico.vercel.app/***
 
 Para desenvolver esse site foi usado:
