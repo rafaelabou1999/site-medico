@@ -5,7 +5,9 @@
 
 html {
   font-size: 62.5%;
-  
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 :root {
@@ -151,12 +153,13 @@ header {
 
 .menu-mobile {
   padding: 7px;
+  padding-top: 4px;
   display: none;
   z-index: 1000;
   position: fixed;
-  min-height: 4vh;
-  background-color: white !important;
-  width: 100%;
+  min-height: 3vh;
+  background-color: rgb(255, 255, 255) !important;
+  width: 90% !important;
 }
 
 li {
@@ -177,7 +180,7 @@ li {
   position: absolute;
   top: 0%;
   right: 1%;
-  min-width: 50px;
+  max-width: 50px;
   cursor: pointer;
   padding-top: 2%;
   padding-right: 10%;
@@ -198,7 +201,7 @@ li {
   text-transform: uppercase;
 }
 .nav-menu {
-  margin-top: 2%;
+  margin-top: .5%;
   background-color: #ffffff;
   z-index: 1000;
 }
@@ -921,6 +924,7 @@ main p {
   color:#434343;
   position:fixed;
   top:50%;
+  bottom:10%;
   padding:2.5rem;
   font-size: 2rem;
   right:0%;
