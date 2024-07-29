@@ -177,7 +177,7 @@
     font-size: 1.7rem !important;
     font-family: var(--main-font);
     font-weight: 400;
-
+    padding-top: 16px !important;
     display: flex;
     align-items: center;
     position: absolute;
@@ -201,7 +201,7 @@
     padding: 0px !important;
     display: flex;
     flex-direction: row;
-    height: 8vh !important;
+    height: 9vh !important;
     top: 0;
     background-color: #ffffff;
   }
@@ -271,6 +271,7 @@
     font-weight: 400;
     margin-top: 5px;
     text-transform: uppercase;
+    
   }
 
   main h1 {
@@ -550,7 +551,8 @@
     position: absolute;
     top: 5px !important;
     padding-right: 1.5% !important;
-    right:15%;
+    padding-top: 30px !important;
+    right:35%;
     text-transform: uppercase;
   
   }
@@ -571,7 +573,7 @@
     display: block;
     width:100vw !important; 
     z-index: 1000 !important;
-    padding: 0px !important;
+    padding: 10px !important;
     display: flex;
     flex-direction: row;
     max-height: 19vh !important;
@@ -592,6 +594,11 @@
     font-weight: 300;
     margin-top: 20% !important;
     font-size: 15px;
+  }
+  .nav-menu {
+    margin-top: 2.5%;
+    background-color: #ffffff;
+    z-index: 1000;
   }
 
   main {
@@ -832,9 +839,10 @@
     display: flex;
     align-items: center;
     position: absolute;
-    top: 12px;
+    top: 14px !important;
     right:40% !important;
     text-transform: uppercase;
+    padding-top: 11.5px !important;
   }
 
   header {
@@ -1434,6 +1442,11 @@
   }
 }
 
+@media screen and (min-width:605px) and (max-width:712px){
+  .navbar::before {
+    padding-top: 9px !important;
+  }
+}
 @media screen and  (max-height:600px) and (min-width:1000px) and (max-width:1440px){
   .sideImg{
     top:55% ;
@@ -1619,6 +1632,8 @@
     margin-bottom: 15%;
     border: 1px solid #ccc;
   }
+
+  
 }
 
 @media screen and (min-height:900px) and (max-height:900px) and (max-width:680px) {
