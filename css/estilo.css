@@ -861,8 +861,8 @@ main p {
   z-index:100;
   width:62rem; 
   height:70rem;
-  background-color: rgb(252, 254, 255);
-  border: .5px solid #e7e0e0;
+  background-color: rgb(255, 255, 255);
+  border: .5px solid #dbd8d8;
   color:#434343;
   position:fixed;
   top:50%;
@@ -877,13 +877,13 @@ main p {
 
 /* Works on Firefox */
 .articleText {
-  scrollbar-width: thin;
+  scrollbar-width:thin;
   scrollbar-color:   #423a4dc2  #d1cfcb;
 }
 
 /* Works on Chrome, Edge, and Safari */
 .articleText::-webkit-scrollbar {
-  width: 12px;
+  width: 1px;
 }
 
 .articleText::-webkit-scrollbar-track {
@@ -892,8 +892,8 @@ main p {
 
 .articleText::-webkit-scrollbar-thumb {
   background-color: var(--main-color);
-  border-radius: 20px;
-  border: 3px solid #a18a60;
+  border-radius: 1px;
+  border: 1px solid #a18a60;
 }
 
 .articleText p{
@@ -905,7 +905,7 @@ main p {
 }
 
 .articleText h2{
-  color:var(--main-color);
+  color: rgb(53, 52, 52);
   margin-top:1-2%;
   margin-left: 4% !important;
   width:55rem;
@@ -916,8 +916,8 @@ main p {
 .exit{
   position: absolute;
   font-size: 3rem;
-  top:4% !important;
-  right:5% !important;
+  top:2.2% !important;
+  right:1% !important;
   width: 3.5rem;
 }
 

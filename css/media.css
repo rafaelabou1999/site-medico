@@ -1279,7 +1279,7 @@
   .article input{
     position: absolute;
     bottom:2%;
-    right:5%;
+    right:5%;  
     width:12rem;
     background-color:#a18a60;
     color:white;
@@ -1290,14 +1290,14 @@
   }
 
   .articleText{
-    z-index:100;
+    z-index:10110 !important;
     width:80vw !important; 
     height:52rem;
     background-color: aliceblue;
     color:#434343;
     position:fixed !important;
     bottom:0% !important;
-    top:33%;
+    top:20% !important;
     padding:2.3rem;
     font-size: max(3.9vw, 15px);
     right:0%;
