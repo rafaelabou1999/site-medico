@@ -5,14 +5,12 @@
 
 html {
   font-size: 62.5%;
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+  
 }
 
 :root {
   --main-font: "Poppins", sans-serif;
-  --main-color: #423a4dc2 ;
+  --main-color: #423a4dc2;
   --main-font-size-h2: max(32px, 3vw);
   --main-font-size-h3: max(22px, 2vw);
   --main-height-div: max(70vh, 40vh);
@@ -34,6 +32,7 @@ body {
 
 
 /*============HEADER==================*/
+/*============HEADER==================*/
 
 header {
   display: flex;
@@ -46,10 +45,12 @@ header {
   padding-left: 3%;
   padding-right: 3%;
   background-color: white;
+}
+
+header {
   position: fixed;
   left: 0;
 }
-
 header h2 {
   font-weight: 400;
 }
@@ -72,11 +73,12 @@ header p a {
 }
 
 .elementosHeader p:not(.agendar) a {
-  transition: all .3s ease-in;
+  transition: color .3s ease-in;
 }
 
 .elementosHeader p:not(.agendar) a:hover {
-   padding: 2.3%;
+   color:#1a1919;
+   border-bottom: 2px solid #313030;
 }
 
 .agendar {
@@ -88,6 +90,7 @@ header p a {
   padding: 10px 11% !important;
   color: white !important;
   border-radius: 10px;
+
   transition: all 1s ease;
 }
 
@@ -119,6 +122,7 @@ main {
   display: flex;
   flex-direction: column;
 }
+
 
 
 /*menu mobile*/
@@ -153,13 +157,12 @@ header {
 
 .menu-mobile {
   padding: 7px;
-  padding-top: 4px;
   display: none;
   z-index: 1000;
   position: fixed;
-  min-height: 3vh;
-  background-color: rgb(255, 255, 255) !important;
-  width: 90% !important;
+  min-height: 4vh;
+  background-color: white !important;
+  width: 100%;
 }
 
 li {
@@ -180,10 +183,14 @@ li {
   position: absolute;
   top: 0%;
   right: 1%;
-  max-width: 50px;
+  min-width: 50px;
   cursor: pointer;
   padding-top: 2%;
   padding-right: 10%;
+  background-color: white;
+}
+
+.navbar {
   background-color: white;
   display: flex;
   flex-direction: row;
@@ -201,11 +208,10 @@ li {
   text-transform: uppercase;
 }
 .nav-menu {
-  margin-top: .5%;
+  margin-top: 2%;
   background-color: #ffffff;
   z-index: 1000;
 }
-
 .nav-branding {
   font-size: 2rem;
 }
@@ -264,10 +270,9 @@ main {
   position: absolute;
   left: 22%;
   max-width: 100vw;
-  background-color: #b8abb531;
+  background-color:  #b8abb531;
   margin-left: 3%;
   color: white;
-  opacity: 1;
 }
 
 main h1 {
@@ -283,11 +288,9 @@ main p {
   font-family: var(--main-font);
   font-weight: 300;
 }
-
 .p {
   opacity: 0.9;
   color: #5f5e5e;
-
   font-size: max(4vmin, 22px);
   padding-top: 1%;
   padding-left: 5%;
@@ -296,11 +299,12 @@ main p {
 }
 
 .buttonTitle button {
-  background-color: #2b2828;
+  background-color: var(--main-color);
   border: none;
   cursor: pointer;
   border-radius: 20px;
-  padding: 20px 30px; 
+  padding: 20px 30px;
+   
   margin-left: 5%;
   margin-top: 5%;
 }
@@ -321,8 +325,8 @@ main p {
   margin-left: 5%;
   display: grid;
   grid-template-columns: repeat(auto-fill, calc(100% / 2));
-  grid-column-gap: 3%;
-  grid-row-gap:8%;
+  grid-column-gap: 10px;
+  grid-row-gap: 20px;
 }
 
 .card {
@@ -332,13 +336,15 @@ main p {
   padding-left: 8%;
   padding-top: 5%;
   transition: all 400ms ease-in;
-  border:.5px solid  rgba(37, 34, 34, 0.041) ;
-  text-decoration: none;
+}
+
+.card:hover {
+  border: 1px solid rgba(75, 40, 77, 0.548);
 }
 
 .card a {
   text-decoration: none;
-  color: white;
+  color: var(--main-color);
   font-family: "Roboto", sans-serif;
 }
 .card h2 {
@@ -352,22 +358,18 @@ main p {
 .card .iconCard {
   transition: all 500ms ease-in;
 }
-
-.card:hover .iconCard{
-  color: var(--main-color);
+.card:hover .iconCard {
+  color: #8a7686 ;
 }
-
-.card:hover{
-  border: 1px solid rgba(75, 40, 77, 0.548);
+.card {
+  text-decoration: none;
 }
-
 .card p {
   font-size: 1.8rem;
   font-weight: 100;
 }
-
 .iconCard {
-  color: #8a7686 ;
+  color: var(--main-color);
   font-size: 6rem;
   transition: all 200ms ease-in;
 }
@@ -388,8 +390,8 @@ main p {
 .text h2 {
   margin-top: 8%;
   font-weight: 400;
-  font-size: var(--main-font-size-h2);
   color: #2b2828 !important;
+  font-size: var(--main-font-size-h2);
 }
 
 .greyH3 {
@@ -414,11 +416,6 @@ main p {
 
 .imgSobre img {
   width: 20vw;
-  opacity: .99;
-}
-
-.imgSobre{
-  position: relative;
 }
 
 .texto {
@@ -426,12 +423,11 @@ main p {
   flex-direction: column;
   align-self: center;
 }
-
 .texto p {
   color: #201f1f;
   margin-right: 22%;
   margin-left: 5%;
-  font-size: 2.1rem;
+  font-size: 2rem;
   line-height: 1.5;
 }
 
@@ -559,8 +555,8 @@ main p {
   margin-left: 5%;
   margin-top: 10%;
   font-weight: 400;
-  font-size: var(--main-font-size-h2);
   color: #2b2828 !important;
+  font-size: var(--main-font-size-h2);
 }
 
 .opiniao h3 {
@@ -576,6 +572,10 @@ main p {
   position: relative;
   
 }
+
+.reviewBtn{
+  display: none !important;
+}
 .line3 {
   margin-left: 5%;
   margin-top: 2%;
@@ -584,36 +584,38 @@ main p {
   height: 1vh;
 }
 .bg-dark {
-  background-color:rgba(203, 200, 211, 0.322);
-  color: #2b2828;
+  margin-top: 5%;
+  background-color: var(--bg-grey);
+  color: white;
   line-height: 1.5;
-  border:.5px solid  rgba(37, 34, 34, 0.041) ;
 }
 
-.patientReview{
-  text-align: center !important;
-}
 .bg-dark {
-  padding: 2% 2%;
-  width:35rem;
-  font-size: 2rem;
+  padding: 2% 3%;
+  border-radius: 0px;
+  color:rgb(15, 15, 15);
+  margin: 0;
+  width:45rem;
+  margin-right: 8% !important;
+  font-size: 1.7rem !important;
 }
 
 .pacienteP {
-  font-size: 1.8rem;
-  font-weight: 400 !important;
+  font-size: 2.3rem;
   padding-bottom: 2%;
-  color: #2b2828!important;
 }
 .opiniao1,
 .opiniao2,
 .opiniao3 {
   padding-top: 3%;
-  width:101rem;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap:2%;
+  text-align: center;
+}
+
+.patientReview {
+  margin-right: 45%;
+}
+.opiniao img:first-of-type {
+  border-radius: 50%;
 }
 
 .reviewBtn {
@@ -634,6 +636,9 @@ main p {
   font-size: 13px;
   color: white !important;
 }
+.opiniaoImg, .rate, .pacienteP {
+  display: none;
+}
 
 /*galeria*/
 .galeria-parent h2 {
@@ -641,7 +646,7 @@ main p {
   font-weight: 400;
   font-size: var(--main-font-size-h2);
   margin-left: 5%;
-  color: #2b2828 ;
+  color: #2b2828;
 }
 
 .galeria-parent h3 {
@@ -666,7 +671,7 @@ main p {
 }
 
 .images img {
-  opacity: 0.93;
+  opacity: 0.97;
   width: 30vw;
   height: 40vh;
   object-fit: cover;
@@ -678,90 +683,7 @@ main p {
 }
 
 /**/
-.inspiracoesTitle {
-  margin-left: 5%;
-  margin-top: 10%;
-  font-weight: 400;
-  font-size: var(--main-font-size-h2);
-  font-family: var(--main-font);
-}
 
-.borderInsp {
-  margin-top: 1%;
-  height: 0.3vh;
-  width: 80px;
-  background-color: #bea370;
-}
-
-.inspiracoesTitle{
-  color: #2b2828 ;
-}
-
-.inspiracoesSub {
-  font-weight: 100;
-  margin-left: 5%;
-  font-size: var(--main-font-size-h3);
-  color: #777;
-  padding-bottom: 0%;
-}
-
-.line4 {
-  margin-top: 2%;
-  width: 10%;
-  background-color: var(--main-color);
-  height: 1vh;
-}
-
-.textMargin {
-  margin-right: 5%;
-  margin-left: 0 !important;
-}
-.insp1 {
-  margin-left: 5%;
-  margin-top: 5%;
-  display: flex;
-  flex-direction: row;
-}
-
-.insp1 img {
-  width: 320px;
-  height: 480px;
-  object-fit: cover;
-}
-
-.imgInsp {
-  position: relative;
-}
-
-.footer {
-  margin-top: 10%;
-  padding-top: 1%;
-  padding-bottom: 1%;
-  font-size: max(1.1vw, 1.1rem);
-  text-align: center;
-  color: var(--main-color);
-}
-
-.textInsp1 {
-  display: flex;
-  align-self: center;
-  flex-direction: column;
-  margin-left: 3%;
-  width: 40vw;
-}
-
-.curve {
-  display: none;
-}
-.textInsp1 h2 {
-  font-size: 2.5rem;
-}
-
-.textInsp1 p {
-  font-size: 1.8rem;
-  line-height: 1.5;
-  margin-top: 4%;
-}
 #pre-loader {
   display: block;
   z-index: 10000;
@@ -786,9 +708,28 @@ main p {
   margin: 0 auto;
 }
 
+.inspiracoesTitle {
+  margin-left: 5%;
+  margin-top: 10%;
+  font-weight: 400;
+  font-size: var(--main-font-size-h2);
+  font-family: var(--main-font);
+  color: #2b2828;
+
+}
+
+.inspiracoesSub{
+  margin-left: 5%;
+  font-size: var(--main-font-size-h3);
+  color: #777;
+  font-weight: 100;
+  padding-bottom: 0%;
+}
+
 .insp1 img {
   opacity: 0.8;
 }
+
 
 .circleLocal{
   display: flex;
@@ -842,6 +783,7 @@ main p {
   flex-direction: column;
   width: 35rem;
 }
+
 
 .allArticles{
   display: flex;
@@ -1015,4 +957,13 @@ input{
   background-color: #bea370;
   margin-left: -2.5rem !important;
   margin-top: 2%;
+}
+
+.footer{
+  padding-top: 5%;
+  background-color: transparent !important;
+  font-size: 1.9rem;
+  padding-bottom: 2%;
+  color: var(--main-color);
+  text-align: center;
 }
