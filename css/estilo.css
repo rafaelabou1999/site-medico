@@ -329,7 +329,7 @@ main p {
 .card {
   background-color: var(--bg-grey);
   color: var(--main-color);
-  height: 30vh;
+  height: 34vh;
   padding-left: 8%;
   padding-top: 5%;
   transition: all 400ms ease-in;
