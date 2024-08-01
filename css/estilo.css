@@ -32,7 +32,6 @@ body {
 
 
 /*============HEADER==================*/
-/*============HEADER==================*/
 
 header {
   display: flex;
@@ -303,7 +302,6 @@ main p {
   cursor: pointer;
   border-radius: 20px;
   padding: 20px 30px;
-   
   margin-left: 5%;
   margin-top: 5%;
 }
@@ -364,7 +362,7 @@ main p {
   text-decoration: none;
 }
 .card p {
-  font-size: 1.8rem;
+  font-size: 2.4rem;
   font-weight: 100;
 }
 .iconCard {
@@ -449,7 +447,7 @@ main p {
 
 .contato h2 {
   margin-top: 5%;
-  font-weight: 400;
+  font-weight: 500;
   font-size: var(--main-font-size-h2);
   color: #2b2828 !important;
 }
@@ -472,7 +470,7 @@ main p {
 }
 
 .contato2 {
-  margin-top: 2%;
+  margin-top: 0%;
   display: flex;
   flex-direction: column;
   margin-left: 5%;
@@ -484,17 +482,6 @@ main p {
   display: none;
 }
 
-.mapa {
-  font-size: 1.6rem;
-  text-decoration: none;
-  color: white;
-  padding-top: 2rem;
-  transition: all 0.3s ease-in;
-}
-
-.mapa:hover {
-  color: var(--main-color);
-}
 .c1 h2 {
   font-size: min(5rem, 26px);
   font-weight: 400;
@@ -549,6 +536,39 @@ main p {
   background-color: #bea3709a;
 }
 
+
+.contatoCard {
+  font-size: 1.7rem;
+  margin-bottom: 12%;
+  background-color: rgba(203, 200, 211, 0.322);
+  padding: 5%;
+}
+
+.ctc1 {
+  margin-bottom: 1%;
+}
+
+
+.ctcP {
+  margin-top: 3%;
+}
+
+.contatoMapa {
+  display: flex;
+  flex-direction: row;
+}
+
+.ctc5 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4.5%;
+}
+
+.paragrafosCtc {
+  display: flex;
+  flex-direction: column;
+  width: 40rem;
+}
 /*opinioes*/
 .opiniao h2 {
   margin-left: 5%;
@@ -569,7 +589,6 @@ main p {
 .grid-opiniao {
   margin-left: 5%;
   position: relative;
-  
 }
 
 .opiniaoBtn{
@@ -584,22 +603,24 @@ main p {
   width: 10%;
   background-color: var(--main-color);
   height: 1vh;
+  margin-bottom: 2% !important;
 }
 .bg-dark {
   margin-top: 5%;
   background-color: var(--bg-grey);
   color: white;
   line-height: 1.5;
+  font-weight: 300;
 }
 
 .bg-dark {
   padding: 2% 3%;
   border-radius: 0px;
-  color:rgb(15, 15, 15);
+  color:rgba(29, 27, 27, 0.884) !important;
   margin: 0;
   width:45rem;
   margin-right: 8% !important;
-  font-size: 1.7rem !important;
+  font-size: 1.9rem !important;
 }
 
 .pacienteP {
@@ -684,108 +705,7 @@ main p {
   opacity: 1;
 }
 
-/**/
-
-#pre-loader {
-  display: block;
-  z-index: 10000;
-  background-color: white;
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-}
-
-.loader {
-  position: absolute;
-  top: 50%;
-  transform: translate(0, -50%);
-  width: 100%;
-}
-
-.loader img {
-  width: 150px;
-  display: block;
-  margin: 0 auto;
-}
-
-.inspiracoesTitle {
-  margin-left: 5%;
-  margin-top: 10%;
-  font-weight: 400;
-  font-size: var(--main-font-size-h2);
-  font-family: var(--main-font);
-  color: #2b2828;
-
-}
-
-.inspiracoesSub{
-  margin-left: 5%;
-  font-size: var(--main-font-size-h3);
-  color: #777;
-  font-weight: 100;
-  padding-bottom: 0%;
-}
-
-.insp1 img {
-  opacity: 0.8;
-}
-
-
-.circleLocal{
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  align-items: center;
-  width:50%;
-  padding:1.5%;
-  padding-left: 0 !important;
-}
-
-.circleLocal h3{
-  color:rgba(0, 0, 0, 0.651);
-  font-weight: 400;
-}
-
-.circleLocal i{
-  color: rgba(68, 14, 68, 0.568) !important;
-  font-size: 2rem; 
-}
-
-.contatoCard {
-  font-size: 1.6rem;
-  margin-bottom: 12%;
-  background-color: rgba(203, 200, 211, 0.322);
-  padding: 5%;
-}
-
-.ctc1 {
-  margin-bottom: 1%;
-}
-
-
-.ctcP {
-  margin-top: 3%;
-}
-
-.contatoMapa {
-  display: flex;
-  flex-direction: row;
-}
-
-.ctc5 {
-  display: flex;
-  flex-direction: column;
-  margin-top: 4.5%;
-}
-
-.paragrafosCtc {
-  display: flex;
-  flex-direction: column;
-  width: 35rem;
-}
-
+/*inspiracoes*/
 
 .allArticles{
   display: flex;
@@ -877,6 +797,40 @@ main p {
   transform: translate(-50%, -50%);
 }
 
+
+.imgArticle{
+  filter:grayscale(50%);
+  margin-top: 5%;
+  width: 55rem;
+  margin-left: 4% !important;
+  height:25rem;
+  object-fit: cover;
+  opacity: .9;
+}
+
+.articleText span{
+  font-size: 3.1rem;
+  color:#464444;
+}
+
+input{
+  cursor: pointer !important;
+}
+
+.titleArticle{
+  display: flex;
+  flex-direction: row;
+  gap:3%;
+}
+
+.lineArticle{
+  width:.5rem;
+  height:2rem;
+  background-color: #bea370;
+  margin-left: -2.5rem !important;
+  margin-top: 2%;
+}
+
 /* Works on Firefox */
 .articleText {
   scrollbar-width:thin;
@@ -921,44 +875,74 @@ main p {
   top:2.2% !important;
   right:1% !important;
   width: 3.5rem;
+  cursor:pointer;
 }
 
+.inspiracoesTitle {
+  margin-left: 5%;
+  margin-top: 10%;
+  font-weight: 400;
+  font-size: var(--main-font-size-h2);
+  font-family: var(--main-font);
+  color: #2b2828;
+}
+
+.inspiracoesSub{
+  margin-left: 5%;
+  font-size: var(--main-font-size-h3);
+  color: #777;
+  font-weight: 100;
+  padding-bottom: 0%;
+}
+
+.circleLocal{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  width:50%;
+  padding:1.5%;
+  padding-left: 0 !important;
+}
+
+.circleLocal h3{
+  color:rgba(0, 0, 0, 0.651);
+  font-weight: 400;
+}
+
+.circleLocal i{
+  color: rgba(68, 14, 68, 0.568) !important;
+  font-size: 2rem; 
+}
+
+/**/
+
+#pre-loader {
+  display: block;
+  z-index: 10000;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.loader {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 100%;
+}
+
+.loader img {
+  width: 150px;
+  display: block;
+  margin: 0 auto;
+}
 
 header, main{
   filter:saturate(100%);
-}
-
-.imgArticle{
-  filter:grayscale(50%);
-  margin-top: 5%;
-  width: 55rem;
-  margin-left: 4% !important;
-  height:25rem;
-  object-fit: cover;
-  opacity: .9;
-}
-
-.articleText span{
-  font-size: 3.1rem;
-  color:#464444;
-}
-
-input{
-  cursor: pointer !important;
-}
-
-.titleArticle{
-  display: flex;
-  flex-direction: row;
-  gap:3%;
-}
-
-.lineArticle{
-  width:.5rem;
-  height:2rem;
-  background-color: #bea370;
-  margin-left: -2.5rem !important;
-  margin-top: 2%;
 }
 
 .footer{
