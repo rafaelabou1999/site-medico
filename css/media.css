@@ -190,9 +190,10 @@
   .articleText p{
     font-size: 1.8rem;
     padding-bottom: 5%;
+    width: 34vw;
   }
   .imgArticle{
-    width:41vw !important;
+    width:35vw !important;
     border-radius: 0px !important;
   }
 }
