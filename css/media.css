@@ -1562,7 +1562,22 @@
 
 
 @media screen and (min-width:660px) and (max-width:800px){
+  .contatoCard{
+    margin-left: 0% !important;
+    width:35rem !important;
+  }
+
+  .bg-dark{
+    width:35rem !important;
+    padding: 2.5% !important;
+  }
   
+  .galeria-parent img {
+    width: 44vw !important;
+    height: 25rem;
+    padding: 1% !important;
+  }
+
   .articleText{
     margin-top: 0;
     margin-bottom: 0;
@@ -1662,6 +1677,11 @@
   .riscoText h2{
     padding-bottom: 7vh !important;
   }
+
+  .imgArticle{
+    width: 85vw !important;
+    height:35vh !important;
+  }
 }
 
 @media screen and (max-height:900px) and (max-width: 400px) {
@@ -1672,5 +1692,10 @@
   .descCard h2{
     width:25rem !important;
     padding-bottom: 5.5% !important;
+  }
+
+  .imgArticle{
+    width: 70vw !important;
+    height:35vh !important;
   }
 }
