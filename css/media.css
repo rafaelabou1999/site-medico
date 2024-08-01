@@ -1,3 +1,15 @@
+@media screen and (min-width:1600px) and (max-width:1810px) {
+  .agendar a {
+    background-color: var(--main-color) !important;
+    padding: 10px 5% !important;
+    color: white !important;
+    border-radius: 10px;
+    transition: all 1s ease;
+    font-size: 2.2rem;
+  }
+}
+
+
 @media screen and (min-width: 1400px) and (max-width: 1600px) {
   .sideImg{
     top:40% !important;
@@ -140,6 +152,23 @@
   
   main h1{
     padding-top: 2%;
+  }
+
+  
+  .opiniaoBtn{
+    cursor: pointer;
+    display: block;
+    background-color: var(--main-color);
+    padding: 2% 3%;
+    border: 0px;
+    font-weight:600;
+    margin: auto;  
+  }
+
+  .opiniaoBtn a{
+    color:#fff;
+    font-size: 1.5rem;
+    text-decoration: none;
   }
 
   .article{
@@ -340,7 +369,7 @@
   .contato2 {
     display: flex;
     flex-direction: row;
-    margin-left: 11% !important;
+    margin-left: 3% !important;
   }
 
   .c1 {
@@ -395,6 +424,10 @@
     font-size: 1.7rem !important;
   }
 
+  .opiniaoBtn{
+    margin-top: 4%;
+    margin: auto;
+  }
   .opiniao1,
   .opiniao2,
   .opiniao3 {
@@ -513,7 +546,7 @@
   }
 
   .contatoCard{
-    margin-left: -16%;
+    margin-left: 2%;
   }
 
   
@@ -797,6 +830,22 @@
     height:15px;
   }
 
+  .opiniaoBtn{
+    cursor: pointer;
+    display: block;
+    background-color: var(--main-color);
+    padding: 2% 3%;
+    border: 0px;
+    letter-spacing: 1.1px;
+    font-weight:600;
+    margin: auto;  
+  }
+
+  .opiniaoBtn a{
+    color:#fff;
+    font-size: 1.5rem;
+    text-decoration: none;
+  }
   
 
   .contactBtn{
@@ -1279,7 +1328,6 @@
     height:35rem;
     object-fit: cover;
     filter: saturate(60%);
-   
     border-radius: 2%;
   }
   
@@ -1548,10 +1596,10 @@
   .imgArticle{
     margin-top: 5%;
     width: 100vw;
-    height:23rem !important;
+    height:24rem !important;
     object-fit: cover;
     filter: saturate(70%) !important;
-    border-radius: 2%;
+    border-radius: 0px;
   }
   .exit{
     top:1.5% !important;
@@ -1680,7 +1728,23 @@
 
   .imgArticle{
     width: 85vw !important;
-    height:35vh !important;
+    height:25vh !important;
+  }
+
+  .opiniaoBtn{
+    cursor: pointer;
+    display: block;
+    background-color: var(--main-color);
+    padding: 2% 3%;
+    border: 0px;
+    font-weight:600;
+    margin: auto;  
+  }
+
+  .opiniaoBtn a{
+    color:#fff;
+    font-size: 1.5rem;
+    text-decoration: none;
   }
 }
 
@@ -1695,7 +1759,7 @@
   }
 
   .imgArticle{
-    width: 70vw !important;
-    height:35vh !important;
+    width: 85vw !important;
+    height:30vh !important;
   }
 }

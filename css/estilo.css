@@ -90,7 +90,6 @@ header p a {
   padding: 10px 11% !important;
   color: white !important;
   border-radius: 10px;
-
   transition: all 1s ease;
 }
 
@@ -573,6 +572,9 @@ main p {
   
 }
 
+.opiniaoBtn{
+  display: none;
+}
 .reviewBtn{
   display: none !important;
 }
