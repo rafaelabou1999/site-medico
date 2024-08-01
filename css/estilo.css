@@ -324,7 +324,7 @@ main p {
   margin-top: 10%;
   margin-left: 5%;
   display: grid;
-  grid-template-columns: repeat(auto-fill, calc(100% / 2));
+  grid-template-columns: repeat(2,calc(80% / 2));
   grid-column-gap: 10px;
   grid-row-gap: 20px;
 }
@@ -332,7 +332,7 @@ main p {
 .card {
   background-color: var(--bg-grey);
   color: var(--main-color);
-  height: 40vh;
+  height: 30vh;
   padding-left: 8%;
   padding-top: 5%;
   transition: all 400ms ease-in;
