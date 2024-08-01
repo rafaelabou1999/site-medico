@@ -1049,7 +1049,7 @@
     border-radius: 0px;
     color:rgb(15, 15, 15);
     margin: 0;
-    width:70vw;
+    width:74vw;
     margin-right: 8% !important;
     font-size: 1.7rem !important;
   }
@@ -1060,17 +1060,22 @@
     padding-bottom: 6%;
     margin-right: 5%;
   }
+ 
+  .contatoCard, .paragrafosCtc{
+    width:78vw;
+  }
+
   .pacienteP {
     display: none !important;
   }
 
   .galeria-parent img {
-    margin-left: 0 !important;
-    width: min(75%, 340px) !important;
+    margin-left: 0% !important;
+    width: 87vw !important;
     height: 22rem;
     margin-bottom: 2%;
     opacity: .97 !important;
-    text-align: center;
+    text-align: left !important;
   }
 
   .text h2 {
@@ -1285,12 +1290,13 @@
 
 
 @media screen and (max-width:600px) {
+
   .article{
-    width:90vw;
+    width:88vw;
     height:260px;
     background-color:aliceblue;
     color:#333;
-   position: relative;
+    position: relative;
   }
 
   
@@ -1498,6 +1504,7 @@
     ;
   }
 
+  
   .articleText{
     z-index:100;
     width:55rem !important; 
@@ -1640,5 +1647,30 @@
     width:40vw !important;
     border-radius: 0px !important;
     margin-top: 2% !important;
+  }
+}
+
+@media screen and (max-height:900px) and (max-width: 600px) {
+  .article{
+    height:43rem !important;
+  }
+
+  .descCard h2{
+    width:35rem !important;
+  }
+
+  .riscoText h2{
+    padding-bottom: 7vh !important;
+  }
+}
+
+@media screen and (max-height:900px) and (max-width: 400px) {
+  .article{
+    height:43rem !important;
+  }
+
+  .descCard h2{
+    width:25rem !important;
+    padding-bottom: 5.5% !important;
   }
 }
