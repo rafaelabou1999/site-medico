@@ -1439,7 +1439,12 @@
 }
 
 @media screen and (min-width: 1500px) and (max-width:2000px) and (max-height: 900px) {
+  .cards{
+    grid-column-gap: 20px !important;
+    grid-row-gap:max(8vh, 70px) !important;
+  }
+  
   .card{
-    height: 42vh !important;
+    height: 27rem !important;
   }
 }
