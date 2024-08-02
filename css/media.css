@@ -472,12 +472,7 @@
 
   .opiniaoBtn{
     cursor: pointer;
-    display: block;
-    background-color: var(--main-color);
-    padding: 2% 3%;
-    border: 0px;
-    font-weight:600;
-    margin: auto;  
+    display: nonr;
   }
 
   .opiniaoBtn a{
@@ -831,6 +826,10 @@
     width:35rem !important;
   }
 
+  .opiniaoBtn{
+    display: none !important;
+  }
+
   .bg-dark{
     width:35rem !important;
     padding: 2.5% !important;
@@ -1135,6 +1134,15 @@
     font-size: var(--main-font-size-h2);
     font-size: min(8.1vw, 32px);
   }
+
+  .opiniao h2, .galeria-parent h2{
+    margin-top: 11% !important;
+  }
+
+  .inspiracoesTitle{
+    margin-top: 15% !important;
+  }
+
   .lineConsultorio {
     width: 24% !important;
   }
@@ -1385,8 +1393,11 @@
   }
 }
 
-
-
+@media screen and (max-width: 350px) {
+  .article p{
+    width:80vw !important;
+  }
+}
 @media screen and (max-height:900px) and (max-width: 600px) {
   .article{
     height:43rem !important;
