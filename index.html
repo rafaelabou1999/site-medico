@@ -269,7 +269,185 @@
               <img class="imgCard" src="https://cdn.pixabay.com/photo/2024/01/05/22/02/ai-generated-8490210_1280.jpg"/>
 
               <div class="descCard riscoText">
-                <h2>Risco Cirúrgico: entenda melhor sua importância e significado
+                <h2 class=
+                function initLoader(){
+                  let loader = document.querySelector("#pre-loader");
+                
+                  window.addEventListener("load", function () {
+                    loader.style.display = "none";
+                  });
+                }
+                initLoader();
+                
+                
+                
+                function initBurger(){
+                  const navbar = document.querySelector(".navbar");
+                  const navMenu = document.querySelector(".nav-menu");
+                  const hamburger = document.querySelector(".navbar");
+                  
+                  navbar.addEventListener("click", () => {
+                    hamburger.classList.toggle("active");
+                    navMenu.classList.toggle("active");
+                  });
+                }
+                initBurger();
+                
+                
+                const articleBtn = document.querySelectorAll(".articleBtn");
+                const header = document.querySelector("header");
+                const main = document.querySelector("main");
+                  
+                const artigo = document.querySelectorAll(".articleText");
+                const cardArtigo = document.querySelectorAll(".article");
+                const exit = document.querySelectorAll(".exit");
+                  
+                artigo.forEach((item) => {
+                  item.style.display = "none"
+                })
+                
+                function desaturateBg(){
+                  header.style.opacity = .6;
+                  main.style.opacity =.6;
+                }
+                  
+                function toExit(index){
+                  artigo[index].style.display ='none';
+                  main.style.opacity = 1;
+                  header.style.opacity = 1;
+                  header.style.filter = 'brightness(100%)';
+                }
+                  
+                exit.forEach((eachExit, index) => {
+                  eachExit.addEventListener("click", () => {
+                    toExit(index);
+                  })
+                })
+                  
+                function displayArticle(index){
+                  artigo[index].style.display = 'block';
+                  artigo[index].classList.toggle("active");
+                  desaturateBg();
+                }
+                  
+                  
+                cardArtigo.forEach((card,index) => {
+                  card.addEventListener('click', () => {
+                    displayArticle(index)
+                  })
+                })
+                
+                
+                
+                
+                function initScroll(){
+                  const btnHref = document.querySelectorAll("a[href^='#']")
+                  function toScroll(e){
+                     e.preventDefault();
+                     const href = e.currentTarget.getAttribute('href');
+                     const section = document.querySelector(href);
+                     section.scrollIntoView({
+                      behavior: 'smooth',
+                      block: 'start'
+                     })
+                  }
+                  
+                  
+                  btnHref.forEach((btn, e) => {
+                    btn.addEventListener("click", toScroll)
+                  })  
+                }
+                initScroll();
+                
+function initLoader(){
+  let loader = document.querySelector("#pre-loader");
+
+  window.addEventListener("load", function () {
+    loader.style.display = "none";
+  });
+}
+initLoader();
+
+
+
+function initBurger(){
+  const navbar = document.querySelector(".navbar");
+  const navMenu = document.querySelector(".nav-menu");
+  const hamburger = document.querySelector(".navbar");
+  
+  navbar.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+  });
+}
+initBurger();
+
+
+const articleBtn = document.querySelectorAll(".articleBtn");
+const header = document.querySelector("header");
+const main = document.querySelector("main");
+  
+const artigo = document.querySelectorAll(".articleText");
+const cardArtigo = document.querySelectorAll(".article");
+const exit = document.querySelectorAll(".exit");
+  
+artigo.forEach((item) => {
+  item.style.display = "none"
+})
+
+function desaturateBg(){
+  header.style.opacity = .6;
+  main.style.opacity =.6;
+}
+  
+function toExit(index){
+  artigo[index].style.display ='none';
+  main.style.opacity = 1;
+  header.style.opacity = 1;
+  header.style.filter = 'brightness(100%)';
+}
+  
+exit.forEach((eachExit, index) => {
+  eachExit.addEventListener("click", () => {
+    toExit(index);
+  })
+})
+  
+function displayArticle(index){
+  artigo[index].style.display = 'block';
+  artigo[index].classList.toggle("active");
+  desaturateBg();
+}
+  
+  
+cardArtigo.forEach((card,index) => {
+  card.addEventListener('click', () => {
+    displayArticle(index)
+  })
+})
+
+
+
+
+function initScroll(){
+  const btnHref = document.querySelectorAll("a[href^='#']")
+  function toScroll(e){
+     e.preventDefault();
+     const href = e.currentTarget.getAttribute('href');
+     const section = document.querySelector(href);
+     section.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+     })
+  }
+  
+  
+  btnHref.forEach((btn, e) => {
+    btn.addEventListener("click", toScroll)
+  })  
+}
+initScroll();
+>Risco Cirúrgico: entenda melhor sua importância e significado
                 </h2>
                 <p>O objetivo da avaliação pré operatória é garantir que sua cirurgia seja realizada com máxima segurança...</p>
               </div>
@@ -297,6 +475,21 @@
               <p>Aterosclerose é uma doença inflamatória,  onde placas de gordura e cálcio se acumulam na parede dos vasos sanguíneos...</p>
             </div>
             <input type="button" class="articleBtn" value="Saiba mais" id="atero">
+          </div>
+
+
+          <div class="article">
+            <div>
+              <img class="imgCard" src="imagens/checkup.jpg"/>
+
+              <div class="descCard ">
+                <h2 class="checkup">Hora do Check-up
+                </h2>
+                <p>Você já parou para pensar na importância de cuidar do seu coração?  Um check-up cardiológico pode identificar precocemente diversos problemas...</p>
+              </div>
+             
+            </div>
+            <input type="button" class="articleBtn" value="Saiba mais" id="checkup">
           </div>
         </div>
       </section>
@@ -336,6 +529,14 @@
       <img class="imgArticle" src="./imagens/med.webp"/>
       <p>Ateroesclerose é uma doença inflamatória das artérias, onde  placas de gordura e cálcio se acumulam na parede dos vasos sanguíneos, dificultando a passagem do sangue e trazendo risco de eventos como infarto e AVC, por exemplo. <br><br>Colesterol alto, diabetes, hipertensão arterial, tabagismo, obesidade e sedentarismo estão entre as principais causas da ateroesclerose, e para se proteger é preciso ter em mente que as escolhas que fazemos diariamente tem impacto na saúde do coração. Então mãos a obra! Escolha uma alimentação saudável, movimente-se, abandone o cigarro e siga a orientação do seu cardiologista para manter níveis de colesterol, glicose e pressão arterial na meta. </p>
      
+    </div>
+    <div class="articleText activeText" id="checkupArtigo">
+      <i class="exit fa-solid fa-xmark"></i>
+      <h2>Hora do Check-up
+      </h2>
+      <img class="imgArticle" src="./imagens/checkup.jpg"/>
+      <p>Você já parou para pensar na importância de cuidar do seu coração?  Um check-up cardiológico pode identificar precocemente diversos problemas e promover o tratamento adequado, evitando surpresas desagradáveis. Durante o check-up, o cardiologista analisa seu histórico de saúde, estilo de vida e exames complementares para entender qual o seu  risco pessoal de desenvolver doenças do coração e quais medidas  precisam ser tomadas. Se você tem mais de 40 anos, histórico familiar de doenças cardíacas, hipertensão, diabetes, colesterol alto ou é fumante, não deixe de agendar seu check-up mesmo, que não existam sintomas. Se sente cansaço, falta de ar, dores no peito ou percebe alterações no ritmo cardíaco, não espere mais!<br><br> As doenças cardiovasculares são a principal causa de morte no mundo e muitas vezes estão presentes de forma silenciosa durante longo tempo antes que ocorram sintomas e danos permanentes. A boa notícia é que existem muitas estratégias de prevenção, que podem te ajudar a ficar fora desta estatística!
+        Cuide do seu coração, agende uma consulta e viva com mais tranquilidade e bem-estar. </p>
     </div>
   </section>
     

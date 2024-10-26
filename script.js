@@ -23,47 +23,50 @@ function initBurger(){
 initBurger();
 
 
-function initArticle(){
-  const articleBtn = document.querySelectorAll(".articleBtn");
-  const header = document.querySelector("header");
-  const main = document.querySelector("main");
+const articleBtn = document.querySelectorAll(".articleBtn");
+const header = document.querySelector("header");
+const main = document.querySelector("main");
   
-  const artigo = document.querySelectorAll(".articleText");
-  const cardArtigo = document.querySelectorAll(".article");
-  const exit = document.querySelectorAll(".exit");
+const artigo = document.querySelectorAll(".articleText");
+const cardArtigo = document.querySelectorAll(".article");
+const exit = document.querySelectorAll(".exit");
   
-  function desaturateBg(){
-    header.style.opacity = .6;
-    main.style.opacity =.6;
-  }
-  
-  function toExit(index){
-    artigo[index].style.display ='none';
-    main.style.opacity = 1;
-    header.style.opacity = 1;
-    header.style.filter = 'brightness(100%)';
-  }
-  
-  exit.forEach((eachExit, index) => {
-    eachExit.addEventListener("click", () => {
-      toExit(index);
-    })
-  })
-  
-  function displayArticle(index){
-    artigo[index].style.display = 'block';
-    artigo[index].classList.toggle("active");
-    desaturateBg();
-  }
-  
-  
-  cardArtigo.forEach((card,index) => {
-    card.addEventListener('click', () => {
-      displayArticle(index)
-    })
-  })
+artigo.forEach((item) => {
+  item.style.display = "none"
+})
+
+function desaturateBg(){
+  header.style.opacity = .6;
+  main.style.opacity =.6;
 }
-initArticle();
+  
+function toExit(index){
+  artigo[index].style.display ='none';
+  main.style.opacity = 1;
+  header.style.opacity = 1;
+  header.style.filter = 'brightness(100%)';
+}
+  
+exit.forEach((eachExit, index) => {
+  eachExit.addEventListener("click", () => {
+    toExit(index);
+  })
+})
+  
+function displayArticle(index){
+  artigo[index].style.display = 'block';
+  artigo[index].classList.toggle("active");
+  desaturateBg();
+}
+  
+  
+cardArtigo.forEach((card,index) => {
+  card.addEventListener('click', () => {
+    displayArticle(index)
+  })
+})
+
+
 
 
 function initScroll(){

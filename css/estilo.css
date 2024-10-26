@@ -332,11 +332,13 @@ main p {
   height: 34vh;
   padding-left: 8%;
   padding-top: 5%;
-  transition: all 400ms ease-in;
+  border: 1px solid transparent;
+  transition: background-color 300ms ease-in, color 300ms ease-in, border-color 250ms ease-in;
 }
 
 .card:hover {
   border: 1px solid rgba(75, 40, 77, 0.548);
+  
 }
 
 .card a {
@@ -747,8 +749,10 @@ main p {
   padding-left:1.3rem;
   padding-right:1.3rem;
 }
+
+
 .article p{
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 500;
   padding-left:1.3rem;
   padding-right:1.3rem;
@@ -829,6 +833,10 @@ input{
   background-color: #bea370;
   margin-left: -2.5rem !important;
   margin-top: 2%;
+}
+
+.checkup{
+  margin-bottom:-6%;
 }
 
 /* Works on Firefox */

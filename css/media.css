@@ -1191,14 +1191,16 @@
 }
 
 @media  screen and (max-width: 600px){
+
   .article{
-    width:min(88vw, 400px);
-    height:46vh;
+    max-width:min(88vw, 420px);
+    max-height:90vh ;
     background-color:aliceblue;
     color:#333;
     position: relative;
     border: 1px solid #c9c9c9;
     margin-bottom: 9%;
+
   }
 
   .filosofia{
@@ -1218,9 +1220,13 @@
 
   .atero h2{
     padding-bottom: 2% !important;
+    margin-bottom: -2.5% !important;
     width:60vw;
   }
 
+  .risco{
+    margin-bottom: -2.5% !important;
+  }
   .article p{
     font-size: 1.3rem !important;
     width:max(60vw, 30rem) !important;
@@ -1231,6 +1237,13 @@
     padding-bottom: 4.1rem;
   }
 
+  .checkup{
+    margin-bottom:-10% !important;
+  }
+
+  .filosofia{
+    margin-bottom: -1.5%;
+  }
   .article input{
     position: absolute;
     bottom:2%;
@@ -1457,5 +1470,23 @@
   
   .card{
     height: 27rem !important;
+  }
+}
+
+@media screen and (max-width:400px) {
+  .atero h2{
+    margin-bottom: -5% !important;
+  }
+
+  .checkup{
+    margin-bottom: -12% !important;
+  }
+
+  .filosofia{
+    margin-bottom: -2.5% !important;
+  }
+
+  .risco{
+    margin-bottom: 1.1% !important;
   }
 }
