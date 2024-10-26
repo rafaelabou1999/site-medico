@@ -70,15 +70,39 @@ header p a {
   color: black;
   font-size: 26px;
 }
-
-.elementosHeader p:not(.agendar) a {
-  transition: color .3s ease-in;
+/* Main menu item */
+.elementosHeader a {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
 }
 
-.elementosHeader p:not(.agendar) a:hover {
-   color:#1a1919;
-   border-bottom: 2px solid #313030;
+/* Pseudo-element for gradient */
+.elementosHeader a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background: #423a4dc2;
+  transition: all .5s;
+  transform: translateX(-100%);
 }
+
+/* Hover effect */
+.elementosHeader :hover::after {
+  transform: translateX(0%);
+  animation: gradient-89 3s linear infinite;
+}
+
+/* Keyframes for gradient animation */
+@keyframes gradient-89 {
+  0% { background-position: 100% 0%; }
+  50% { background-position: 0% 0%; }
+  100% { background-position: 100% 0%; }
+}
+
 
 .agendar {
   cursor: pointer;
