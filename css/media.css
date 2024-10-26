@@ -1501,6 +1501,10 @@
     right: 10% !important;
   }
   
+  .articleText h2{
+    padding-left: 2% !important;
+  }
+  
   .imgArticle{
     border-radius: 1% !important;
     filter: grayscale(10%);
