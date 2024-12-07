@@ -13,24 +13,40 @@ import Welcome from "./components/Welcome";
 import Contact from "./components/Contact";
 import Galeria from "./components/Galeria";
 import cardInfo from './dados/cardInfo';
-import { useState } from "react";
+import LeftArrow from "@/../public/left-arrow.svg"
+import RightArrow from "@/../public/right-arrow.svg"
+import { use, useState } from "react";
 
 export default function Home() {
   const [isActive, setActive] = useState(true);
   const [isHidden, setHidden] = useState(styles.displayHidden)
   const [isDisplayed, setIsDisplayed] = useState(styles.display);
 
- 
-  function displayCard(){
+  const [currentPage, setCurrentPage] = useState(1);
+  const maxPage = 2;
+  const minPage = 1;
+
+  function displayCard(direction){
+    handleArrow(direction)
+
     setActive(!isActive);
     if(isActive){
-      setIsDisplayed(styles.displayHidden)
-      setHidden(styles.display)
+      setIsDisplayed(styles.displayHidden);
+      setHidden(styles.display);
     } else{
-      setIsDisplayed(styles.display)
-      setHidden(styles.displayHidden)
+      setIsDisplayed(styles.display);
+      setHidden(styles.displayHidden);
     }
   }
+
+  function handleArrow(direction){
+    if(direction === 'right' && currentPage < maxPage){
+      setCurrentPage((prevPage) => prevPage + 1 )
+    } else if(direction = 'left' && currentPage > minPage){
+      setCurrentPage((prevPage) => prevPage - 1)
+    }
+  }
+
   return (
     <div className={styles.container}>
         <div className={styles.header}>
@@ -43,8 +59,15 @@ export default function Home() {
               <Title title="Galeria" desc="Venha Conhecer"/>
               <Galeria/>
             </div>
+             
+           
             <div className={styles.all_cards}>
               <Title title="Informações e Inspirações" desc="Saiba mais"/>
+              <div className={styles.card_btn_container}>
+                <button className={styles.card_btn} onClick={() => displayCard('left')} disabled={currentPage === minPage}><Image src={LeftArrow} alt="seta para esquerda"/></button>
+                <button className={styles.card_btn} onClick={() => displayCard('right')} disabled={currentPage === maxPage}><Image src={RightArrow} alt="seta para direita"/></button>
+              </div>
+           
               <div className={isDisplayed}>
               {cardInfo && cardInfo.length > 0 ? (
                 cardInfo.filter((card) => card.id <= 3).map((card) => (
@@ -71,11 +94,7 @@ export default function Home() {
               
               }
               </div>
-              <div className={styles.card_btn_container}>
-                <button className={styles.card_btn} onClick={displayCard}>1</button>
-                <button className={styles.card_btn} onClick={displayCard}>2</button>
-              </div>
-           
+            
             </div>
           </div>
         </div>

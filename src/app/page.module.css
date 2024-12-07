@@ -61,7 +61,8 @@
 }
 
 .card_btn_container{
-  margin-left:40%;
+  margin-right:18%;
+  text-align: center;
 }
 
 .all_cards{
@@ -70,14 +71,13 @@
 
 .card_btn{
   cursor: pointer;
-  background-color:  #2F3740;
-  color: #E9F5F5;
   border-radius: 2px;
   font-size: 18px;
   border: none;
-  margin-right: 1%;
+  margin-right:-1.5%;
   padding: 1% 1.5% 3.5% 1.5%;
   height:2px;
-  margin-bottom: 30%;
+  margin-bottom: 2%;
+  background-color: #ffffff;
 
 }
