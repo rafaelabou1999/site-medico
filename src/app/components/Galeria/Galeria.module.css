@@ -1,0 +1,5 @@
+.image_container{
+    display: grid;
+grid-template-columns: repeat(2, 470px);
+grid-template-rows: repeat(2, 400px);
+}

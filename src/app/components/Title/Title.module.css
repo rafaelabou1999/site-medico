@@ -1,0 +1,26 @@
+.container{
+    display: flex;
+    margin-top: 12%;
+    margin-bottom: 5%;
+    flex-direction: column;
+}
+
+.title_container{
+    font-weight: 500;
+    font-size:48px;
+}
+
+.line_container{
+    width: 70px;
+    height:10px;
+    margin-top: 2%;
+    background-color:  rgb(29, 52, 71);
+}
+
+.desc_container{
+    padding: .6% 0%;
+    font-weight: 500;
+    font-size: 32px;
+    color:  rgba(29, 52, 71, 0.788);
+
+}

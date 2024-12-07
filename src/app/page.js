@@ -1,95 +1,86 @@
+
+'use client'
+
 import Image from "next/image";
 import styles from "./page.module.css";
+import Header from "./components/Header";
+import Sobre from "./components/Welcome";
+import Banner from "./components/Banner";
+import Title from "./components/Title";
+import Card from "./components/Card";
+import Inspiracoes from "./components/Inspiracoes";
+import Welcome from "./components/Welcome";
+import Contact from "./components/Contact";
+import Galeria from "./components/Galeria";
+import cardInfo from './dados/cardInfo';
+import { useState } from "react";
 
 export default function Home() {
-  return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.js</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+  const [isActive, setActive] = useState(true);
+  const [isHidden, setHidden] = useState(styles.displayHidden)
+  const [isDisplayed, setIsDisplayed] = useState(styles.display);
 
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
+ 
+  function displayCard(){
+    setActive(!isActive);
+    if(isActive){
+      setIsDisplayed(styles.displayHidden)
+      setHidden(styles.display)
+    } else{
+      setIsDisplayed(styles.display)
+      setHidden(styles.displayHidden)
+    }
+  }
+  return (
+    <div className={styles.container}>
+        <div className={styles.header}>
+          <Header/>
+          <div className={styles.main}>
+            <div className={styles.sobre}>
+              <Welcome/>
+            </div>
+            <div>
+              <Title title="Galeria" desc="Venha Conhecer"/>
+              <Galeria/>
+            </div>
+            <div className={styles.all_cards}>
+              <Title title="Informações e Inspirações" desc="Saiba mais"/>
+              <div className={isDisplayed}>
+              {cardInfo && cardInfo.length > 0 ? (
+                cardInfo.filter((card) => card.id <= 3).map((card) => (
+                  <Card key={card.id} title={card.title}  imagem={card.imagem} />
+                 
+                )
+                )
+              ) : (
+                <p>No cards available</p>
+              )
+              
+              }
+              </div>
+              <div className={isHidden}>
+                {cardInfo && cardInfo.length > 0 ? (
+                  cardInfo.filter((card) => card.id > 3).map((card) => (
+                    <Card key={card.id} title={card.title}  imagem={card.imagem} />
+                  
+                  )
+                  )
+                ) : (
+                  <p>No cards available</p>
+                )
+              
+              }
+              </div>
+              <div className={styles.card_btn_container}>
+                <button className={styles.card_btn} onClick={displayCard}>1</button>
+                <button className={styles.card_btn} onClick={displayCard}>2</button>
+              </div>
+           
+            </div>
+          </div>
         </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+    
     </div>
+   
   );
 }

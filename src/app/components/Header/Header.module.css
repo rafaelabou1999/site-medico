@@ -1,0 +1,59 @@
+.container{
+    background-color: #2F3740;
+    width:22%;
+    position: fixed;
+    padding:4%;
+    top:0;
+    bottom:0;
+    color: #E9F5F5;
+}
+
+.logo{
+    width:150px;
+    height:140px;
+    object-fit: cover;
+    border-radius: 10%;
+    margin-bottom: 6%;
+    filter: grayscale(20%);
+}
+
+.logo_h2{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.logo_p{
+    font-size: 19px;
+    padding-top: 2%;
+    font-weight: 400;
+}
+.container_list{
+    list-style: none;
+}
+
+.text_link{
+    text-decoration: none;
+    color:#E9F5F5;
+    font-weight: 200;
+
+}
+
+.text_li{
+    font-size: 1.3rem;
+    padding-bottom: 10%;
+    font-family: "Monteserrat";
+    font-weight: 200;
+}
+
+.line{
+    background-color: #E9F5F5;
+    height:2px;
+    width:220px;
+    margin: 20% 0;
+}
+
+.logo_crm{
+    font-weight: 500;
+    font-size: 1.05rem;
+    padding-top: 6%;
+}
