@@ -67,6 +67,7 @@
 
 .all_cards{
   position: relative;
+  padding-bottom: 300px;
 }
 
 .card_btn{

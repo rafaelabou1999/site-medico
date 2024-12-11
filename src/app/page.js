@@ -15,6 +15,7 @@ import Galeria from "./components/Galeria";
 import cardInfo from './dados/cardInfo';
 import LeftArrow from "@/../public/left-arrow.svg"
 import RightArrow from "@/../public/right-arrow.svg"
+
 import { use, useState } from "react";
 
 export default function Home() {
@@ -47,6 +48,7 @@ export default function Home() {
     }
   }
 
+ 
   return (
     <div className={styles.container}>
         <div className={styles.header}>
@@ -71,8 +73,9 @@ export default function Home() {
               <div className={isDisplayed}>
               {cardInfo && cardInfo.length > 0 ? (
                 cardInfo.filter((card) => card.id <= 3).map((card) => (
-                  <Card key={card.id} title={card.title}  imagem={card.imagem} />
+                  <Card key={card.id} id={card.id} title={card.title}  image={card.imagem} />
                  
+
                 )
                 )
               ) : (
@@ -84,8 +87,8 @@ export default function Home() {
               <div className={isHidden}>
                 {cardInfo && cardInfo.length > 0 ? (
                   cardInfo.filter((card) => card.id > 3).map((card) => (
-                    <Card key={card.id} title={card.title}  imagem={card.imagem} />
-                  
+                    <Card key={card.id} id={card.id} title={card.title}  image={card.imagem} />
+                    
                   )
                   )
                 ) : (

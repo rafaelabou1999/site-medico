@@ -3,7 +3,6 @@
 .container{
     position: relative;
     width:18vw;
-    margin-bottom: 20%;
     padding-top: 0% !important;
     background-color: rgba(255, 255, 255, 0.322);
     height:42vh;
@@ -12,12 +11,12 @@
     display: flex;
     flex-direction: column;
     transition: all .3s ease-in-out;
-   
 }
 
 .container:hover{
     opacity: .95;
 }
+
 
 .text_container{
     padding: 4%;
@@ -33,6 +32,7 @@
     cursor: pointer;
     line-height: 1.6;
     align-self: center;
+    text-align: center;
     text-decoration: none !important;
 }
 
@@ -55,6 +55,13 @@
     font-weight: 400;
     padding-top: 2%;
     font-size: 14px;
+}
+
+.link{
+    text-decoration: none;
+    box-shadow: 1px 1px 7px #ccc;
+    padding-bottom: 6%;
+    position: relative;
 }
 
 .img_btn{
@@ -80,13 +87,11 @@
 }
 
 .additional_info{
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    bottom:5%;
-    left:50%;
-    width:100%;
-    transform: translateX(-50%);
+  text-align: center;
+  text-decoration: none !important;
+  position: absolute;
+  padding-left:20%;
+  bottom:4%;
 }
 
 .additional_title{
