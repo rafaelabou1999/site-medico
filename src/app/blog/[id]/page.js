@@ -43,7 +43,7 @@ export default function Blog({params}){
             <Image className={styles.perfil_renata} src={Renata} alt="foto da renata"/>
            </div>
            <div className={styles.container_text}>
-              <h2 className={styles.text_title}>{title}</h2>   
+              <h2 className={styles.text_title}>{card.title}</h2>   
               <div className={styles.container_text} style={{ whiteSpace: "pre-wrap" }}>{card.text}</div>   
               <h5 className={styles.data}>24 Nov 2024</h5>
            </div>

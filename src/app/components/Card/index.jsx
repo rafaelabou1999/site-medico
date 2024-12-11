@@ -18,7 +18,7 @@ export default function Card(props){
                 </div>
                 <div className={styles.text_container}>
             
-                <h2 className={styles.title_container} style={{textDecoration: "none"}}>{props.title}</h2>
+                <h2 className={styles.title_container} style={{textDecoration: "none"}} >{props.title}</h2>
                 </div>
                 <div className={styles.additional_info}>
                         <h4 className={styles.additional_title}>Tempo de leitura: 2 min</h4>
