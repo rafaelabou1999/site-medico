@@ -85,3 +85,25 @@
     font-size: 1.2rem;
     word-spacing: .10em;
 }
+
+@media screen and (max-width:1300px){
+    .title{
+        font-size: 42px;
+    }
+    .single_paragraph, .second_paragraph{
+        width:75vw;
+        font-size: 1.3rem;
+        word-spacing: .10em;
+    }
+    .container_agende{
+        cursor: pointer;
+        display: flex;
+        flex-direction: row;
+        width:25%;
+        background-color: #2f3740;
+        padding:1.7%;
+        margin-top: 5%;
+        transition: all .3s ease-in-out;
+    }
+    
+}

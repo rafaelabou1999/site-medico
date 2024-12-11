@@ -3,3 +3,14 @@
 grid-template-columns: repeat(2, 470px);
 grid-template-rows: repeat(2, 400px);
 }
+
+@media screen and (max-width:1300px){
+    .image_container{
+        grid-template-columns: repeat(2, 36vw);
+        grid-template-rows: repeat(2, 45vh);
+    }
+    .image{
+        width: 34vw!important;
+        height:340px !important;
+    }
+}
