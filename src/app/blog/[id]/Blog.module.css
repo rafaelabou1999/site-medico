@@ -41,7 +41,9 @@
 
 .container_text{
     margin-top: 8%;
-    
+    width:80%;
+    font-size: 20px;
+    line-height: 1.4;
 }
 
 .text_title{
@@ -51,7 +53,7 @@
 }
 
 .text_paragraph{
-    width:60%;
+    width:70%;
     margin-top: 2%;
     margin-left: 5%;
     font-size: 19px;
@@ -62,7 +64,7 @@
     font-weight: 600;
     font-size: 1.1rem;
     text-align: right;
-    width:68%;
+    width:85%;
     color: #2f3740f3;
     margin-top: 5%;
     margin-bottom: 5%;

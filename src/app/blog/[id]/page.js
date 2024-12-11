@@ -12,8 +12,10 @@ import  Atero from  "@/../public/card-atero.webp" ;
 import  Risco from  "@/../public/card-risco.jpg" ;
 import Renata from "@/../public/renata.jpeg"
 import { useRouter } from "next/navigation";
+import cardInfo from "@/app/dados/cardInfo";
 export default function Blog({params}){
     const {id, title} = React.use(params);
+    const card = cardInfo.find((item) => item.id === parseInt(id)); 
     let image;
     if(id  === "1"){
        image = "/card-risco.jpg"
@@ -26,7 +28,7 @@ export default function Blog({params}){
     }
   
       console.log(image)
-
+    
     return(
         <div className={styles.container}>
             <Link href="/" style={{ textDecoration: 'none' }}>
@@ -41,7 +43,8 @@ export default function Blog({params}){
             <Image className={styles.perfil_renata} src={Renata} alt="foto da renata"/>
            </div>
            <div className={styles.container_text}>
-              <h2 className={styles.text_title}>{title}</h2>      
+              <h2 className={styles.text_title}>{title}</h2>   
+              <div className={styles.container_text} style={{ whiteSpace: "pre-wrap" }}>{card.text}</div>   
               <h5 className={styles.data}>24 Nov 2024</h5>
            </div>
         </div>
