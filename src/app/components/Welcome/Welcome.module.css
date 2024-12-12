@@ -108,19 +108,26 @@
     
 }
 @media screen and (max-width:950px){
+    .container{
+        margin-top: 32px;
+    }
     .title{
-        font-size: 42px;
+        font-size: 40px;
     }
     .single_paragraph, .second_paragraph{
         width:88vw;
         font-size: 1.3rem;
         word-spacing: .10em;
     }
+
+    .container_button{
+        font-size: 16px;
+    }
     .container_agende{
         cursor: pointer;
         display: flex;
         flex-direction: row;
-        width:225px;
+        width:235px;
         background-color: #2f3740;
         padding:12px;
         margin-top: 5%;
@@ -132,4 +139,17 @@
         letter-spacing: 0.01em;
     }
     
+}
+
+@media screen and (min-width:1300px) and (max-width:1500px) {
+ .container_agende{
+    width:218px;
+ }   
+
+ .single_paragraph, .second_paragraph{
+    width:63%;
+    font-size: 1.2rem;
+    word-spacing: .10em;
+}
+
 }

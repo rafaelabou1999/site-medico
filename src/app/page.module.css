@@ -108,13 +108,16 @@
 @media screen and (max-width:1090px){
  
   .display{
-    grid-template-columns: repeat(2, 32vw);
-    padding-left: 10%;
+    grid-template-columns: repeat(3, 29vw);
+    padding-left: 0%;
+   
   }
   .card_btn_container{
-    margin-right:9%;
+    margin-right:0%;
     text-align: center;
   }
+
+  
   
 }
 @media screen and (max-width:930px){

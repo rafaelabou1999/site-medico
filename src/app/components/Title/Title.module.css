@@ -25,3 +25,13 @@
 
 }
 
+@media screen and (max-width:650px){
+    .container{
+        margin-top: 29% !important;
+    }
+}
+@media screen and (max-width:930px){
+    .container{
+        margin-top:105px !important;
+    }
+}

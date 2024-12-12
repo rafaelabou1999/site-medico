@@ -5,22 +5,32 @@ grid-template-rows: repeat(2, 400px);
 }
 
 @media screen and (max-width:1300px){
-    .image_container{
-        grid-template-columns: repeat(2, 36vw);
-        grid-template-rows: repeat(2, 45vh);
+     .image_container{
+        grid-template-columns: repeat(2, 41vw);
+        grid-template-rows: repeat(2,355px);
     }
     .image{
-        width: 34vw!important;
+        width: 39vw !important;
         height:340px !important;
     }
 }
 @media screen and (max-width:930px){
     .image_container{
+        grid-template-columns: repeat(1, min(90vw, 400px));
+        grid-template-rows: repeat(4,357px);
+    }
+    .image{
+        width: 55vw !important;
+        height:340px !important;
+    }
+}
+@media screen and (max-width:630px){
+    .image_container{
         grid-template-columns: repeat(1, 90vw);
         grid-template-rows: repeat(4,357px);
     }
     .image{
-        width: 85vw!important;
+        width: 90vw !important;
         height:340px !important;
     }
 }
