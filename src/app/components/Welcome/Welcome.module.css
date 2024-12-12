@@ -107,3 +107,29 @@
     }
     
 }
+@media screen and (max-width:950px){
+    .title{
+        font-size: 42px;
+    }
+    .single_paragraph, .second_paragraph{
+        width:88vw;
+        font-size: 1.3rem;
+        word-spacing: .10em;
+    }
+    .container_agende{
+        cursor: pointer;
+        display: flex;
+        flex-direction: row;
+        width:225px;
+        background-color: #2f3740;
+        padding:12px;
+        margin-top: 5%;
+        transition: all .3s ease-in-out;
+    }
+    
+    .single_paragraph{
+        padding-bottom: 4.5%;
+        letter-spacing: 0.01em;
+    }
+    
+}

@@ -4,10 +4,6 @@
   flex-direction: column ;
 }
 
-
-
-
-
 .main{
   background-color: #ffffff;
   margin-left: 30%;
@@ -121,16 +117,21 @@
   }
   
 }
-@media screen and (max-width:620px){
+@media screen and (max-width:930px){
  
   .display{
-    grid-template-columns: repeat(1, 60vw);
+    margin-top: 12%;
+    grid-template-columns: repeat(1, min(90vw, 420px));
     grid-template-rows: repeat(2, 1fr);
-    padding-left: 10%;
+    padding-left: 0px;
   }
   .card_btn_container{
     margin-right:9%;
     text-align: center;
+  }
+
+  .card_btn_container{
+    display: none;
   }
   
 }
