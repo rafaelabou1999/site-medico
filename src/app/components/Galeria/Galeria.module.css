@@ -26,11 +26,12 @@ grid-template-rows: repeat(2, 400px);
 }
 @media screen and (max-width:630px){
     .image_container{
+        margin-top: 12%;
         grid-template-columns: repeat(1, 90vw);
-        grid-template-rows: repeat(4,357px);
+        grid-template-rows: repeat(4,327px);
     }
     .image{
         width: 90vw !important;
-        height:340px !important;
+        height:310px !important;
     }
 }
