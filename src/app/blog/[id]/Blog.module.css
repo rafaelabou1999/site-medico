@@ -99,7 +99,7 @@
     
     .container_text{
         margin-top: 3%;
-        width:95%;
+        width:99%;
         font-size: 22.5px;
     }
 
@@ -114,25 +114,25 @@
 
 @media screen and (max-width:1300px){
     .container{
-        margin: 150px 5%;
-
+        margin: 125px 0% 150px 2.5%;
+        padding: 2%;
     }
 
     .imagem{
         margin-top: 5%;
-        width: 88vw;
+        width: 93vw;
         height:33vh;
     }
 
     .text_title{
         margin-top: 10%;
-        width:97%;
+        width:98%;
         font-size: min(7.8vw, 34px) !important;
     }
     
     .container_text{
         margin-top: 3%;
-        width:95%;
+        width:99%;
         font-size: 22.5px;
     }
 
@@ -140,6 +140,6 @@
         text-align: center;
         padding:1.5%;
         width:150px;
-        right:10.3%;
+        right:1.5% !important;
     }
 }
