@@ -11,9 +11,9 @@ export default function Header(){
     const [size, setSize] = useState(window.innerWidth)
     useEffect(() => {
         const handleSize = () => setSize(window.innerWidth);
-        window.addEventListener('resize', handleSize)
+        document.addEventListener('resize', handleSize)
         return () => {
-            window.removeEventListener('resize', handleSize)
+            document.removeEventListener('resize', handleSize)
         }
     },[])
     
