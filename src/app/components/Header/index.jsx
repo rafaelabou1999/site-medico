@@ -8,13 +8,16 @@ import Logo from "@/../public/renata.jpeg"
 import Burger from "@/../public/burger.svg"
 import { useState, useEffect } from 'react';
 export default function Header(){
-    const [size, setSize] = useState(window.innerWidth)
+    const [size, setSize] = useState(0)
     useEffect(() => {
-        const handleSize = () => setSize(window.innerWidth);
-        document.addEventListener('resize', handleSize)
-        return () => {
-            document.removeEventListener('resize', handleSize)
+        if(typeof window !== "undefined"){
+            const handleSize = () => setSize(window.innerWidth);
+            window.addEventListener('resize', handleSize)
+            return () => {
+                window.removeEventListener('resize', handleSize)
+            }
         }
+      
     },[])
     
     return (
