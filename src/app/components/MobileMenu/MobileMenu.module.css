@@ -1,0 +1,10 @@
+.container{
+
+}
+
+.line{
+    height:2px;
+    background-color: black;
+    width:15px;
+    margin-bottom: 1%;
+}
