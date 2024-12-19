@@ -33,7 +33,7 @@ export default function Header(){
             </div>
          
             <div className={size  <= 1300 ? styles.burger : styles.isBurger}>
-                <Image src={Burger} alt="menu burger"/>
+                <Image src={Burger} alt="menu burger" className={styles.isBurger}/>
             </div>
           </div>
           <div className={styles.line}></div>
