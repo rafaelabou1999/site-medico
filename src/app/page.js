@@ -17,6 +17,7 @@ import LeftArrow from "@/../public/left-arrow.svg"
 import RightArrow from "@/../public/right-arrow.svg"
 
 import { use, useState } from "react";
+import Opinioes from "./components/Opinioes";
 
 export default function Home() {
   const [isActive, setActive] = useState(true);
@@ -61,7 +62,10 @@ export default function Home() {
               <Title title="Galeria" desc="Venha Conhecer"/>
               <Galeria/>
             </div>
-             
+             <div>
+              <Title title="Opiniões" desc="Conheça a opinião dos meus pacientes"/>
+              <Opinioes/>
+             </div>
            
             <div className={styles.all_cards}>
               <Title title="Informações e Inspirações" desc="Saiba mais"/>
