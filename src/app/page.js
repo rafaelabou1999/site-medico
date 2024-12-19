@@ -18,6 +18,7 @@ import RightArrow from "@/../public/right-arrow.svg"
 
 import { use, useState } from "react";
 import Opinioes from "./components/Opinioes";
+import About from "./components/About";
 
 export default function Home() {
   const [isActive, setActive] = useState(true);
@@ -59,6 +60,10 @@ export default function Home() {
               <Welcome/>
             </div>
             <div>
+              <Title title="Sobre mim" desc="Saiba mais"/>
+              <About/>
+            </div>
+            <div>
               <Title title="Galeria" desc="Venha Conhecer"/>
               <Galeria/>
             </div>
@@ -66,7 +71,10 @@ export default function Home() {
               <Title title="Opiniões" desc="Conheça a opinião dos meus pacientes"/>
               <Opinioes/>
              </div>
-           
+           <div>
+            <Title title="Contato" desc="Agende sua consulta"/>
+            <Contact/>
+           </div>
             <div className={styles.all_cards}>
               <Title title="Informações e Inspirações" desc="Saiba mais"/>
               <div className={styles.card_btn_container}>

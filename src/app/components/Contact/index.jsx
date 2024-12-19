@@ -3,19 +3,16 @@ import styles from "./Contact.module.css";
 export default function Contact(){
     return(
         <div className={styles.container}>
-            <div>
-                <h2  className={styles.title}>Agende sua consulta</h2>
-                <p>+55 21 2323-2323</p>
+            <div className={styles.each}>
+                <h2  className={styles.title}>Telefone</h2>
+                <p className={styles.text}>+55 21 2323-2323</p>
             </div>
 
-            <div>
+            <div className={styles.each}>
                 <h2 className={styles.title}>Localização</h2>
-                <p>121 Rock Street, 21 Avenue, New York, NY</p>
+                <p className={styles.text}>Av. das Américas, 3.500 | Barra da Tijuca <br/> Ed. Toronto, Bloco 4, sala 606</p>
             </div>
-            <div>
-                <h2  className={styles.title}>Horas</h2>
-                <p className={styles.hour}>Seg-Se....11h</p>
-            </div>
+           
         </div>
     )
 }
