@@ -128,7 +128,7 @@
         font-size:20px;
         position: fixed;
         top:2%;
-        right:4%;
+        right:7%;
         margin-top: 10px;
         background-color: transparent;
         border: none;
@@ -169,7 +169,7 @@
     }
 
     .logo_h2{
-        font-size: 17px;
+        font-size: 16px;
         font-weight: 300 !important;
         width:70% !important;
         text-align: start !important;
@@ -192,6 +192,7 @@
     .isBurger{
         font-weight: 400;
         padding-top: 9px;
+        padding-right: 5% !important;
         z-index:1000;
         letter-spacing: -.05em;
         font-size: 17.5px;
