@@ -1,21 +1,42 @@
 
 .title{
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     font-weight: 500;
-    font-size: 22px;
+    font-size: 23px;
     font-family: sans-serif;
+    background-color: rgb(29, 28, 28);
+    color:aliceblue;
+    width:10%;
+    text-align: center;
+    padding:.5%;
+    margin-bottom: 1%;
 }
 
 .each{
-    border-left: 3px solid #333c47;
     padding-left:1%;
+    background-color: rgba(255, 255, 255, 0.034);
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
+.each:nth-of-type(1){
+    padding-bottom: 2%;
+
+}
 .each:nth-of-type(2) {
     margin-top: 40px;
 }
 
 .text{
-    font-size: 17.2px;
-    list-style:circle;
+    font-size: 20.5px;
+    margin-left:20px;
+}
+
+.icon{
+    background-color: black;
+    padding: 10px;
+    width:50px;
+    height:50px;
 }

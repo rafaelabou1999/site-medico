@@ -4,12 +4,10 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import Header from "./components/Header";
-import Sobre from "./components/Welcome";
 import Banner from "./components/Banner";
 import Title from "./components/Title";
 import Card from "./components/Card";
 import Inspiracoes from "./components/Inspiracoes";
-import Welcome from "./components/Welcome";
 import Contact from "./components/Contact";
 import Galeria from "./components/Galeria";
 import cardInfo from './dados/cardInfo';
@@ -19,6 +17,7 @@ import RightArrow from "@/../public/right-arrow.svg"
 import { use, useState } from "react";
 import Opinioes from "./components/Opinioes";
 import About from "./components/About";
+import Agendar from "./components/Agendar";
 
 export default function Home() {
   const [isActive, setActive] = useState(true);
@@ -56,10 +55,10 @@ export default function Home() {
         <div className={styles.header}>
           <Header/>
           <div className={styles.main}>
-            <div className={styles.sobre}>
-              <Welcome/>
-            </div>
-            <div>
+            
+            <Agendar/>
+            
+            <div className={styles.about}>
               <Title title="Sobre mim" desc="Saiba mais"/>
               <About/>
             </div>
@@ -67,10 +66,7 @@ export default function Home() {
               <Title title="Galeria" desc="Venha Conhecer"/>
               <Galeria/>
             </div>
-             <div>
-              <Title title="Opiniões" desc="Conheça a opinião dos meus pacientes"/>
-              <Opinioes/>
-             </div>
+          
            <div>
             <Title title="Contato" desc="Agende sua consulta"/>
             <Contact/>
