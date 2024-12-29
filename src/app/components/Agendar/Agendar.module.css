@@ -75,3 +75,35 @@
     }
     
 }
+
+@media screen and (max-width:900px){
+    
+.container_display{
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: .4% .4%;
+    text-transform: uppercase;
+    color:#f3f3f3;
+    border: transparent !important;
+    height:45px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    cursor: pointer;
+   vertical-align: center;
+   z-index: 100000;
+   height:48px;
+   display: flex;
+   align-items: center;
+}
+
+.icon{
+    padding-top:5px;
+}
+
+.container{
+    height:55px;
+    width:160px;
+}
+
+}

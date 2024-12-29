@@ -1,10 +1,13 @@
 .container{
-    background-color:#2F3740;
+    background-color: #f6f6f7;
     position: fixed;
     width:100%;
     padding:8% 5%;
-    top:90px;
-    left:0;
+    border-bottom:1px solid #000;
+    border-top:1px solid #000;
+    top:0px;
+    left:0%;
+    bottom:0;
     right:0;
  
 }
@@ -12,15 +15,43 @@
 
 .item{
     list-style: none;
-    padding-bottom: 5%;
+    padding-bottom: 15%;
     font-size: 1.2rem;
     font-family:sans-serif;
-    color: rgb(219, 219, 219);
     font-weight: 500;
+    
 }
 
 .item_link{
     text-decoration: none;
-    color:white;
+    color:rgb(19, 18, 18);
     font-weight: 500;
+    font-size: 27.5px;
+    
+    font-weight: 300;
+    letter-spacing: -0.02em;
+}
+
+.list{
+    position: absolute;
+    top:45%;
+    left:40%;
+    transform: translate(-50%, -50%);
+}
+
+.close{
+    position: absolute;
+    right:10%;
+    color:black;
+}
+
+.btn{
+    position: absolute;
+    bottom:30%;
+    left:10%;
+    border:none;
+    padding: 3%;
+    background-color: #000;
+    color:#f6f6f7;
+    font-size: 1.2rem;
 }
