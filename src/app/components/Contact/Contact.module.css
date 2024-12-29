@@ -65,3 +65,29 @@
 .icone{
     margin-right:4%;
 }
+
+@media screen and (max-width:1300px) {
+    .btn_agende{
+        width:270px !important;
+        height:10px;
+        cursor: pointer;
+        background-color: #2f3740;
+        padding:7% .4%;
+        margin-top: 6%;
+        font-size: .9rem;
+        color:azure;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 600;
+        text-transform: uppercase;
+        border: none;
+        transition: all .3s ease-in-out;
+    }
+
+    .each:nth-of-type(1){
+        margin-top: 10%;
+    
+    }
+    
+}
