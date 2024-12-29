@@ -24,8 +24,8 @@
     margin-top: 5%;
     object-fit: cover;
     filter: saturate(70%);
-    width: 44vw;
-    height:40vh;
+    width: 38vw;
+    height:28vh;
     border-radius: 5px;
 }
 
@@ -33,14 +33,14 @@
     position: absolute;
     bottom:-10%;
     left:10%;
-    width:110px;
+    width:120px;
     border-radius: 50%;
-    height:110px;
+    height:120px;
 }
 
 .container_text{
     margin-top: 3%;
-    width:80%;
+    width:70%;
     font-size: 21px;
     line-height: 1.6;
     letter-spacing: .002em;

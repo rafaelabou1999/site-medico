@@ -14,7 +14,7 @@ export default function Card(props){
             }}
                 className={styles.link}>
                 <div className={styles.img_btn}>
-                    <Image style={{width:'100%', height: '200px', objectFit: 'cover', filter: 'saturate(90%)'}} src={props.image} alt="card imagem"/>
+                    <Image className={styles.arrow} style={{width:'100%', height: '200px', objectFit: 'cover', filter: 'saturate(90%)'}} src={props.image} alt="card imagem"/>
                 </div>
                 <div className={styles.text_container}>
             

@@ -6,12 +6,12 @@
 }
 
 .about{
-  margin-top: -120px;
+  margin-top: -54px !important;
 }
 .main{
-  background-color: #ffffff;
-  margin-left: 30%;
-  height:100vh;
+  background-color: #ada5ab1e;
+  padding-left: 30%;
+  min-height: 100vh;
   scroll-behavior: smooth;
 
 }
@@ -93,7 +93,6 @@
   }
 
   .main{
-    background-color: #fffefe;
     margin-left: 0%;
     padding-left: 5%;
     padding-top: 15vh;
@@ -109,6 +108,11 @@
     margin-right:9%;
     text-align: center;
   }
+
+  
+.about{
+  margin-top: -164px !important;
+}
   
 }
 @media screen and (max-width:1090px){

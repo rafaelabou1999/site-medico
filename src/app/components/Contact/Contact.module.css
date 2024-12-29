@@ -34,7 +34,7 @@
 }
 
 .icon{
-    background-color: black;
+    background-color: #141118e3;
     padding: 10px;
     width:50px;
     height:50px;
@@ -44,7 +44,7 @@
     width:270px !important;
     height:10px;
     cursor: pointer;
-    background-color: #2f3740;
+    background-color: #423a4dc2;
     padding:2% .4%;
     margin-top: 3%;
     font-size: .9rem;

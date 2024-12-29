@@ -59,20 +59,20 @@ export default function Home() {
             <Agendar/>
             
             <div className={styles.about} id="about">
-              <Title title="Sobre mim" desc="Saiba mais"/>
+              <Title title="Sobre mim"/>
               <About/>
             </div>
             <div id="galeria">
-              <Title title="Galeria" desc="Venha Conhecer"/>
+              <Title title="Galeria" />
               <Galeria/>
             </div>
           
            <div id="contact">
-            <Title title="Contato" desc="Agende sua consulta"/>
+            <Title title="Contato" />
             <Contact/>
            </div>
             <div className={styles.all_cards} id="info">
-              <Title title="Informações e Inspirações" desc="Saiba mais"/>
+              <Title title="Informações e Inspirações" />
               <div className={styles.card_btn_container}>
                 <button className={styles.card_btn} onClick={() => displayCard('left')} disabled={currentPage === minPage}><Image src={LeftArrow} alt="seta para esquerda"/></button>
                 <button className={styles.card_btn} onClick={() => displayCard('right')} disabled={currentPage === maxPage}><Image src={RightArrow} alt="seta para direita"/></button>

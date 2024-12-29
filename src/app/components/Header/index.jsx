@@ -41,7 +41,7 @@ export default function Header(){
             </div>
          
             <div className={size  <= 1300 ? styles.burger : styles.isBurger}>
-                <Image src={Burger} alt="menu burger" className={styles.isBurger} onClick={handleClick}/>
+                <h4 className={styles.isBurger} onClick={handleClick}>MENU</h4>
                 {size && isClicked ? <Submenu/> : ''}
             </div>
           </div>
@@ -51,8 +51,9 @@ export default function Header(){
                 <li className={styles.text_li}><a className={styles.text_link} href="#galeria">Galeria</a></li>
                 <li className={styles.text_li}><a className={styles.text_link} href="#contact">Contato</a></li>
                 <li className={styles.text_li}><a className={styles.text_link} href="#info">Informações e Inspirações</a></li>
+                <button className={styles.btn}>Agende sua consulta</button>
+
             </ul>
-    
         </header>
     )
 }

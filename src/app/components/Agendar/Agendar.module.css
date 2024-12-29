@@ -3,8 +3,7 @@
 .container_display{
     background-color: transparent;
     font-weight: 600;
-    font-size: 1.1rem;
-    padding: .5% .4%;
+    font-size: 1rem;
     text-transform: uppercase;
     color:#f3f3f3;
     border: transparent !important;
@@ -20,9 +19,9 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width:260px;
-    background-color: #2f3740;
-    padding:1.1%;
+    width:158px;
+    background-color: #423a4def;
+    padding:.8%;
     margin-top: 5%;
     transition: all .3s ease-in-out;
     position:fixed;
@@ -32,27 +31,8 @@
     vertical-align: center;
 }
 
-.container_hidden{
-    width:90px !important;
-    cursor: pointer;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width:190px;
-    background-color: #2f3740;
-    padding:1.1%;
-    margin-top: 5%;
-    transition: all .3s ease-in-out;
-    position:fixed;
-    bottom:5%;
-    z-index:10000 !important;
 
-    right:10%;
-}
 
-.container_agende:hover{
-    background-color: #2f3740f3;
-}
 
 @media screen and (max-width:1090px) {
     

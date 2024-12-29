@@ -1,9 +1,11 @@
 .container{
     display: flex;
-    margin-top: 13%;
+   padding-top: 10%;
     margin-bottom: 4%;
     flex-direction: column;
 }
+
+
 
 .title_container{
     font-weight: 500;
@@ -14,7 +16,7 @@
     width: 70px;
     height:10px;
     margin-top: 2%;
-    background-color:  rgb(29, 52, 71);
+    background-color:  #423a4dc2;
 }
 
 .desc_container{
