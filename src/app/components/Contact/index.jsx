@@ -16,7 +16,6 @@ export default function Contact(){
                 <Image src={Map} alt="icone" className={styles.icon}/>    
                 <p className={styles.text}>Av. das Américas, 3.500 | Barra da Tijuca <br/> Ed. Toronto, Bloco 4, sala 606</p>   
             </div>
-           <button className={styles.btn_agende}><Image className={styles.icone} src={Icon} alt="icone"/> Agende sua consulta</button>
         </div>
     )
 }

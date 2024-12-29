@@ -3,7 +3,7 @@
 .container_display{
     background-color: transparent;
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 19px;
     text-transform: uppercase;
     color:#f3f3f3 !important;
     border: transparent !important;
@@ -62,16 +62,21 @@
    position: absolute;
    right:10%;
    top:22.5%;
+   font-size: 15px;
 }
 .icon{
     position: absolute;
     top:20%;
-    left:12%;
+    left:8%;
     
 }
 .container{
-    height:55px;
-    width:160px;
+    padding: 0 !important;
+    height:50px;
+    width:140px;
+    position:fixed;
+    bottom:5%;
+    right:5%;
 }
 
 
