@@ -54,24 +54,24 @@ export default function Home() {
     <div className={styles.container}>
         <div className={styles.header}>
           <Header/>
-          <div className={styles.main}>
+          <div className={styles.main} >
             
             <Agendar/>
             
-            <div className={styles.about}>
+            <div className={styles.about} id="about">
               <Title title="Sobre mim" desc="Saiba mais"/>
               <About/>
             </div>
-            <div>
+            <div id="galeria">
               <Title title="Galeria" desc="Venha Conhecer"/>
               <Galeria/>
             </div>
           
-           <div>
+           <div id="contact">
             <Title title="Contato" desc="Agende sua consulta"/>
             <Contact/>
            </div>
-            <div className={styles.all_cards}>
+            <div className={styles.all_cards} id="info">
               <Title title="Informações e Inspirações" desc="Saiba mais"/>
               <div className={styles.card_btn_container}>
                 <button className={styles.card_btn} onClick={() => displayCard('left')} disabled={currentPage === minPage}><Image src={LeftArrow} alt="seta para esquerda"/></button>

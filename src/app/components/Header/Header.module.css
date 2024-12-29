@@ -4,6 +4,18 @@
     padding: 0;
   }
 
+.container_click{
+    background-color: red !important;
+    height:500px;
+    width:700px;
+    position: absolute;
+    top:10%;
+    left:0%;
+    right:0%;
+
+}
+
+
 .container{
     background-color: #2F3740;
     width:22%;
@@ -64,6 +76,9 @@
     padding-top: 6%;
 }
 
+.text_link{
+    scroll-behavior: smooth;
+}
 
 @media screen and (min-width:1300px){
     .isBurger{
@@ -123,6 +138,8 @@
        flex-direction: row;
        position: relative;   
     }
+
+   
     .logo{
         width:65px;
         height:58px;

@@ -6,9 +6,10 @@ import Icon from "@/../public/agendar.svg";
 import Image from "next/image";
 import Logo from "@/../public/renata.jpeg"
 import Burger from "@/../public/burger.svg"
-import { useState, useEffect } from 'react';
+import { useState, useEffect, use } from 'react';
 export default function Header(){
     const [size, setSize] = useState(0)
+    const [isClicked, setClick] = useState(false)
     useEffect(() => {
         if(typeof window !== "undefined"){
             const handleSize = () => setSize(window.innerWidth);
@@ -19,6 +20,12 @@ export default function Header(){
         }
       
     },[])
+
+    function handleClick(){
+        setClick(!isClicked)
+    }
+
+    
     
     return (
         <header className={styles.container}>
@@ -33,17 +40,18 @@ export default function Header(){
             </div>
          
             <div className={size  <= 1300 ? styles.burger : styles.isBurger}>
-                <Image src={Burger} alt="menu burger" className={styles.isBurger}/>
+                <Image src={Burger} alt="menu burger" className={styles.isBurger} onClick={handleClick}/>
+                {size && handleClick ? styles.container_click : styles.container_hidden}
             </div>
           </div>
           <div className={styles.line}></div>
             <ul className={styles.container_list}>
-                <li className={styles.text_li}><a className={styles.text_link} href="#">Início</a></li>
-                <li className={styles.text_li}><a className={styles.text_link} href="#">Contato</a></li>
-                <li className={styles.text_li}><a className={styles.text_link} href="#">Galeria</a></li>
-                <li className={styles.text_li}><a className={styles.text_link} href="#">Opiniões</a></li>
-                <li className={styles.text_li}><a className={styles.text_link} href="#">Informações e Inspirações</a></li>
+                <li className={styles.text_li}><a className={styles.text_link} href="#about">Sobre mim</a></li>
+                <li className={styles.text_li}><a className={styles.text_link} href="#galeria">Galeria</a></li>
+                <li className={styles.text_li}><a className={styles.text_link} href="#contact">Contato</a></li>
+                <li className={styles.text_li}><a className={styles.text_link} href="#info">Informações e Inspirações</a></li>
             </ul>
+    
         </header>
     )
 }

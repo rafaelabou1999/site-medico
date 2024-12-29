@@ -1,0 +1,7 @@
+.container{
+    background-color: red;
+    position: fixed;
+    top:30px;
+    left:0;
+    right:0;
+}
