@@ -138,7 +138,7 @@
   .display{
     margin-top: 12%;
     grid-template-columns: repeat(1, min(90vw, 420px));
-    grid-template-rows: repeat(2, 44vh);
+    grid-template-rows: repeat(2, 400px);
     padding-left: 0px;
   }
   .card_btn_container{
