@@ -70,9 +70,15 @@
 
 .all_cards{
   position: relative;
-  padding-bottom: 300px;
+  padding-bottom: 0;
 }
 
+.footer{
+  padding-left:30% !important ;
+  padding: 2%;
+  font-size: 18px;
+  color:rgb(21, 22, 22);
+}
 .card_btn{
   cursor: pointer;
   border-radius: 2px;
@@ -82,7 +88,7 @@
   padding: 1% 1.5% 3.5% 1.5%;
   height:2px;
   margin-bottom: 2%;
-  background-color: #ffffff;
+  background-color: transparent;
 
 }
 
@@ -112,6 +118,10 @@
   
 .about{
   margin-top: -164px !important;
+}
+
+.all_cards{
+  padding-left: 2%;
 }
   
 }
@@ -150,10 +160,40 @@
     display: none;
   }
   
+  .footer{
+    padding-top: 55%;
+  }
 }
 
 @media screen and (min-width:1300px) and (max-width:1500px) {
   .main{
     padding-top: 50px;
+  }
+}
+
+@media screen and (min-width:1300px) and (max-width:1550px) {
+  .display{
+    display: block;
+    display: grid;
+    grid-template-columns: repeat(3, 20vw);
+    grid-template-rows: repeat(1, 1fr);
+    gap:4%;
+  }
+  .card_btn{
+    padding-left: 10% !important;
+    cursor: pointer;
+    border-radius: 2px;
+    font-size: 18px;
+    border: none;
+    margin-right:-1 .5%;
+    padding: 1% 0% 3.5% 0%;
+    height:2px;
+    margin-bottom: 2%;
+    background-color: transparent;
+  
+  }
+
+  .footer{
+    padding-top: 180px;
   }
 }

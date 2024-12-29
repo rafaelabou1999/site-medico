@@ -8,8 +8,8 @@
 }
 
 .image{
-    width:420px;
-    height:635px;
+    width:380px;
+    height:535px;
     object-fit: cover;
 }
 
@@ -19,7 +19,7 @@
 
 .single_paragraph, .second_paragraph{
     width:60%;
-    font-size:24px;
+    font-size:21px;
     letter-spacing: 0.02em;
     line-height: 1.24;
     font-weight: 300;

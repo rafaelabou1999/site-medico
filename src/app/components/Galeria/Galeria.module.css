@@ -1,7 +1,12 @@
 .image_container{
     display: grid;
-grid-template-columns: repeat(2, 600px);
-grid-template-rows: repeat(2, 400px);
+grid-template-columns: repeat(2, 470px);
+grid-template-rows: repeat(2, 360px);
+}
+
+.image{
+    height:340px !important;
+    width:450px !important;
 }
 
 @media screen and (max-width:1300px){
@@ -34,5 +39,16 @@ grid-template-rows: repeat(2, 400px);
     .image{
         width: 80vw !important;
         height:240px !important;
+    }
+}
+
+@media screen and (min-width:1300px) and (max-width:1550px) {
+    .image_container{
+        grid-template-columns: repeat(2, 32vw);
+        grid-template-rows: repeat(2,335px);
+    }
+    .image{
+        width: 30vw !important;
+        height:325px !important;
     }
 }

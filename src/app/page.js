@@ -107,6 +107,9 @@ export default function Home() {
               </div>
             
             </div>
+            <footer className={styles.footer}>
+              Desenvolvido por Rafaela Bourdette 2023
+            </footer>
           </div>
         </div>
     

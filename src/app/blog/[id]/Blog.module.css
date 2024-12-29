@@ -1,5 +1,6 @@
 .container{
-    margin: 4% 0% 150px 30%;
+    padding: 4% 0% 150px 30%;
+    background-color: #ada5ab1e;
   }
   
   .back_btn{
@@ -8,7 +9,7 @@
     align-items: center;
     justify-content: center;
     gap:9%;
-    background-color: #2f3740;
+    background-color: #423a4def;
     color: rgb(244, 244, 245);
     font-size: 18px;
     font-weight: 500;
@@ -64,7 +65,7 @@
     padding:.5%;
     width:11%;
     color:aliceblue;
-    background-color: #2f3740f3;
+    background-color: #423a4def;
     margin-top: 5%;
   
     position: absolute;

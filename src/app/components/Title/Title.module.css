@@ -10,6 +10,7 @@
 .title_container{
     font-weight: 500;
     font-size:min(48px,9vw);
+    color:#353336;
 }
 
 .line_container{
@@ -19,13 +20,6 @@
     background-color:  #423a4dc2;
 }
 
-.desc_container{
-    padding: .6% 0%;
-    font-weight: 500;
-    font-size: 32px;
-    color:  rgba(29, 52, 71, 0.788);
-
-}
 
 @media screen and (max-width:650px){
     .container{
@@ -34,7 +28,7 @@
 
     .title_container{
         font-weight: 500;
-        font-size:38px;
+        font-size:30px;
     }
 }
 @media screen and (max-width:930px){

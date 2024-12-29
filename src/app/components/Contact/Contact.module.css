@@ -103,9 +103,9 @@
     
     .each{
         background-color: #dfdfe0c2;
-        width:90%;
+        width:min(90%, 500px);
         padding: 5% 3% ;
-        padding-bottom: 6% !important;
+        padding-bottom: min(6%, 30px) !important;
         padding-top: 2% !important;
         display: flex;
         flex-direction: column;
@@ -120,4 +120,12 @@
     }
 
     
+}
+
+
+@media screen and (min-width:1300px) and (max-width:1550px) {
+
+    .each{  
+        width:44%;
+    }
 }
