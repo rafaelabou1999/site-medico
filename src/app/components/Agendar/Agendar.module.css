@@ -53,3 +53,25 @@
 .container_agende:hover{
     background-color: #2f3740f3;
 }
+
+@media screen and (max-width:1090px) {
+    
+
+    .container_hidden{
+        width:70px !important;
+        cursor: pointer;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: #2f3740;
+        padding:3.1%;
+        margin-top: 5%;
+        transition: all .3s ease-in-out;
+        position:fixed;
+        bottom:5%;
+        z-index:10000 !important;
+    
+        right:10%;
+    }
+    
+}
