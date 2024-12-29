@@ -234,6 +234,10 @@
   }
 
   @media screen and (min-width:1300px) and (max-width:1550px) {
+    .container{
+        width:25%;
+    }
+    
     .logo_h2{
         font-size: 19px !important;
     }
@@ -257,7 +261,7 @@
     }
 
     .line{
-        width:230px;
+        width:250px;
     }
 
     .text_li{

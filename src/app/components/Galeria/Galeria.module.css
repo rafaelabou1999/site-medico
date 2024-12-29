@@ -44,11 +44,11 @@ grid-template-rows: repeat(2, 360px);
 
 @media screen and (min-width:1300px) and (max-width:1550px) {
     .image_container{
-        grid-template-columns: repeat(2, 32vw);
-        grid-template-rows: repeat(2,335px);
+        grid-template-columns: repeat(2, 28vw);
+        grid-template-rows: repeat(2,295px);
     }
     .image{
-        width: 30vw !important;
-        height:325px !important;
+        width: 27vw !important;
+        height:280px !important;
     }
 }
