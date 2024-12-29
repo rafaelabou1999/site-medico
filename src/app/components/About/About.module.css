@@ -50,3 +50,44 @@
 .container_text{
     position: relative;
 }
+
+@media screen and (max-width:1090px) {
+    .image{
+        display: none;
+    }
+
+    .single_paragraph, .second_paragraph{
+        width:90%;
+        font-size:24px;
+        letter-spacing: 0.02em;
+        line-height: 1.24;
+    }
+    
+}
+@media screen and (min-width:1090px) and (max-width:1600px) {
+    .image{
+        display: none;
+    }
+
+    .single_paragraph, .second_paragraph{
+        width:78%;
+        font-size:24px;
+        letter-spacing: 0.02em;
+        line-height: 1.24;
+    }
+    
+}
+
+@media screen and (min-width:1600px) and (max-width:1900px){
+    .single_paragraph, .second_paragraph{
+        width:90%;
+        font-size:24px;
+        letter-spacing: 0.02em;
+        line-height: 1.24;
+    }
+    .image{
+        width:320px;
+        height:505px;
+        object-fit: cover;
+    }
+}

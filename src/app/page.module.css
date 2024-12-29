@@ -120,6 +120,9 @@
     text-align: center;
   }
 
+  .main{
+    padding-top: 150px;
+  }
   
   
 }
@@ -140,4 +143,10 @@
     display: none;
   }
   
+}
+
+@media screen and (min-width:1300px) and (max-width:1500px) {
+  .main{
+    padding-top: 50px;
+  }
 }
