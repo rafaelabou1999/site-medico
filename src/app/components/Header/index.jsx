@@ -6,6 +6,7 @@ import Icon from "@/../public/agendar.svg";
 import Image from "next/image";
 import Logo from "@/../public/renata.jpeg"
 import Burger from "@/../public/burger.svg"
+import Submenu from "@/app/Submenu";
 import { useState, useEffect, use } from 'react';
 export default function Header(){
     const [size, setSize] = useState(0)
@@ -41,7 +42,7 @@ export default function Header(){
          
             <div className={size  <= 1300 ? styles.burger : styles.isBurger}>
                 <Image src={Burger} alt="menu burger" className={styles.isBurger} onClick={handleClick}/>
-                {size && handleClick ? styles.container_click : styles.container_hidden}
+                {size && isClicked ? <Submenu/> : ''}
             </div>
           </div>
           <div className={styles.line}></div>

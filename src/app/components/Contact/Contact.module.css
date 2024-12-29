@@ -91,3 +91,13 @@
     }
     
 }
+@media screen and (max-width:1300px) {
+    .btn_agende{
+        width:270px !important;
+        height:10px;
+        padding:30px .4%;
+        
+    }
+
+    
+}

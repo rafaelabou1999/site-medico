@@ -80,6 +80,10 @@
     scroll-behavior: smooth;
 }
 
+.display{
+    width:100%;
+}
+
 @media screen and (min-width:1300px){
     .isBurger{
         display: none;

@@ -1,7 +1,26 @@
 .container{
-    background-color: red;
+    background-color:#2F3740;
     position: fixed;
-    top:30px;
+    width:100%;
+    padding:8% 5%;
+    top:90px;
     left:0;
     right:0;
+ 
+}
+
+
+.item{
+    list-style: none;
+    padding-bottom: 5%;
+    font-size: 1.2rem;
+    font-family:sans-serif;
+    color: rgb(219, 219, 219);
+    font-weight: 500;
+}
+
+.item_link{
+    text-decoration: none;
+    color:white;
+    font-weight: 500;
 }
