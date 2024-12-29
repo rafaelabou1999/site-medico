@@ -5,7 +5,7 @@
     font-weight: 600;
     font-size: 1rem;
     text-transform: uppercase;
-    color:#f3f3f3;
+    color:#f3f3f3 !important;
     border: transparent !important;
     padding-left: 8%;
     padding-top: 5px;
@@ -59,31 +59,20 @@
 @media screen and (max-width:900px){
     
 .container_display{
-    background-color: transparent;
-    font-weight: 600;
-    font-size: 1.1rem;
-    padding: .4% .4%;
-    text-transform: uppercase;
-    color:#f3f3f3;
-    border: transparent !important;
-    height:45px;
-    padding-bottom: 5px;
-    padding-left: 10px;
-    cursor: pointer;
-   vertical-align: center;
-   z-index: 100000;
-   height:48px;
-   display: flex;
-   align-items: center;
+   position: absolute;
+   right:10%;
+   top:22.5%;
 }
-
 .icon{
-    padding-top:5px;
+    position: absolute;
+    top:20%;
+    left:12%;
+    
 }
-
 .container{
     height:55px;
     width:160px;
 }
+
 
 }

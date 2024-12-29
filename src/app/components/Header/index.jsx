@@ -11,6 +11,7 @@ import { useState, useEffect, use } from 'react';
 export default function Header(){
     const [size, setSize] = useState(0)
     const [isClicked, setClick] = useState(false)
+    
     useEffect(() => {
         if(typeof window !== "undefined"){
             const handleSize = () => setSize(window.innerWidth);

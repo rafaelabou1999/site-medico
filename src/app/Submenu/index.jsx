@@ -3,14 +3,13 @@ import { useState } from 'react';
 
 export default function Submenu() {
   const [isClicked, setIsClicked] = useState(false);
-
+  
   const handleClick = () => {
     setIsClicked(!isClicked);
   };
 
   return (
-    <div className={styles.container}  style={{ display: isClicked ? 'none' : 'block' }}>
-        <p className={styles.close}>Fechar</p>
+    <div className={styles.container} style={{ display: isClicked ? 'none' : 'block' }}>
       <ul className={styles.list}>
         <li className={styles.item} style={{ display: isClicked ? 'none' : 'block' }}>
           <a className={styles.item_link} href="#about" onClick={handleClick}>Sobre mim</a>
@@ -25,7 +24,6 @@ export default function Submenu() {
           <a className={styles.item_link} href="#info" onClick={handleClick}>Informações e Inspirações</a>
         </li>
       </ul>
-      <button className={styles.btn}>Agende sua consulta</button>
     </div>
   );
 }
