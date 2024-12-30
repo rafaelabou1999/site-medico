@@ -19,9 +19,9 @@ export default function About(){
                     </p>
                     <p className={styles.text_formacao}>Residencia em Cardiologia - UERJ 1998
                     </p>
-                    <p className={styles.text_formacao}>Titulo de Especialista em Cardiologia pela SBC 
+                    <p className={styles.text_formacao}>Titulo de Especialista em Cardiologia - SBC 2011
                     </p>
-                    <p className={styles.text_formacao}>Pós Graduação em Cardio Oncologia 2024
+                    <p className={styles.text_formacao}>Pós Graduação em Cardio Oncologia - SBC 2024
                     </p>
                 </div>
                 

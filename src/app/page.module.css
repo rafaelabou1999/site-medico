@@ -147,7 +147,7 @@
  
   .display{
     margin-top: 12%;
-    grid-template-columns: repeat(1, min(90vw, 420px));
+    grid-template-columns: repeat(1, min(85vw, 420px));
     grid-template-rows: repeat(2, 400px);
     padding-left: 0px;
   }
