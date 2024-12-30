@@ -7,8 +7,10 @@ import Image from "next/image";
 import Logo from "@/../public/renata.jpeg"
 import Burger from "@/../public/burger.svg"
 import Submenu from "@/app/Submenu";
-import { useState, useEffect, memo } from 'react';
-function Header(){
+import { useState, useEffect, use } from 'react';
+import React, { memo } from 'react';
+
+const MemoizedHeader = memo(function Header(){
     const [size, setSize] = useState(0)
     const [isClicked, setClick] = useState(false)
     
@@ -56,6 +58,4 @@ function Header(){
 
             </ul>
         </header>
-    )
-}
-export default memo(Header);
+)});
