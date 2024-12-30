@@ -62,7 +62,7 @@
 
 @media screen and (max-width:900px){
     .imagem{
-        width:82vw !important;
+        width:88vw !important;
         height:23vh !important;
         object-fit: cover;
        
@@ -73,20 +73,21 @@
         width:85px !important;
         height:85px !important;
         top:280px !important;
-        left:50px !important;
+        left:45px !important;
     }
 
     .container{
         margin-left: 0%;
         padding-top:32% !important;
         padding-bottom: 10% !important;
-        padding-left:40px !important;
+        padding-left:20px !important;
         background-color:  #e2e2e2 !important;
         height:100% !important;
     }
 
     .text_title{
-        width:110% !important;
+        width:120% !important;
+        margin-top: 12% !important;
     }
     
     .container_text{
