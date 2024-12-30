@@ -106,7 +106,7 @@
 .isBurger{
     cursor:pointer !important;
     width:65px;
-    height:300px;
+    height:63px;
 }
 @media screen and (min-width:1300px){
     .isBurger{

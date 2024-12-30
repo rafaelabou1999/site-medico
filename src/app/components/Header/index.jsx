@@ -24,8 +24,10 @@ export default function Header(){
       
     },[])
 
-
-    
+    function handleClick(){
+        setClick(!isClicked)
+        console.log(isClicked)
+    }
     
     return (
         <header className={styles.container}>
@@ -40,11 +42,8 @@ export default function Header(){
             </div>
          
             <div className={size  <= 1300 ? styles.burger : styles.isBurger}>
-                <h4 className={styles.isBurger} onClick={ function handleClick(){
-        setClick(!isClicked)
-    }
-}>MENU</h4>
-                {size && isClicked ? <Submenu/> : ''}
+                <h4 className={styles.isBurger} onClick={handleClick}>MENU</h4>
+                {isClicked ? <Submenu/> : ''}
             </div>
           </div>
           <div className={styles.line}></div>
