@@ -3,14 +3,14 @@
     position: fixed;
     height:240px;
     width:100%;
-    padding:2% 6%;
+    padding:21% 6%;
     text-align: start;
     top:90px;
     left:0%;
     display: block;
     right:0;
     cursor: pointer !important;
-    padding-top: 9%;
+    padding-top: 7%;
 }
 
 .item{
@@ -21,7 +21,7 @@
     text-decoration: none;
     padding-bottom: 5%;
     color:black;
-    font-size: 16px;
+    font-size: 17px;
     letter-spacing: .02em;
     font-weight: 400;
 }
