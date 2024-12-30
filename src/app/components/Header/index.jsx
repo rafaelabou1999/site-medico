@@ -7,7 +7,7 @@ import Image from "next/image";
 import Logo from "@/../public/renata.jpeg"
 import Burger from "@/../public/burger.svg"
 import Submenu from "@/app/Submenu";
-import { useState, useEffect, use } from 'react';
+import { useState, useEffect} from 'react';
 import React, { memo } from 'react';
 
 const MemoizedHeader = memo(function Header(){
