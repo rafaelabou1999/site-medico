@@ -7,8 +7,8 @@ import Image from "next/image";
 import Logo from "@/../public/renata.jpeg"
 import Burger from "@/../public/burger.svg"
 import Submenu from "@/app/Submenu";
-import { useState, useEffect, use } from 'react';
-export default function Header(){
+import { useState, useEffect, memo } from 'react';
+function Header(){
     const [size, setSize] = useState(0)
     const [isClicked, setClick] = useState(false)
     
@@ -52,9 +52,10 @@ export default function Header(){
                 <li className={styles.text_li}><a className={styles.text_link} href="#galeria">Galeria</a></li>
                 <li className={styles.text_li}><a className={styles.text_link} href="#contact">Contato</a></li>
                 <li className={styles.text_li}><a className={styles.text_link} href="#info">Informações e Inspirações</a></li>
-                <button className={styles.btn}>Agende sua consulta</button>
+                <button className={styles.btn}><a className={styles.link} href="https://api.whatsapp.com/send?phone=5521964336994" target="_blank">Agende sua consulta</a></button>
 
             </ul>
         </header>
     )
 }
+export default memo(Header);

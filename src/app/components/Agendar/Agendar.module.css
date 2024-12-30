@@ -31,7 +31,10 @@
     vertical-align: center;
 }
 
-
+.link{
+    text-decoration: none;
+    color:white;
+}
 
 
 @media screen and (max-width:1090px) {

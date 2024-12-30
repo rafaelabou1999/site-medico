@@ -7,7 +7,6 @@ import Header from "./components/Header";
 import Banner from "./components/Banner";
 import Title from "./components/Title";
 import Card from "./components/Card";
-import Inspiracoes from "./components/Inspiracoes";
 import Contact from "./components/Contact";
 import Galeria from "./components/Galeria";
 import cardInfo from './dados/cardInfo';
@@ -15,7 +14,6 @@ import LeftArrow from "@/../public/left-arrow.svg"
 import RightArrow from "@/../public/right-arrow.svg"
 
 import { use, useState } from "react";
-import Opinioes from "./components/Opinioes";
 import About from "./components/About";
 import Agendar from "./components/Agendar";
 

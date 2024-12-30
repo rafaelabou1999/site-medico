@@ -97,7 +97,11 @@
     width:100%;
 }
 
-
+.link{
+    text-decoration: none;
+    color:white;
+    font-weight: 400 !important;
+}
 @media screen and (min-width:1300px){
     .isBurger{
         display: none;
