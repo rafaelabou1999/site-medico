@@ -1,6 +1,11 @@
 .container{
     padding: 4% 0% 150px 30%;
     background-color: #ada5ab1e;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   
   .back_btn{
@@ -142,5 +147,48 @@
         padding:1.5%;
         width:150px;
         right:1.5% !important;
+    }
+}
+
+@media screen and (min-width:1000px) and (max-width:1550px) {
+    .imagem{
+        margin-top: 5%;
+        margin-left: -5% !important;
+        object-fit: cover;
+        filter: saturate(70%);
+        width: 58vw;
+        height:34vh;
+        border-radius: 5px;
+    }
+
+    .container_text{
+        margin-top: 3%;
+        width:90%;
+        font-size: 21px;
+        line-height: 1.6;
+        letter-spacing: .002em;
+        position: relative;
+    }
+    
+    .text_title{
+        margin-top: 9%;
+        width:70%;
+        font-size: 36px !important;
+        font-weight: 600;
+        font-size: 30px;
+    }
+
+    .data{
+        text-align: center;
+        padding:1.5%;
+        width:180px;
+        right:12% !important;
+    }
+
+    .back_btn{
+        margin-left: -300%;
+        border: none;
+        padding: 5%;
+    
     }
 }
