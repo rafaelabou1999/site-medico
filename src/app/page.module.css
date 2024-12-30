@@ -74,7 +74,7 @@
 }
 
 .footer{
-  padding-left:370px !important ;
+  text-align: center;
   padding: 2%;
   font-size: 18px;
   color:rgb(21, 22, 22);
@@ -162,6 +162,7 @@
   
   .footer{
     padding-top: 55%;
+    text-align: start !important;
   }
 }
 
