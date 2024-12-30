@@ -48,7 +48,7 @@
 
 .text_title{
     margin-top: 6%;
-    color: #32363b;
+    color: #212427;
 }
 
 .data{
@@ -144,7 +144,7 @@
         margin-left: 0%;
         padding-top:10%;
         padding-left:340px;
-        height:150vh;
+        height:90vh !important;
     }
 
     

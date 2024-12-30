@@ -15,9 +15,14 @@ export default function About(){
                 <p className={styles.second_paragraph}>Minha proposta é transformar conhecimento em ferramenta de promoção de saúde e bem estar através da prevenção, identificação e tratamento das doenças cardiovasculares, com foco nas necessidades de cada paciente.</p>
                 <div className={styles.formacao_container}>
                     <h4 className={styles.title_formacao}>Formação</h4>
-                    <p className={styles.text_formacao}>Graduação em Medicina</p>
-                    <p className={styles.text_formacao}>Residência em Cardiologia</p>
-                    <p className={styles.text_formacao}>Pós-graduação em Cardioncologia</p>
+                    <p className={styles.text_formacao}>Graduação em Medicina - UERJ 1994
+                    </p>
+                    <p className={styles.text_formacao}>Residencia em Cardiologia - UERJ 1998
+                    </p>
+                    <p className={styles.text_formacao}>Titulo de Especialista em Cardiologia pela SBC 
+                    </p>
+                    <p className={styles.text_formacao}>Pós Graduação em Cardio Oncologia 2024
+                    </p>
                 </div>
                 
               
