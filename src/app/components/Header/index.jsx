@@ -7,10 +7,9 @@ import Image from "next/image";
 import Logo from "@/../public/renata.jpeg"
 import Burger from "@/../public/burger.svg"
 import Submenu from "@/app/Submenu";
-import { useState, useEffect} from 'react';
-import React, { memo } from 'react';
+import { useState, useEffect } from 'react';
 
-const MemoizedHeader = memo(function Header(){
+export default function Header(){
     const [size, setSize] = useState(0)
     const [isClicked, setClick] = useState(false)
     
@@ -25,9 +24,6 @@ const MemoizedHeader = memo(function Header(){
       
     },[])
 
-    function handleClick(){
-        setClick(!isClicked)
-    }
 
     
     
@@ -44,7 +40,10 @@ const MemoizedHeader = memo(function Header(){
             </div>
          
             <div className={size  <= 1300 ? styles.burger : styles.isBurger}>
-                <h4 className={styles.isBurger} onClick={handleClick}>MENU</h4>
+                <h4 className={styles.isBurger} onClick={ function handleClick(){
+        setClick(!isClicked)
+    }
+}>MENU</h4>
                 {size && isClicked ? <Submenu/> : ''}
             </div>
           </div>
@@ -58,4 +57,5 @@ const MemoizedHeader = memo(function Header(){
 
             </ul>
         </header>
-)});
+    )
+}

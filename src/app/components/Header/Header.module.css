@@ -102,6 +102,12 @@
     color:white;
     font-weight: 400 !important;
 }
+
+.isBurger{
+    cursor:pointer !important;
+    width:65px;
+    height:300px;
+}
 @media screen and (min-width:1300px){
     .isBurger{
         display: none;
