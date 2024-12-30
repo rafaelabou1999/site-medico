@@ -163,6 +163,8 @@
   .footer{
     padding-top: 55%;
     text-align: start !important;
+    font-size: 14px !important;
+
   }
 }
 
@@ -196,6 +198,5 @@
 
   .footer{
     padding-top: 180px;
-    font-size: 15px;
   }
 }
