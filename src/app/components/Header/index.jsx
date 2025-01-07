@@ -40,7 +40,6 @@ export default function Header(){
                 <p className={styles.logo_crm}>CRM: 604248-RJ</p>
             </div> 
             </div>
-         
             <div className={size  <= 1300 ? styles.burger : styles.isBurger}>
                 <h4 className={styles.isBurger} onClick={handleClick}>MENU</h4>
                 {isClicked ? <Submenu/> : ''}
@@ -53,7 +52,6 @@ export default function Header(){
                 <li className={styles.text_li}><a className={styles.text_link} href="#contact">Contato</a></li>
                 <li className={styles.text_li}><a className={styles.text_link} href="#info">Informações e Inspirações</a></li>
                 <button className={styles.btn}><a className={styles.link} href="https://api.whatsapp.com/send?phone=5521964336994" target="_blank">Agende sua consulta</a></button>
-
             </ul>
         </header>
     )

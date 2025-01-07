@@ -24,10 +24,7 @@ export default function About(){
                     <p className={styles.text_formacao}>Pós Graduação em Cardio Oncologia - SBC 2024
                     </p>
                 </div>
-                
-              
-        </div>
-     
+        </div>  
        </div> 
     )
 }

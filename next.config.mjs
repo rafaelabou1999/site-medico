@@ -1,11 +1,8 @@
+/** @type {import('next').NextConfig} */
 const nextConfig = {
-  webpack: (config, { isServer }) => {
-    // Disable Webpack cache
-    config.cache = false;
-
-    // Return the modified config
-    return config;
-  },
+  output: "export",
+  basePath: process.env.BASE_PATH ? process.env.BASE_PATH : "",
+  assetPrefix: process.env.URL ? process.env.URL : undefined,
 };
 
 export default nextConfig;

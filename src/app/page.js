@@ -1,9 +1,8 @@
 'use client'
-
+'use strict'
 import Image from "next/image";
 import styles from "./page.module.css";
 import Header from "./components/Header";
-import Banner from "./components/Banner";
 import Title from "./components/Title";
 import Card from "./components/Card";
 import Contact from "./components/Contact";
