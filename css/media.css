@@ -1,0 +1,1583 @@
+@media screen and (min-width:1600px) and (max-width:1810px) {
+  .agendar a {
+    background-color: var(--main-color) !important;
+    padding: 10px 5% !important;
+    color: white !important;
+    border-radius: 10px;
+    transition: all 1s ease;
+    font-size: 2.2rem;
+  }
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1600px) {
+  .sideImg{
+    top:40% !important;
+    width:6vw;
+    height:10vh;
+  }
+
+  .cards {
+    grid-template-columns: repeat(2, calc(70% / 2));
+    grid-template-rows: 26rem;
+  }
+
+  .card {
+    height: 25rem;
+  }
+
+  .card h2 {
+    font-size: 2.7rem;
+  }
+  .agendar a {
+    font-size: 1.4rem !important;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+  }
+
+  .agendar a:hover {
+    background-color: #6b6150 !important;
+    padding: 10px 8% !important;
+    color: white !important;
+    border-radius: 10px;
+
+    transition: all 1s ease;
+  }
+
+  
+  .articleText{
+    background-color: #fff !important;
+  }
+
+  .articleText h2{
+    font-size: 2.8rem;
+    padding-top: 4%;
+  }
+
+  .articleText p{
+    font-size: 1.8rem;
+    padding-bottom: 5%;
+  }
+  .imgArticle{
+    width:35vw !important;
+    border-radius: 0px !important;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+  header a {
+    font-size: 2.1rem !important;
+  }
+  .agendar a {
+    background-color: var(--main-color) !important;
+    padding: 10px 11% !important;
+    color: white !important;
+    border-radius: 10px;
+
+    transition: all 1s ease;
+  }
+  .agendar a {
+    background-color: var(--main-color) !important;
+    padding: 10px 1%;
+
+    color: white !important;
+    border-radius: 10px;
+  }
+
+  .article{
+    margin-bottom: 4%;
+  }
+
+  .articleText{
+    z-index:100;
+    width:60rem !important; 
+    height:60rem;
+    background-color: aliceblue;
+    color:#434343;
+    position:fixed;
+    bottom:30% !important;
+    top:28%;
+    padding:2rem;
+    font-size: 1.4rem;
+    right:0%;
+    left:65% !important;
+    filter:saturate(100%) !important;
+    transform: translate(-50%, -25%);
+  }
+  
+
+  .imgArticle{
+    margin-top: 5%;
+    width: 70rem;
+    height:20rem !important;
+    object-fit: cover;
+    filter: saturate(60%);
+    border-radius: 2%;
+  }
+
+  .renataAtero{
+    bottom:110px;
+  }
+  
+  .dataArticleAtero{
+    bottom:-60% !important;
+  }
+
+  .exit{
+    top:3% !important;
+  }
+  
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1488px) {
+  .sideImg{
+    top:30% !important;
+    width:6vw;
+    height:10vh;
+  }
+
+  
+  .agendar a {
+    font-size: 1.3rem !important;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+  }
+
+  .agendar a:hover {
+    background-color: #6b6150 !important;
+    padding: 10px 8% !important;
+    color: white !important;
+    border-radius: 10px;
+
+    transition: all 1s ease;
+  }
+  .cards {
+    grid-template-columns: repeat(2, calc(90% / 2));
+    grid-template-rows: 27rem;
+  }
+
+  header p a {
+    font-weight: 300;
+    text-decoration: none;
+    color: black;
+    font-size: 19px !important
+    ;
+  }
+
+  .card {
+    height: 26rem;
+  }
+
+  .card h2 {
+    font-size: 2.7rem;
+  }
+
+  .sobre img {
+    width: 250px;
+  }
+
+  .imgSobre{
+    display: none;
+  }
+
+  .formacao {
+    margin-left: 0%;
+  }
+
+  .texto p {
+    margin-right: 35%;
+    margin-left: 0%;
+    font-size: 1.9rem;
+  }
+
+  .galeria-parent img {
+    width: 30vw;
+    height: 25rem;
+  }
+
+  .articleText{
+    background-color: #fff !important;
+  }
+
+  .articleText h2{
+    font-size: 2.8rem;
+    padding-top: 4%;
+  }
+
+  .articleText p{
+    font-size: 1.8rem;
+    padding-bottom: 5%;
+    width: 38vw;
+  }
+  
+  .imgArticle{
+    width:43.5vw !important;
+    border-radius: 0px !important;
+  }
+  
+  .renataFilosofia{
+    bottom: 69px;
+  }
+
+  
+  .dataArticle{
+    bottom: -36em;
+    padding-bottom: 5%;
+    right:7%;
+    font-size: 17px;
+  }
+
+  .exit{
+      margin-left:95%;
+      margin-top: .1%;
+      margin-bottom: -110%;
+  }
+
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1199px) { 
+  .navbar::before {
+    background-color: white;
+    content: "Menu";
+    font-size: 1.7rem !important;
+    font-family: var(--main-font);
+    font-weight: 400;
+
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 12px !important;
+    right: 55%;
+    text-transform: uppercase;
+  }
+  header {
+    height: 0vh !important;
+    background-color: white;
+    width: 100% !important;
+    z-index: 100;
+    margin-left: 0%;
+  }
+
+  .menu-mobile {
+    display: block;
+    z-index: 100;
+    padding: 10px !important;
+    height: 80px !important;
+    display: flex;
+    flex-direction: row;
+
+    top: 0;
+    background-color: #333;
+  }
+
+  .perfil-mobile img {
+    margin-top: 4%;
+    height: 7rem !important;
+    width: 7rem !important;
+  }
+  .perfil-mobile h3 {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 300;
+    margin-top: 20% !important;
+    font-size: 15px;
+  }
+
+  main {
+    width: 100% !important;
+    left: 0;
+    padding-top: 1%;
+    top: 5% !important;
+    margin-left: 0;
+  }
+  .elementosHeader {
+    position: fixed;
+
+    left: -100%;
+    top: 0;
+    gap: 0;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    text-align: center;
+  }
+
+  .perfil-desktop {
+    display: none;
+    width: 100%;
+  }
+
+  .perfil {
+    display: none;
+    width: 100%;
+  }
+
+  .elementosHeader {
+    display: none;
+  }
+  main {
+    width: 100% !important;
+    left: 0;
+    top: 10%;
+    margin-left: 0;
+  }
+
+  .navbar::before {
+    background-color: white;
+    content: "Menu";
+    font-size: max(14px, 3vmin);
+    font-family: var(--main-font);
+    font-weight: 400;
+    margin-top: 5px;
+    text-transform: uppercase;
+  }
+
+  main h1 {
+    margin-top: 7%;
+    font-size: 4.7rem;
+    font-weight: 300 !important;
+    margin-left: 5%;
+    color: #fff;
+    font-family: var(--main-font);
+  }
+
+  main p {
+    font-family: var(--main-font);
+    font-weight: 300;
+  }
+
+  .cards {
+    grid-template-columns: repeat(2, min(45%, 350px));
+    grid-template-rows: 26rem;
+  }
+
+  .card {
+    height: 25rem;
+  }
+
+  .card h2 {
+    font-size: 2.4rem;
+  }
+  .linkCard {
+    text-decoration: none !important;
+  }
+
+  .sobre img {
+    width: 350px;
+  }
+
+  .texto p {
+    margin-right: 15%;
+    font-size: 1.9rem;
+  }
+
+  .consultorio {
+    padding: 5% 2%;
+    width: 110% !important;
+  }
+  .contato2 {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    margin-left: 5% !important;
+  }
+
+  .consultorioTexto {
+    padding: 1% 2%;
+    width: 110%;
+    padding-bottom: 4% !important;
+  }
+
+  .consultorio h6 {
+    font-size: min(3.5vw, 18px);
+  }
+  .consultorio h2 {
+    font-size: max(3.5vw, 21px);
+  }
+  .c2 img {
+    width: 50%;
+    margin-left: 10%;
+    height: 20vh;
+    object-fit: cover;
+  }
+
+  .opiniaoImg{
+    display: none;
+  }
+
+  .rate {
+    display: none;
+  }
+  .c2 button {
+    width: 50%;
+    margin-left: 10%;
+  }
+
+  .bg-dark {
+    padding: 2% 3%;
+    border-radius: 0px;
+    color:rgb(15, 15, 15);
+    margin: 0;
+    margin-right: 8% !important;
+    width:45rem;
+    font-size: 1.7rem !important;
+  }
+  .patientReview {
+    margin-left: 12%;
+    margin-right: 56% !important;
+  }
+  .pacienteP {
+    font-size: 1.5rem;
+  }
+
+
+  .galeria-parent img {
+    width: min(40vw, 380px);
+    height: 25rem;
+  }
+ 
+  .article{
+    margin-bottom: 4%;
+  }
+  .articleText p{
+    width:44rem !important;
+  }
+  
+  .articleText{
+    z-index:100;
+    width:50vw !important; 
+    height:60rem;
+    background-color: #fff !important;
+    color:#434343;
+    position:fixed;
+    bottom:30% !important;
+    top:38%;
+    padding:2rem;
+    font-size: 1.8rem;
+    right:0%;
+    left:50% !important;
+    filter:saturate(100%) !important;
+    transform: translate(-50%, -25%);
+  }
+
+  .articleText h2{
+    padding-top: 2%;
+    font-size: 2.6rem;
+    width:45vw;
+  }
+  
+  .articleText p{
+    font-size: 1.8rem;
+    width:40vw !important;
+    padding-bottom: 5%;
+  }
+
+  .imgArticle{
+    margin-top: 5%;
+    width:47.2vw !important;
+    height:23rem !important;
+    object-fit: cover;
+    filter: saturate(60%);
+    border-radius: 0px !important;
+    margin-top: 2% !important;
+  }
+  
+  .exit{
+    top:2.5% !important;
+  }
+
+  .dataArticle{
+    position: absolute;
+    bottom: -40em;
+    font-weight: 600;
+    padding-bottom: 5%;
+    right:9%;
+    font-size: 19px;
+  }
+  
+  .dataArticleRisco{
+    bottom: -63%;
+  }
+  .dataArticleAtero{
+    bottom:-23em;
+  }
+ 
+  .footer {
+    margin-top: 10%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 1.8rem;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+  .sideImg{
+    top:43% ;
+    left:2.5%;
+    opacity: .6;
+    width:60px;
+    height:75px;
+  }
+  
+  main h1{
+    padding-top: 2%;
+  }
+
+  .opiniaoBtn{
+    cursor: pointer;
+    display: nonr;
+  }
+
+  .opiniaoBtn a{
+    color:#fff;
+    font-size: 1.5rem;
+    text-decoration: none;
+  }
+
+ 
+  .contato h3,
+  .opiniao h3,
+  .text h3,
+  .inspiracoesSub,
+  .galeria-parent h3 {
+    font-size: var(--main-font-size-h3);
+    color: #777;
+    font-weight: 100;
+    font-size: min(6vw, 23px);
+  }
+
+  .contato h2,
+  .opiniao h2,
+  .text h2,
+  .inspiracoesTitle,
+  .galeria-parent h2 {
+    margin-top: 10% !important;
+    font-weight: 400;
+    color: #2b2828 !important;
+    font-size: var(--main-font-size-h2);
+    font-size: min(9vw, 36px);
+  }
+
+  .navbar::before {
+    background-color: white;
+    content: "Menu";
+    font-size: 1.7rem !important;
+    font-family: var(--main-font);
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 5px !important;
+    right: 55%;
+    text-transform: uppercase;
+  }
+  
+  header {
+    height: 0vh !important;
+    background-color: white;
+    width: 100% !important;
+    z-index: 100;
+    margin-left: 0%;
+  }
+
+  .menu-mobile {
+    display: block;
+    z-index: 1000 !important;
+    padding: 9px !important;
+    display: flex;
+    flex-direction: row;
+    height: 70px !important;
+    top: 0;
+    background-color: #333;
+  }
+
+  .perfil-mobile img {
+    margin-top: 4%;
+    height: 6rem !important;
+  }
+  .perfil-mobile h3 {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 300;
+    margin-top: 15%;
+    font-size: 15px;
+  }
+
+  main {
+    width: 100% !important;
+    left: 0;
+    padding-top: 5%;
+    top: 5% !important;
+    margin-left: 0;
+  }
+
+  .elementosHeader {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    gap: 0;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    text-align: center;
+  }
+
+  .perfil-desktop {
+    display: none;
+    width: 100%;
+  }
+  .perfil {
+    display: none;
+    width: 100%;
+  }
+
+  .perfil-mobile img {
+    width: 34%;
+    height: 6vh;
+    object-fit: cover;
+  }
+
+  .elementosHeader {
+    display: none;
+  }
+
+  main {
+    width: 100% !important;
+    left: 0;
+    top: 10%;
+    margin-left: 0;
+  }
+
+  .navbar::before {
+    background-color: white;
+    content: "Menu";
+    font-size: max(14px, 3vmin);
+    font-family: var(--main-font);
+    font-weight: 400;
+    margin-top: 5px;
+    text-transform: uppercase;
+  }
+
+  main h1 {
+    margin-top: 4% !important;
+    font-size: 4.7rem;
+    font-weight: 300 !important;
+    margin-left: 5%;
+    color: #fff;
+    font-family: var(--main-font);
+  }
+
+  main p {
+    font-family: var(--main-font);
+    font-weight: 300;
+  }
+
+  .cards {
+    grid-template-columns: repeat(2, min(45%, 350px));
+    grid-template-rows: 26rem;
+  }
+
+  .card {
+    height: 25rem;
+  }
+
+  .card h2 {
+    font-size: 2.4rem;
+  }
+  .linkCard {
+    text-decoration: none !important;
+  }
+
+  .sobre img {
+    display: none;
+  }
+
+  .texto p {
+    margin-right: 15%;
+    font-size: 1.9rem;
+  }
+
+  .contato2 {
+    display: flex;
+    flex-direction: row;
+    margin-left: 3% !important;
+  }
+
+  .c1 {
+    width: 60vw !important;
+  }
+
+  .c2 img {
+    width: 50%;
+    margin-left: 10%;
+    height: 20vh;
+    object-fit: cover;
+  }
+
+  .ctc5 {
+    margin-left: 4% !important;
+  }
+
+  .contactBtn{
+    display: block !important;
+  }
+
+  .contatoCard{
+    margin-left: 2%;
+    width:58vw !important;
+  }
+
+  .consultorioTexto {
+    padding: 1% 2%;
+    width: 110%;
+    padding-bottom: 4% !important;
+  }
+  .consultorio {
+    padding: 5% 2%;
+    width: 110% !important;
+  }
+  .consultorio h6 {
+    font-size: min(3.5vw, 18px);
+  }
+  .consultorio h2 {
+    font-size: max(3.5vw, 21px);
+  }
+  .c1 p,
+  .mapa {
+    padding-top: 1%;
+    font-size: min(1.5rem, 18px);
+    padding-right: 15%;
+    font-family: "Roboto", sans-serif;
+  }
+  .c2 button {
+    width: 50%;
+    margin-left: 10%;
+  }
+  .grid-opiniao {
+    margin-left: 5% !important;
+    position: relative;
+  }
+
+  .bg-dark {
+    padding: 2% 4%;
+    border-radius: 0px;
+    color:rgb(15, 15, 15);
+    margin: 0;
+    width:50vw;
+    margin-right: 8% !important;
+    font-size: 1.7rem !important;
+  }
+
+  .opiniaoBtn{
+    margin-top: 4%;
+    margin: auto;
+  }
+
+  .opiniao1,
+  .opiniao2,
+  .opiniao3 {
+    padding-top: 3%;
+    text-align: center;
+  }
+
+  .patientReview {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+
+  .pacienteP {
+    font-size: 1.5rem;
+  }
+
+  .galeria-parent img {
+    width: min(40vw, 380px);
+    height: 25rem;
+    opacity: .98;
+  }
+
+  .images {
+    text-align: center !important;
+    display: block;
+    margin-left: 0 !important;
+  }
+  .galeria-parent h2 {
+    font-weight: 100;
+    font-size: var(--main-font-size-h2);
+    margin-left: 5%;
+  }
+
+  .article{
+    margin-bottom: 4%;
+  }
+
+  .articleText{
+    margin-top: 0;
+    margin-bottom: 0;
+    z-index:10000;
+    width: 100vw!important; 
+    height:100vh;
+    color:#434343;
+    position:fixed;
+    top:0% !important;
+    padding:2rem;
+    font-size: 1.4rem;
+    right:0%;
+    left:0% !important;
+    filter:saturate(100%) !important;
+    transform: translate(-0%, -0%) !important;
+  }
+
+  .imgArticle{
+    margin-top: 5%;
+    width: 80vw;
+    height:24rem !important;
+    object-fit: cover;
+    filter: saturate(70%) !important;
+    border-radius: 0px;
+  }
+
+  .exit{
+    top:1.5% !important;
+    width:28px;
+    right:6% !important;
+  }
+  
+  .articleText h2{
+    font-size: 2.5rem !important;
+    width: 45rem;
+    padding-top: 4%;
+  }
+  
+  .articleText p{
+    font-size: 1.8rem;
+    width:48rem !important;
+    padding-bottom: 8%;
+  }
+  
+  .article{
+    border: 1px solid #c9c9c9;
+    margin-bottom: 9%;
+  }
+  
+  .footer {
+    margin-top: 10%;
+    padding-top: 2%;
+    padding-bottom: 4%;
+    font-size: 1.8rem !important;
+    text-align: center;
+
+  }
+
+  .exit{
+    top:2.5% !important;
+  }
+}
+
+@media screen and (min-width:660px) and (max-width:800px){
+  .contatoCard{
+    margin-left: 0% !important;
+    width:35rem !important;
+  }
+
+  .opiniaoBtn{
+    display: none !important;
+  }
+
+  .bg-dark{
+    width:35rem !important;
+    padding: 2.5% !important;
+  }
+  
+  .galeria-parent img {
+    width: 44vw !important;
+    height: 25rem;
+    padding: 1% !important;
+  }
+
+  .articleText{
+    margin-top: 0;
+    margin-bottom: 0;
+    z-index:100;
+    width: 80vw !important; 
+    height:80vh;
+    color:#434343;
+    position:fixed;
+    top:55% !important;
+    padding:2rem;
+    font-size: 1.4rem;
+    left:50% !important;
+    filter:saturate(100%) !important;
+    transform: translate(-50%, -50%) !important;
+  }
+
+  .imgArticle{
+    margin-top: 5%;
+    width: 70vw !important;
+    height:23rem !important;
+    object-fit: cover;
+    filter: saturate(70%) !important;
+    border-radius: 0px !important;
+  }
+
+  .exit{
+    top:2.5% !important;
+    width:28px;
+    right:3%;
+  }
+}
+
+
+@media screen and (min-width: 200px) and (max-width: 710px) {
+  .sideImg{
+    top:55% ;
+    left:2.5%;
+    opacity: .6;
+    width:10px;
+    height:15px;
+  }
+
+  .opiniaoBtn{
+    cursor: pointer;
+    display: block;
+    background-color: var(--main-color);
+    padding: 2% 3%;
+    border: 0px;
+    letter-spacing: .3px;
+    font-weight: 600;
+    margin: auto;  
+  }
+
+  .opiniaoBtn a{
+    color:#fff;
+    font-size: 1.5rem;
+    text-decoration: none;
+  }
+  
+  .contactBtn{
+    display: block !important;
+  }
+
+  .navbar::before {
+    background-color: white;
+    content: "Menu";
+    font-size: 1.7rem !important;
+    font-family: var(--main-font);
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 12px;
+    right: 55%;
+    text-transform: uppercase;
+  }
+
+  header {
+    height: 0vh !important;
+    background-color: white;
+    width: 100% !important;
+    z-index: 100;
+    margin-left: 0%;
+  }
+
+  .menu-mobile {
+    display: block;
+    z-index: 100 !important;
+    display: flex;
+    flex-direction: row;
+    top: 0;
+    background-color: #333;
+  }
+
+  .perfil-mobile img {
+    margin-top: 4%;
+    width: 6rem !important;
+    height: 6rem !important;
+  }
+  .perfil-mobile h3 {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 300;
+    margin-top: 15%;
+    font-size: 15px;
+  }
+
+  main {
+    width: 100% !important;
+    left: 0;
+    padding-top: 0 !important;
+    top: 5% !important;
+    margin-left: 0;
+  }
+
+  .perfil-desktop {
+    display: none;
+    width: 100%;
+  }
+
+  .perfil {
+    display: none;
+    width: 100%;
+  }
+
+  .elementosHeader {
+    display: none;
+  }
+  main {
+    width: 100% !important;
+    left: 0;
+    top: 10%;
+    margin-left: 0;
+    padding-top: 13%;
+  }
+
+  main h1 {
+    margin-top: 0 !important;
+  }
+
+  main p {
+    font-family: var(--main-font);
+    font-weight: 300;
+  }
+
+  .cards {
+    visibility: hidden !important;
+    height: 0 !important;
+  }
+
+  #sobre {
+    margin-top: 1% !important;
+  }
+
+  .sobre {
+    padding-top: 1% !important;
+    display: flex;
+    flex-direction: row;
+  }
+
+  #home {
+    display: none;
+    height: 0 !important;
+    width: 0;
+  }
+
+  .imgSobre img {
+    display: none;
+    height: 0;
+    width: 0;
+  }
+  .texto p {
+    margin-right: 10%;
+    margin-left: 5%;
+    font-size: 1.7rem;
+    line-height: 1.7;
+  }
+
+  .consultorio {
+    padding: 5% 2%;
+    width: 110% !important;
+  }
+  .contato2 {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    margin-left: 5% !important;
+  }
+
+  .consultorioTexto {
+    padding: 1% 2%;
+    width: 110%;
+    padding-bottom: 4% !important;
+  }
+
+  .consultorio h6 {
+    font-size: min(3.5vw, 18px);
+  }
+  .consultorio h2 {
+    font-size: max(3.5vw, 21px);
+  }
+  .c1 p,
+  .mapa {
+    padding-top: 1%;
+    font-size: min(1.5rem, 18px);
+    padding-right: 15%;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .telefone {
+    margin-top: 7%;
+  }
+  .images img {
+    opacity: 0.7;
+    max-width: 400px;
+    height: 30vh;
+    object-fit: cover;
+    transition: all 200ms ease-in;
+  }
+
+  .contatoButton a {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+  .contato h2 {
+    padding-top: 9%;
+  }
+
+  .opiniao h2 {
+    padding-top: 9%;
+  }
+
+  .grid-opiniao {
+    margin-top: 2%;
+    display: block;
+    margin-left: 5%;
+  }
+  .galeria-parent h2 {
+    padding-top: 9%;
+  }
+  .patientReview {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+
+  .bg-dark {
+    padding: 2% 8%;
+    border-radius: 0px;
+    color:rgb(15, 15, 15);
+    margin: 0;
+    width:74vw;
+    margin-right: 8% !important;
+    font-size: 1.7rem !important;
+  }
+
+  .opiniao1,
+  .opiniao2,
+  .opiniao3 {
+    padding-bottom: 6%;
+    margin-right: 5%;
+  }
+ 
+  .contatoCard, .paragrafosCtc{
+    width:78vw;
+  }
+
+  .pacienteP {
+    display: none !important;
+  }
+
+  .galeria-parent img {
+    margin-left: 0% !important;
+    width: 87vw !important;
+    height: 22rem;
+    margin-bottom: 2%;
+    opacity: .97 !important;
+    text-align: left !important;
+  }
+
+  .text h2 {
+    margin-top: max(2vh, 27px) !important;
+  }
+  .contato h2,
+  .opiniao h2,
+  .text h2,
+  .inspiracoesTitle,
+  .galeria-parent h2 {
+    margin-top: 5%;
+    font-weight: 400;
+    font-size: var(--main-font-size-h2);
+    font-size: min(8.1vw, 32px);
+  }
+
+  .opiniao h2, .galeria-parent h2{
+    margin-top: 11% !important;
+  }
+
+  .inspiracoesTitle{
+    margin-top: 15% !important;
+  }
+
+  .lineConsultorio {
+    width: 24% !important;
+  }
+
+  .inspiracoesTitle {
+    margin-top: 12%;
+  }
+
+  .contato h3,
+  .opiniao h3,
+  .text h3,
+  .inspiracoesSub,
+  .galeria-parent h3 {
+    font-size: var(--main-font-size-h3);
+    color: #777;
+    font-weight: 100;
+    font-size: min(5vw, 20px);
+  }
+
+  .text p,
+  .contato p,
+  .opiniao p,
+  .galeria-parent p,
+  .textInsp1 p {
+    margin-top: 3%;
+    font-size: 1.6rem;
+  }
+
+  .images {
+    display: block;
+    margin-left: 0 !important;
+    text-align: center;
+  }
+
+  .footer {
+    margin-top: 10%;
+    padding-top: 2%;
+    padding: 5%;
+    font-size:1.5rem;
+    text-align: center;
+  }
+
+  .ctc5 {
+    margin-left: 1% !important;
+  }
+}
+
+@media  screen and (max-width: 600px){
+  .formacao{
+    width:80vw;
+    margin-top: 10%;
+  }
+
+  .formacaoItem{
+    line-height: 1.5;
+  }
+
+  .article{
+    width:min(88vw, 400px);
+    height:46vh;
+    background-color:aliceblue;
+    color:#333;
+    position: relative;
+    border: 1px solid #c9c9c9;
+    margin-bottom: 9%;
+  }
+
+  .filosofia{
+    height:2.8rem !important;
+  }
+ 
+  .article h2{
+    font-size: max(3.5vw,18px) !important;
+    font-weight: 800;
+    width:80vw;
+    height:6rem; 
+    padding-top: 1.3rem;
+    padding-bottom: 3% !important;
+    padding-left:1.3rem;
+    padding-right:1.3rem;
+  }
+
+  .atero h2{
+    padding-bottom: 2% !important;
+    width:60vw;
+  }
+
+  .article p{
+    font-size: 1.3rem !important;
+    width:max(60vw, 30rem) !important;
+    font-weight: 500;
+    padding-top: 2% !important;
+    padding-left:1.5rem;
+    padding-right:1.5rem;
+    padding-bottom: 4.1rem;
+  }
+
+  .article input{
+    position: absolute;
+    bottom:2%;
+    right:5%;
+    width:12rem;
+    color:white;
+    padding: 1rem .6rem 1rem .6rem;
+    border: none;
+    margin-bottom: 3%;
+    font-weight: 800;
+    background-color: var(--main-color) !important;
+  }
+
+  .articleText{
+    z-index:1001 !important;
+    width:100vw !important; 
+    height:100vh !important;
+    background-color: rgb(255, 255, 255);
+    color:#434343;
+    position:fixed !important;
+    bottom:0% !important;
+    top:25%;
+    padding:2.3rem;
+    font-size: max(3.9vw, 15px);
+    right:0%;
+    left:50% !important;
+    filter:saturate(100%) !important;
+    transform: translate(-50%, -25%);
+  }
+
+  .articleText p, .articleText h2, .imgArticle{
+    width:92%;
+  }
+
+  .articleText p{
+    width:46rem !important;
+    font-size: 1.8rem !important;
+    padding-bottom: 10% !important;
+  }
+
+  .articleText h2{
+    padding-top: 4%;
+    font-size: 2.4rem !important;
+  }
+  
+  .articleText p, .articleText h2, .imgArticle{
+    width:85vw !important;
+  }
+
+  .articleText i{
+    
+    font-size: 3rem;
+  }
+
+  .imgArticle{
+    margin-top: 1.7% !important;
+    margin-bottom: 3%;
+    margin-left: 3% !important;
+  }
+
+  .imgCardOpen{
+    width:85px !important;
+    height:85px !important;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 100px;
+    display: block !important;
+    left:14%;
+  }  
+
+  .exit{
+    margin-left:92%;
+    margin-top: 2%;
+  }
+  
+}
+
+@media screen and  (max-height:600px) and (min-width:1000px) and (max-width:1440px){
+  .sideImg{
+    top:55% ;
+    left:2.5%;
+    opacity: .6;
+    width:60px;
+    height:75px;
+  }
+  
+  .articleText{
+    z-index:100;
+    width:30rem !important; 
+    height:47rem;
+    color:#434343;
+    position:fixed;
+    bottom:30% !important;
+    top:210px !important;
+    padding:2rem;
+    font-size: 1.4rem;
+    right:0%;
+    left:50% !important;
+    filter:saturate(100%) !important;
+    transform: translate(-50%, -25%);
+  }
+}
+
+@media screen and (max-height:680px)  and (min-width:1000px) and (max-width:1440px){
+  header p a {
+    font-weight: 300;
+    text-decoration: none;
+    color: black;
+    font-size: 16px !important
+    ;
+  }
+ 
+  .articleText{
+    z-index:100;
+    width:55rem !important; 
+    height:80vh;
+    color:#434343;
+    position:fixed;
+    top:160px !important;
+    padding:2rem;
+    font-size: 1.4rem;
+    right:0%;
+    left:60% !important;
+    filter:saturate(100%) !important;
+    transform: translate(-50%, -25%);
+  }
+
+  .exit{
+    top:4.5% !important;
+  }
+}
+
+@media screen and (min-width:800px) and (max-width:1000px){
+  .articleText{
+    margin-top: 0;
+    margin-bottom: 0;
+    z-index:100;
+    width: 65vw !important; 
+    height:80vh;
+    color:#434343;
+    position:fixed;
+    top:55% !important;
+    padding:2rem;
+    font-size: 1.4rem;
+    left:50% !important;
+    filter:saturate(100%) !important;
+    transform: translate(-50%, -50%) !important;
+  }
+
+  .imgArticle{
+    margin-top: 5%;
+    width: 55vw !important;
+    height:23rem !important;
+    object-fit: cover;
+    filter: saturate(70%) !important;
+    border-radius: 0px !important;
+  }
+  .exit{
+    top:2.5% !important;
+    width:28px;
+    right:5% !important;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .article p{
+    width:80vw !important;
+  }
+}
+@media screen and (max-height:900px) and (max-width: 600px) {
+  .article{
+    height:43rem !important;
+  }
+
+  .descCard h2{
+    width:35rem !important;
+  }
+
+  .riscoText h2{
+    padding-bottom: 0vh !important;
+  }
+
+  .imgArticle{
+    width: 92vw !important;
+    height:220px !important;
+  }
+
+  .opiniaoBtn{
+    cursor: pointer;
+    display: block;
+    background-color: var(--main-color);
+    padding: 2% 3%;
+    border: 0px;
+    font-weight:600;
+    margin: auto;  
+  }
+
+  .opiniaoBtn a{
+    color:#fff;
+    font-size: 1.5rem;
+    text-decoration: none;
+  }
+}
+
+@media screen and (max-height:900px) and (max-width: 399px) {
+  .article{
+    height:43rem !important;
+  }
+
+  .descCard h2{
+    width:25rem !important;
+    padding-bottom: 5.5% !important;
+  }
+
+  .imgArticle{
+    width: 92vw !important;
+    height:222px !important;
+  }
+
+  .imgCardOpen{
+    bottom:-20px;
+  }
+
+  .renataAtero{
+    bottom:110px;
+  }
+
+  .renataFilosofia{
+    bottom:70px;
+  }
+}
+
+@media screen and (max-height: 900px) and (min-width:400px) {
+  .imgCardOpen{
+    bottom:-20px;
+  }
+
+  .renataAtero{
+    bottom:110px;
+  }
+  
+  .renataFilosofia{
+    bottom:70px;
+  }
+}
+
+@media screen and (min-width: 1500px) and (max-width:2000px) and (max-height: 900px) {
+  .cards{
+    grid-column-gap: 20px !important;
+    grid-row-gap:max(8vh, 70px) !important;
+  }
+  
+  .card{
+    height: 27rem !important;
+  }
+}
+
+@media screen and (min-width:1440px) and (max-width:1490px) {
+  .imgArticle{
+    width: 40vw !important;
+  }
+}
+
+@media screen and (max-width: 412px) {
+  .dataArticle{
+    bottom: -39.5em;
+  }
+  
+  .dataArticleRisco{
+    bottom: -63%;
+  }
+  .dataArticleAtero{
+    bottom:-18em;
+  }
+}
+@media screen and (max-width: 380px) {
+  .dataArticle{
+    bottom: -40.5em !important;
+  }
+  
+  .dataArticleRisco{
+    bottom: -63%;
+  }
+  .dataArticleAtero{
+    bottom:-19em !important;
+  }
+}
