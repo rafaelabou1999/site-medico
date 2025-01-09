@@ -1609,9 +1609,14 @@
   }
 }
 
-@media screen and (max-width:1660px) {
+@media screen and (max-width:1500px) {
   .imgSobre{
     display: none !important;
   }
 }
 
+@media screen and (min-width:1500px) and (max-width:1700px) {
+  .imgSobre img{
+    height:500px !important;
+    object-fit: cover;
+  }}
