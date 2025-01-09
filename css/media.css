@@ -108,7 +108,7 @@
 
   .imgArticle{
     margin-top: 5%;
-    width: 70rem;
+    width: 400px;
     height:20rem !important;
     object-fit: cover;
     filter: saturate(60%);
@@ -119,10 +119,6 @@
     bottom:110px;
   }
   
-  .dataArticleAtero{
-    bottom:-60% !important;
-  }
-
   .exit{
     top:3% !important;
   }
@@ -212,20 +208,12 @@
   }
   
   .imgArticle{
-    width:43.5vw !important;
+    width:570px !important;
     border-radius: 0px !important;
   }
   
   .renataFilosofia{
     bottom: 69px;
-  }
-
-  
-  .dataArticle{
-    bottom: -36em;
-    padding-bottom: 5%;
-    right:7%;
-    font-size: 17px;
   }
 
   .exit{
@@ -486,22 +474,6 @@
     top:2.5% !important;
   }
 
-  .dataArticle{
-    position: absolute;
-    bottom: -40em;
-    font-weight: 600;
-    padding-bottom: 5%;
-    right:9%;
-    font-size: 19px;
-  }
-  
-  .dataArticleRisco{
-    bottom: -63%;
-  }
-  .dataArticleAtero{
-    bottom:-23em;
-  }
- 
   .footer {
     margin-top: 10%;
     padding-top: 2%;
@@ -1567,45 +1539,9 @@
   }
 }
 
-@media screen and (max-width: 412px) {
-  .dataArticle{
-    bottom: -39.5em;
-  }
-  
-  .dataArticleRisco{
-    bottom: -63%;
-  }
-  .dataArticleAtero{
-    bottom:-18em;
-  }
-}
-@media screen and (max-width: 380px) {
-  .dataArticle{
-    bottom: -40.5em !important;
-  }
-  
-  .dataArticleRisco{
-    bottom: -63%;
-  }
-  .dataArticleAtero{
-    bottom:-19em !important;
-  }
-}
-
 @media screen and (max-height:750px) {
   .articleText h2{
     width:86vw !important;
-  }
-  .dataArticleAtero{
-    bottom:-26em !important;
-  }
-
-  .dataArticle{
-    bottom: -47.5em !important;
-  }
-  
-  .dataArticleRisco{
-    bottom: -109% !important;
   }
 }
 
@@ -1619,4 +1555,14 @@
   .imgSobre img{
     height:500px !important;
     object-fit: cover;
-  }}
+  }
+
+  .articleText h2{
+    width:32vw !important;
+  }
+
+  .imgArticle{
+    width:57rem !important;
+  }
+
+}

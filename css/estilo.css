@@ -664,21 +664,6 @@ main p {
   transform: translate(-50%, -50%);
 }
 
-.dataArticle{
-  position: absolute;
-  bottom: -30em;
-  font-weight: 600;
-  padding-bottom: 5%;
-  right:9%;
-  font-size: 19px;
-}
-
-.dataArticleRisco{
-  bottom: -63%;
-}
-.dataArticleAtero{
-  bottom:-15em;
-}
 .imgArticle{
   filter:grayscale(21%);
   margin-top: 2%;
