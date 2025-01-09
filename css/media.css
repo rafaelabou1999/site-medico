@@ -1045,7 +1045,7 @@
   }
 
   #sobre {
-    margin-top: 1% !important;
+    padding-top: 12% !important;
   }
 
   .sobre {
@@ -1245,6 +1245,16 @@
 }
 
 @media  screen and (max-width: 600px){
+  .btnMain{
+    right:6%;
+    width:140px;
+    padding:0%;
+    height:45px;
+  }
+
+  .btnMain a{
+    font-size: 15px;
+  }
   .formacao{
     width:80vw;
     margin-top: 10%;
@@ -1365,8 +1375,8 @@
   }  
 
   .exit{
-    margin-left:92%;
-    margin-top: 2%;
+    margin-left:90%;
+    margin-top: 4%;
   }
   
 }
@@ -1579,5 +1589,22 @@
   }
   .dataArticleAtero{
     bottom:-19em !important;
+  }
+}
+
+@media screen and (max-height:750px) {
+  .articleText h2{
+    width:86vw !important;
+  }
+  .dataArticleAtero{
+    bottom:-26em !important;
+  }
+
+  .dataArticle{
+    bottom: -47.5em !important;
+  }
+  
+  .dataArticleRisco{
+    bottom: -109% !important;
   }
 }
