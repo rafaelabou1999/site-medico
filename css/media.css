@@ -401,6 +401,7 @@
     margin-left: 10%;
   }
 
+ 
   .bg-dark {
     padding: 2% 3%;
     border-radius: 0px;
@@ -418,6 +419,7 @@
     font-size: 1.5rem;
   }
 
+  
 
   .galeria-parent img {
     width: min(40vw, 380px);
@@ -696,7 +698,7 @@
 
   .contatoCard{
     margin-left: 2%;
-    width:58vw !important;
+    width:370px !important;
   }
 
   .consultorioTexto {
