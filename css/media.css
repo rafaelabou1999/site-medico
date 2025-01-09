@@ -1608,3 +1608,10 @@
     bottom: -109% !important;
   }
 }
+
+@media screen and (max-width:1660px) {
+  .imgSobre{
+    display: none !important;
+  }
+}
+
